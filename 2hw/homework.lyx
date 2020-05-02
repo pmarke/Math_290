@@ -4596,6 +4596,16 @@ For each of the following compound sentences, describe the subset of
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $P\left(x\right)\land Q\left(x\right)$
 \end_inset
 
@@ -4604,6 +4614,16 @@ For each of the following compound sentences, describe the subset of
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\left\{ 2,3\right\} $
 \end_inset
 
@@ -4612,6 +4632,16 @@ For each of the following compound sentences, describe the subset of
 
 \end_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $Q\left(x\right)\land R\left(x\right)$
 \end_inset
 
@@ -4620,6 +4650,16 @@ For each of the following compound sentences, describe the subset of
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\left\{ -3,-1,1,3\right\} $
 \end_inset
 
@@ -4628,11 +4668,1122 @@ For each of the following compound sentences, describe the subset of
 
 \end_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\left(Q\left(x\right)\lor\neg P\left(x\right)\right)\land\neg R\left(x\right)$
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+This statement can be rewritten as 
+\begin_inset Formula $\left(Q\left(x\right)\land R\left(x\right)\right)\lor\left(\neg P\left(x\right)\land R\left(x\right)\right)$
+\end_inset
+
+.
+ I am dropping the dependency on 
+\begin_inset Formula $x$
+\end_inset
+
+ for clarity.
+ We already know the set for 
+\begin_inset Formula $Q\land R$
+\end_inset
+
+ from part b).
+ The set associated with 
+\begin_inset Formula $\neg P\land R$
+\end_inset
+
+ is 
+\begin_inset Formula $\left\{ 1,-1,-3,\cdots\right\} $
+\end_inset
+
+.
+ Thus the subset is 
+\begin_inset Formula 
+\[
+\left\{ 1,-1,-3,\cdots\right\} \cup\left\{ -3,-1,1,3\right\} =\left\{ 3,1,-1,-3,\cdots\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left(P\left(x\right)\implies Q\left(x\right)\right)\implies R\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Dropping the dependency on 
+\begin_inset Formula $x$
+\end_inset
+
+ we can write and equivalent statement
+\begin_inset Formula 
+\begin{align*}
+\left(P\left(x\right)\implies Q\left(x\right)\right)\implies R\left(x\right) & \equiv\left(\neg P\lor Q\right)\implies R\\
+ & \equiv\left(P\land\neg Q\right)\lor R
+\end{align*}
+
+\end_inset
+
+The subset is 
+\begin_inset Formula 
+\[
+\left\{ -4,-5,-6,\cdots\right\} \cup\left\{ 4,5,6,7,8\cdots\right\} \cup\left\{ -3,-1,1,3\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+For each 
+\begin_inset Formula $x\in\left\{ 1,2,3,4,5,6\right\} $
+\end_inset
+
+, write down the truth value of 
+\begin_inset Formula 
+\[
+P\left(x\right):\:\text{If \ensuremath{x}}\text{ is an odd integer, then }\frac{3x+5}{2}\text{ is an odd integer,}
+\]
+
+\end_inset
+
+and then state whether you believe 
+\begin_inset Formula $\forall x\in\mathbb{Z},P\left(x\right)$
+\end_inset
+
+ is true or false.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The truth table for the open sentence is 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="7">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+In order for the term 
+\begin_inset Formula $\frac{3x+5}{2}\in\mathbb{Z}$
+\end_inset
+
+, the numerator must be even; otherwise, the term is a rational number.
+ This implies that 
+\begin_inset Formula $\forall x\in\mathbb{Z},P\left(x\right)$
+\end_inset
+
+ is false, which we could've concluded from the truth table.
+ 
+\end_layout
+
+\begin_layout Exercise
+For each 
+\begin_inset Formula $x\in\left\{ 1,2,3,4,5,6\right\} $
+\end_inset
+
+, write down the truth value of 
+\begin_inset Formula 
+\[
+Q\left(x\right):\,\text{If }x\text{ is an even integer, then }3x+5\text{ is an odd integer},
+\]
+
+\end_inset
+
+and then state whether you believe 
+\begin_inset Formula $\forall x\in\mathbb{Z},Q\left(x\right)$
+\end_inset
+
+ is true or false.
+\end_layout
+
+\begin_layout Exercise
+The corresponding truth table for the open sentence is
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="7">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ We can easily show that the statement 
+\begin_inset Formula $\forall x\in\mathbb{Z},Q\left(x\right)$
+\end_inset
+
+ is true.
+ We know that an even integer multiplied by an odd integer is even, and
+ we know that an even integer added to an odd integer is odd.
+ Since 
+\begin_inset Formula $3$
+\end_inset
+
+ and 
+\begin_inset Formula $5$
+\end_inset
+
+ are odd, and if 
+\begin_inset Formula $x$
+\end_inset
+
+ is even then 
+\begin_inset Formula $3x+5$
+\end_inset
+
+ must be odd.
+ In fact, this is bi-conditional .
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be two subsets of a universal set 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ Write a symbolic logic interpretation of the statement 
+\begin_inset Formula $A=B$
+\end_inset
+
+.
+ Explicitly write out any quantifiers involved in the statement.
+\begin_inset Formula 
+\[
+\forall a\in A,\,\forall b\in B,\,b\in A,\,a\in B.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Translate the following English sentences into symbolic logic.
+ Explicitly write out any quantifiers involved in the statement.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+There is an integer strictly between 
+\begin_inset Formula $4$
+\end_inset
+
+ and 
+\begin_inset Formula $6$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\exists x\in\mathbb{Z},\,x\in\left(4,6\right).$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+The square of any odd integer is odd.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $S=\left\{ \text{odd integers}\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall x\in S,\,x^{2}\in S.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+If the square of an integer is odd, then the original integer is odd.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $S=\left\{ \text{odd integers}\right\} $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall x\in\mathbb{Z},\,x^{2}\in S\implies x\in S.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+d)
+\end_layout
+
+\end_inset
+
+If a real number is not rational, then it is not equal to 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\in\mathbb{R},\,x\notin\mathbb{Q}\implies x\neq0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+e)
+\end_layout
+
+\end_inset
+
+The sum of two rational numbers is rational.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x,y\in\mathbb{Q},\,x+y\in\mathbb{Q}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+f)
+\end_layout
+
+\end_inset
+
+The square of any real number is a nonnegative real number.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\in\mathbb{R},\,x^{2}\geq0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+g)
+\end_layout
+
+\end_inset
+
+There is an integer solution to the equation 
+\begin_inset Formula $x^{2}-5x+6=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\exists x\in\mathbb{Z},\,x^{2}-5x+6=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+h)
+\end_layout
+
+\end_inset
+
+Every real solution to 
+\begin_inset Formula $x^{2}-5x+6=0$
+\end_inset
+
+ is an integer.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\in\mathbb{R},\,x^{2}-5x+6=0\implies x\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Translate the following symbolic logic statements into English
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\exists x\in\mathbb{R},\,x=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+There exists a real number that is equal to 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\in\mathbb{Z},\,\left(x\text{ is even}\right)\iff\left(x^{2}\text{ is even}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+An integer is even if and only if the square of the integer is even for
+ all integers.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\in\mathbb{R},\,\left(x>1\right)\implies\left(x^{3}>1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+For every real number, if the number is greater than 
+\begin_inset Formula $1$
+\end_inset
+
+, then the number cubed is greater than 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+d)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\in\mathbb{R},\,\left(x^{2}-2x+1=0\right)\implies\left(x=1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+For every real number, if it is a solution to 
+\begin_inset Formula $x^{2}-2x+1=0$
+\end_inset
+
+, then the number is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+e)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\exists x\in\mathbb{Q},\,2x^{3}-x^{2}+2x-1=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+There exists a rational solution to 
+\begin_inset Formula $2x^{3}-x^{2}+2x-1=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+f)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\in\mathbb{R},\exists y\in\mathbb{Z},\exists z\in\left[0,1\right),\,x=y+z$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+For any real number 
+\begin_inset Formula $x$
+\end_inset
+
+, there is an integer 
+\begin_inset Formula $y$
+\end_inset
+
+ and a number 
+\begin_inset Formula $z$
+\end_inset
+
+ from the interval 
+\begin_inset Formula $\left[0,1\right)$
+\end_inset
+
+ that satisfies the equation 
+\begin_inset Formula $x=y+z$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
