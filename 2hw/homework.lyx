@@ -3838,7 +3838,7 @@ We begin by manipulating the statement
 \begin_inset Formula 
 \begin{align*}
  & \left(\left(P\lor Q\right)\land\left(\neg P\right)\right)\implies Q\\
- & \equiv\left(\left(P\land\neg P\right)\lor Q\land\neg P\right)\implies Q\\
+ & \equiv\left(\left(P\land\neg P\right)\lor\left(Q\land\neg P\right)\right)\implies Q\\
  & \equiv\left(Q\land\neg P\right)\implies Q\\
  & \equiv\left(\neg Q\lor P\right)\lor Q\\
  & \equiv\text{T}
@@ -3890,7 +3890,7 @@ We begin by manipulating the statement
 
 \end_inset
 
-which is neither a tautology or a statement.
+which is neither a tautology or a contradiction.
 \end_layout
 
 \end_deeper

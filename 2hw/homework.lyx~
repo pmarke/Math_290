@@ -5549,6 +5549,16 @@ Translate the following symbolic logic statements into English
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\exists x\in\mathbb{R},\,x=2$
 \end_inset
 
@@ -5557,6 +5567,15 @@ Translate the following symbolic logic statements into English
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 There exists a real number that is equal to 
 \begin_inset Formula $2$
 \end_inset
@@ -5566,6 +5585,16 @@ There exists a real number that is equal to
 
 \end_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\forall x\in\mathbb{Z},\,\left(x\text{ is even}\right)\iff\left(x^{2}\text{ is even}\right)$
 \end_inset
 
@@ -5574,12 +5603,31 @@ There exists a real number that is equal to
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 An integer is even if and only if the square of the integer is even for
  all integers.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\forall x\in\mathbb{R},\,\left(x>1\right)\implies\left(x^{3}>1\right)$
 \end_inset
 
@@ -5588,6 +5636,15 @@ An integer is even if and only if the square of the integer is even for
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 For every real number, if the number is greater than 
 \begin_inset Formula $1$
 \end_inset
@@ -5601,6 +5658,16 @@ For every real number, if the number is greater than
 
 \end_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+d)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\forall x\in\mathbb{R},\,\left(x^{2}-2x+1=0\right)\implies\left(x=1\right)$
 \end_inset
 
@@ -5609,6 +5676,15 @@ For every real number, if the number is greater than
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 For every real number, if it is a solution to 
 \begin_inset Formula $x^{2}-2x+1=0$
 \end_inset
@@ -5622,6 +5698,16 @@ For every real number, if it is a solution to
 
 \end_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+e)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\exists x\in\mathbb{Q},\,2x^{3}-x^{2}+2x-1=0$
 \end_inset
 
@@ -5630,6 +5716,15 @@ For every real number, if it is a solution to
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 There exists a rational solution to 
 \begin_inset Formula $2x^{3}-x^{2}+2x-1=0$
 \end_inset
@@ -5639,6 +5734,16 @@ There exists a rational solution to
 
 \end_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+f)
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $\forall x\in\mathbb{R},\exists y\in\mathbb{Z},\exists z\in\left[0,1\right),\,x=y+z$
 \end_inset
 
@@ -5647,6 +5752,15 @@ There exists a rational solution to
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 For any real number 
 \begin_inset Formula $x$
 \end_inset
