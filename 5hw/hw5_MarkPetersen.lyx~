@@ -1,0 +1,2844 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\addtocounter{section}{7}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\begin_modules
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 5
+\end_layout
+
+\begin_layout After Title Text
+Sections 8 and 9
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Section
+Proof By Cases
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+.
+ Prove that if 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ have the same parity, then 
+\begin_inset Formula $x^{2}+xy$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Proof
+We directly suppose that 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ have the same parity, and prove this for the case of even and odd parity.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Suppose 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are even such that 
+\begin_inset Formula $x=2k$
+\end_inset
+
+ and 
+\begin_inset Formula $y=2l$
+\end_inset
+
+ for some 
+\begin_inset Formula $k,l\in\,\mathbb{Z}$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula 
+\begin{align*}
+x^{2}+xy & =4k^{2}+4kl\\
+ & =2\left(2k^{2}+2kl\right),
+\end{align*}
+
+\end_inset
+
+which is even.
+\end_layout
+
+\begin_layout Case
+Suppose 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are odd such that 
+\begin_inset Formula $x=2k+1$
+\end_inset
+
+ and 
+\begin_inset Formula $y=2l+1$
+\end_inset
+
+ for some 
+\begin_inset Formula $k,l\in\mathbb{Z}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\begin{align*}
+x^{2}+xy & =4k^{2}+4k+1+4kl+2k+2l+1\\
+ & =2\left(2k^{2}+4k+4l+2kl+1\right),
+\end{align*}
+
+\end_inset
+
+which is even.
+\end_layout
+
+\begin_layout Standard
+Therefore, if 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ have the same parity, then 
+\begin_inset Formula $x^{2}+xy$
+\end_inset
+
+ is even.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a,b,c\in\mathbb{Z}$
+\end_inset
+
+.
+ Prove that if 
+\begin_inset Formula $a\nmid bc$
+\end_inset
+
+, then 
+\begin_inset Formula $a\nmid b$
+\end_inset
+
+ and 
+\begin_inset Formula $a\nmid c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We contrapositively suppose that if 
+\begin_inset Formula $a\mid b$
+\end_inset
+
+ or 
+\begin_inset Formula $a\mid c$
+\end_inset
+
+ then 
+\begin_inset Formula $a\mid bc$
+\end_inset
+
+.
+ We break this down into two cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $a\mid b$
+\end_inset
+
+ then by definition 
+\begin_inset Formula $b=am$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $bc=amc$
+\end_inset
+
+ which 
+\begin_inset Formula $a$
+\end_inset
+
+ is a divisor of.
+ 
+\end_layout
+
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $a\mid c$
+\end_inset
+
+.
+ This case is similar to the first.
+\end_layout
+
+\begin_layout Standard
+Since the statement 
+\begin_inset Formula $a\mid b$
+\end_inset
+
+ or 
+\begin_inset Formula $a\mid c$
+\end_inset
+
+ then 
+\begin_inset Formula $a\mid bc$
+\end_inset
+
+ is true, the original statement is true.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove that given 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+, either 
+\begin_inset Formula $x^{2}\equiv0\:\mod\:4$
+\end_inset
+
+ or 
+\begin_inset Formula $x^{2}\equiv1\:\mod\:4$
+\end_inset
+
+.
+ Using this, prove that for any integer 
+\begin_inset Formula $x$
+\end_inset
+
+ we have 
+\begin_inset Formula $4\mid\left(x^{4}-x^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+The value of 
+\begin_inset Formula $x$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $4k$
+\end_inset
+
+, 
+\begin_inset Formula $4k+1$
+\end_inset
+
+, 
+\begin_inset Formula $4k+2$
+\end_inset
+
+, or 
+\begin_inset Formula $4k+3$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ We prove the statement directly by proving the following four cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Suppose 
+\begin_inset Formula $x=4k$
+\end_inset
+
+, then 
+\begin_inset Formula $x^{2}=16k^{2}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $4\mid16k^{2}-0$
+\end_inset
+
+, 
+\begin_inset Formula $x^{2}\equiv0\:\mod\:4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Suppose 
+\begin_inset Formula $x=4k+1$
+\end_inset
+
+, then 
+\begin_inset Formula $x^{2}=16k^{2}+8k+1$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $4\mid16k^{2}+8k+1-1$
+\end_inset
+
+, 
+\begin_inset Formula $x^{2}\equiv1\:\mod\:4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Suppose 
+\begin_inset Formula $x=4k+2$
+\end_inset
+
+, then 
+\begin_inset Formula $x^{2}=16k^{2}+16k+4$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $4\mid16k^{2}+16k+4-0$
+\end_inset
+
+, 
+\begin_inset Formula $x^{2}\equiv0\:\mod\:4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Suppose 
+\begin_inset Formula $x=4k+3$
+\end_inset
+
+, then 
+\begin_inset Formula $x^{3}=16k+24k+9$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $4\mid16k+24k+9-1$
+\end_inset
+
+, 
+\begin_inset Formula $x^{2}\equiv1\:\mod\:4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since all four cases hold, the statement is true.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The second portion of this problem is to prove that given 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $4\mid\left(x^{4}-x^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We directly suppose that 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+.
+ Using the information from the previous proof we know that either 
+\begin_inset Formula $x^{2}\equiv0\:\mod\:4$
+\end_inset
+
+ or 
+\begin_inset Formula $x^{2}\equiv1\:\mod\:4$
+\end_inset
+
+.
+ This gives us two cases that we can prove separately.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Suppose directly that 
+\begin_inset Formula $x^{2}\equiv0\:\mod\:4$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $4\mid x^{2}$
+\end_inset
+
+, in other words 
+\begin_inset Formula $x^{2}=4a$
+\end_inset
+
+ for some 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+.
+ Let us simplify the expression 
+\begin_inset Formula $4\mid\left(x^{4}-x^{2}\right)$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $4\mid x^{2}\left(x^{2}-1\right)$
+\end_inset
+
+ and is equivalent to saying 
+\begin_inset Formula $x^{2}\left(x^{2}-1\right)=4c$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\mathbb{Z}$
+\end_inset
+
+.
+ Using the fact that 
+\begin_inset Formula $x^{2}=4a$
+\end_inset
+
+ we get 
+\begin_inset Formula $4a\left(x^{2}-1\right)=4c$
+\end_inset
+
+ which is true.
+\end_layout
+
+\begin_layout Case
+Suppose directly that 
+\begin_inset Formula $x^{2}\equiv1\:\mod\:4$
+\end_inset
+
+.
+ This indicates that 
+\begin_inset Formula $4\mid x^{2}-1$
+\end_inset
+
+, in other words 
+\begin_inset Formula $x^{2}-1=4a$
+\end_inset
+
+ for some 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+.
+ We showed earlier that the statement 
+\begin_inset Formula $4\mid\left(x^{4}-x^{2}\right)$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $4\mid x^{2}\left(x^{2}-1\right)$
+\end_inset
+
+ and is equivalent to saying 
+\begin_inset Formula $x^{2}\left(x^{2}-1\right)=4c$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\mathbb{Z}$
+\end_inset
+
+.
+ Using the fact that 
+\begin_inset Formula $x^{2}-1=4a$
+\end_inset
+
+ we get 
+\begin_inset Formula $x^{2}4a=4c$
+\end_inset
+
+ which is true.
+\end_layout
+
+\begin_layout Standard
+Since both cases are true, given 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $4\mid\left(x^{4}-x^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a,b,c,n\in\mathbb{Z}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $a\equiv b\,\mod\,n$
+\end_inset
+
+ and 
+\begin_inset Formula $b\equiv c\,\mod\,n$
+\end_inset
+
+, show that 
+\begin_inset Formula $a\equiv c\,\mod\,n$
+\end_inset
+
+.
+ If we know 
+\begin_inset Formula $11\equiv-3\,\mod\,7$
+\end_inset
+
+ and 
+\begin_inset Formula $-3\equiv4\,\mod\,7$
+\end_inset
+
+, can we say that 
+\begin_inset Formula $11\equiv4\,\mod\,7$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $a\equiv b\,\mod\,n$
+\end_inset
+
+ which implies 
+\begin_inset Formula $n\mid\left(a-b\right)$
+\end_inset
+
+ which is equivalent to saying that 
+\begin_inset Formula $a-b=ng$
+\end_inset
+
+ for some 
+\begin_inset Formula $g\in\mathbb{Z}$
+\end_inset
+
+.
+ Solving for 
+\begin_inset Formula $b$
+\end_inset
+
+ we get 
+\begin_inset Formula $b=a-ng$
+\end_inset
+
+.
+ We can use this identity in the statement 
+\begin_inset Formula $b\equiv c\,\mod\,n$
+\end_inset
+
+ by writing the equivalent form 
+\begin_inset Formula $b-c=nl$
+\end_inset
+
+ for some 
+\begin_inset Formula $l\in\mathbb{Z}$
+\end_inset
+
+, and substituting in 
+\begin_inset Formula $a-ng$
+\end_inset
+
+ for 
+\begin_inset Formula $b$
+\end_inset
+
+ to get 
+\begin_inset Formula 
+\begin{align*}
+b-c & =nl\\
+a-ng-c & =nl\\
+a-c & =nl+ng\\
+a-c & =n\left(l+g\right),
+\end{align*}
+
+\end_inset
+
+which implies 
+\begin_inset Formula $n\mid a-c$
+\end_inset
+
+ or equivalently 
+\begin_inset Formula $a\equiv c\,\mod\,n$
+\end_inset
+
+.
+ And of course this proof shows that the answer to the question is yes.
+\end_layout
+
+\begin_layout Exercise
+Prove, for any 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+, that 
+\begin_inset Formula $3\mid n$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $3\mid n^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+This is a biconditional, so we will prove both direction.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We begin by showing directly that if 
+\begin_inset Formula $3\mid n$
+\end_inset
+
+ then 
+\begin_inset Formula $3\mid n^{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $3\mid n$
+\end_inset
+
+ is equivalent to saying 
+\begin_inset Formula $n=3c$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\mathbb{N}$
+\end_inset
+
+.
+ Substituting this in for 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ yields 
+\begin_inset Formula $n^{2}=3\left(3c^{2}\right)$
+\end_inset
+
+ which shows that 
+\begin_inset Formula $3\mid n^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ Next we show directly by cases that if 
+\begin_inset Formula $3\mid n^{2}$
+\end_inset
+
+ then 
+\begin_inset Formula $3\mid n$
+\end_inset
+
+.
+ An integer 
+\begin_inset Formula $n$
+\end_inset
+
+ can be written as either 
+\begin_inset Formula $3k$
+\end_inset
+
+, 
+\begin_inset Formula $3k+1$
+\end_inset
+
+, or 
+\begin_inset Formula $3k+2$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+.
+ Only in the case 
+\begin_inset Formula $n=3k$
+\end_inset
+
+ is 
+\begin_inset Formula $3\mid n$
+\end_inset
+
+.
+ Thus we need to show that in the other two cases, that 
+\begin_inset Formula $3\mid n^{2}$
+\end_inset
+
+ is false.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Suppose 
+\begin_inset Formula $n=3k$
+\end_inset
+
+, substituting this into the statement 
+\begin_inset Formula $3\mid n^{2}$
+\end_inset
+
+ yields 
+\begin_inset Formula $3\mid3\left(3k^{2}\right)$
+\end_inset
+
+.
+ Which is true.
+\end_layout
+
+\begin_layout Case
+Suppose 
+\begin_inset Formula $n=3k+1$
+\end_inset
+
+, substituting this into the statement 
+\begin_inset Formula $3\mid n^{2}$
+\end_inset
+
+ yields 
+\begin_inset Formula $3\mid\left(3\left(3k^{2}+2k\right)+1\right)$
+\end_inset
+
+ which is false since 
+\begin_inset Formula $3$
+\end_inset
+
+ does not divide 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Suppose 
+\begin_inset Formula $n=3k+2$
+\end_inset
+
+, substituting this into the statement 
+\begin_inset Formula $3|n^{2}$
+\end_inset
+
+ yields 
+\begin_inset Formula $3\mid\left(3\left(3k^{2}+4k\right)+2\right)$
+\end_inset
+
+ which is false since 
+\begin_inset Formula $3$
+\end_inset
+
+ does not divide 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Therefore if 
+\begin_inset Formula $3\mid n^{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $3\mid n$
+\end_inset
+
+, which completes the proof.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove 
+\begin_inset Formula $3\mid\left(2n^{2}+1\right)$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $3\nmid n$
+\end_inset
+
+, for 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+This is a biconditional, so we will prove both direction.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We suppose contrapositively that 
+\begin_inset Formula $3\mid n$
+\end_inset
+
+ such that 
+\begin_inset Formula $n=3a$
+\end_inset
+
+ for some 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+.
+ Substituting this into 
+\begin_inset Formula $2n^{2}+1$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+2n^{2}+1 & =18a^{2}+1\\
+ & =3\left(6a^{2}\right)+1,
+\end{align*}
+
+\end_inset
+
+which does not divide by 
+\begin_inset Formula $3$
+\end_inset
+
+ since 
+\begin_inset Formula $1$
+\end_inset
+
+ does not divide by 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Therefore if 
+\begin_inset Formula $3\mid\left(2n^{2}+1\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $3\nmid n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $3\nmid n$
+\end_inset
+
+.
+ This means that the integer 
+\begin_inset Formula $n$
+\end_inset
+
+ can be written as either 
+\begin_inset Formula $n=3k+1$
+\end_inset
+
+ or 
+\begin_inset Formula $3k+2$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+.
+ If the statement holds for both cases, then it is true.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+We assume that 
+\begin_inset Formula $n=3k+1$
+\end_inset
+
+.
+ Substituting this into 
+\begin_inset Formula $2n^{2}+1$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+2n^{2}+1 & =2\left(9k^{2}+6k+1\right)+1\\
+ & =18k^{2}+12k+3\\
+ & =3\left(6k^{2}+4k+1\right),
+\end{align*}
+
+\end_inset
+
+which does divide by 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+We assume that 
+\begin_inset Formula $n=3k+2$
+\end_inset
+
+.
+ Substituting the value of 
+\begin_inset Formula $n$
+\end_inset
+
+ into 
+\begin_inset Formula $2n^{2}+1$
+\end_inset
+
+ yields
+\begin_inset Formula 
+\begin{align*}
+2n^{2}+1 & =2\left(9k^{2}+12k+4\right)+1\\
+ & =18k^{2}+24k+9\\
+ & =3\left(6k^{2}+8k+3\right),
+\end{align*}
+
+\end_inset
+
+which does divide by 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since both cases hold, if 
+\begin_inset Formula $3\nmid n$
+\end_inset
+
+ then 
+\begin_inset Formula $3\mid\left(2n^{2}+1\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a,b,c,d,n\in\mathbb{Z}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $a\equiv b\,\mod\,n$
+\end_inset
+
+ and 
+\begin_inset Formula $c\equiv d\,\mod\,n$
+\end_inset
+
+, prove that 
+\begin_inset Formula $ac\equiv bd\,\mod\:n$
+\end_inset
+
+.
+ What does this statement say if we take 
+\begin_inset Formula $c=a$
+\end_inset
+
+ and 
+\begin_inset Formula $d=b$
+\end_inset
+
+? We know that 
+\begin_inset Formula $19\equiv5\,\mod\,7$
+\end_inset
+
+.
+ Do we then know 
+\begin_inset Formula $19^{2}\equiv5^{2}\,\mod\,7$
+\end_inset
+
+.
+ How about 
+\begin_inset Formula $19^{3}\equiv5^{3}\,\mod\,7$
+\end_inset
+
+?.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $a\equiv b\,\mod\,n$
+\end_inset
+
+ and 
+\begin_inset Formula $c\equiv d\,\mod\,n$
+\end_inset
+
+, which is equivalent to supposing 
+\begin_inset Formula $a-b=ng$
+\end_inset
+
+ and 
+\begin_inset Formula $c-d=nk$
+\end_inset
+
+ for some 
+\begin_inset Formula $k,g\in\mathbb{Z}$
+\end_inset
+
+.
+ Solving for 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ gives us 
+\begin_inset Formula $a=ng+b$
+\end_inset
+
+ and 
+\begin_inset Formula $c=nk+d$
+\end_inset
+
+.
+ Multiplying 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\[
+ac=ngnk-dng-bnk+bd,
+\]
+
+\end_inset
+
+which can be written as 
+\begin_inset Formula 
+\begin{align*}
+ad-bd & =ngnk-dng-bnk\\
+ & =n\left(ngk-dg-bk\right).
+\end{align*}
+
+\end_inset
+
+This shows that 
+\begin_inset Formula $n\mid ad-bd$
+\end_inset
+
+, or equivalently 
+\begin_inset Formula $ac\equiv bd\,\mod\:n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Under the conditions that 
+\begin_inset Formula $c=a$
+\end_inset
+
+ and 
+\begin_inset Formula $d=b$
+\end_inset
+
+, the statement that we proves says that 
+\begin_inset Formula $a^{2}\equiv b^{2}\,\mod\,n$
+\end_inset
+
+.
+ This means that if 
+\begin_inset Formula $19\equiv5\,\mod\,7$
+\end_inset
+
+ then 
+\begin_inset Formula $19^{2}\equiv5^{2}\,\mod\,7$
+\end_inset
+
+.
+ To show that 
+\begin_inset Formula $19^{3}\equiv5^{3}\,\mod\,7$
+\end_inset
+
+, suppose 
+\begin_inset Formula $a-b=ng$
+\end_inset
+
+ for some 
+\begin_inset Formula $g\in\mathbb{Z}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\begin{align*}
+a^{3} & =n^{3}g^{3}+n^{2}g^{2}b+2n^{2}g^{2}b+2ngb^{2}+ngb^{2}+b^{3}\\
+ & =n\left(n^{2}g^{3}+3ng^{2}b+3gb^{2}\right)+b^{3},
+\end{align*}
+
+\end_inset
+
+which can be written as 
+\begin_inset Formula 
+\[
+a^{3}-b^{3}=n\left(n^{2}g^{3}+3ng^{2}b+3gb^{2}\right).
+\]
+
+\end_inset
+
+This shows that if 
+\begin_inset Formula $a\equiv b\,\mod\,n$
+\end_inset
+
+, then 
+\begin_inset Formula $a^{3}\equiv b^{3}\,\mod\,n$
+\end_inset
+
+, thus 
+\begin_inset Formula $19^{3}\equiv5^{3}\,\mod\,7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Prove Theorem 
+\begin_inset Formula $8.22$
+\end_inset
+
+ for any 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+, we have 
+\begin_inset Formula $\left|xy\right|=\left|x\right|\left|y\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We show this directly by considering the four case.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $x\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $y\geq0$
+\end_inset
+
+, then 
+\begin_inset Formula $xy\geq0$
+\end_inset
+
+, 
+\begin_inset Formula $xy=\left|xy\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|x\right|=x$
+\end_inset
+
+, and 
+\begin_inset Formula $\left|y\right|=y$
+\end_inset
+
+, thus showing that
+\begin_inset Formula $\left|xy\right|=\left|x\right|\left|y\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $x<0$
+\end_inset
+
+ and 
+\begin_inset Formula $y<0$
+\end_inset
+
+, then 
+\begin_inset Formula $xy>0$
+\end_inset
+
+, 
+\begin_inset Formula $xy=\left|xy\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|x\right|=-x$
+\end_inset
+
+, and 
+\begin_inset Formula $\left|y\right|=-y$
+\end_inset
+
+.
+ Therefore we have 
+\begin_inset Formula 
+\begin{align*}
+xy & =-\left|x\right|\left(-\left|y\right|\right)\\
+ & =\left|x\right|\left|y\right|,
+\end{align*}
+
+\end_inset
+
+thus showing that 
+\begin_inset Formula $\left|xy\right|=\left|x\right|\left|y\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $x\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $y<0$
+\end_inset
+
+, then 
+\begin_inset Formula $xy\leq0$
+\end_inset
+
+, 
+\begin_inset Formula $xy=-\left|xy\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|x\right|=x$
+\end_inset
+
+, and 
+\begin_inset Formula $\left|y\right|=-y$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $xy=-\left|x\right|\left|y\right|$
+\end_inset
+
+, which shows that 
+\begin_inset Formula $\left|x\right|\left|y\right|=\left|xy\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $x<0$
+\end_inset
+
+ and 
+\begin_inset Formula $y\geq0$
+\end_inset
+
+.
+ This case is similar to the previous one.
+\end_layout
+
+\begin_layout Standard
+Since all four cases hold, we have shown that 
+\begin_inset Formula $\left|xy\right|=\left|x\right|\left|y\right|$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $a^{2}\leq1$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $-1\leq a\leq1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+This is biconditional so we show both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We assume directly that 
+\begin_inset Formula $a^{2}\leq1$
+\end_inset
+
+.
+ Taking the square root of both sides gives us 
+\begin_inset Formula $\left|a\right|\leq1$
+\end_inset
+
+.
+ We have two cases to show.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $a\geq0$
+\end_inset
+
+, then 
+\begin_inset Formula $\left|a\right|=a$
+\end_inset
+
+ and 
+\begin_inset Formula $a\leq1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $a\leq0$
+\end_inset
+
+, then 
+\begin_inset Formula $\left|a\right|=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $a\geq-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Regardless of the case, 
+\begin_inset Formula $-1\leq a\leq1$
+\end_inset
+
+.
+ This shows that if 
+\begin_inset Formula $a^{2}\leq1$
+\end_inset
+
+, then 
+\begin_inset Formula $-1\leq a\leq1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We assume contrapositively that if 
+\begin_inset Formula $a^{2}>1$
+\end_inset
+
+, then 
+\begin_inset Formula $a>1$
+\end_inset
+
+ or 
+\begin_inset Formula $a<-1$
+\end_inset
+
+.
+ Taking the square root of both side of 
+\begin_inset Formula $a^{2}>1$
+\end_inset
+
+ gives us 
+\begin_inset Formula $\left|a\right|>1$
+\end_inset
+
+.
+ We have two cases to show.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $a\geq0$
+\end_inset
+
+, then 
+\begin_inset Formula $\left|a\right|=1$
+\end_inset
+
+ and 
+\begin_inset Formula $a>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $a\leq0$
+\end_inset
+
+, then 
+\begin_inset Formula $\left|a\right|=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $a<-1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Regardless of the case, 
+\begin_inset Formula $a>1$
+\end_inset
+
+ or 
+\begin_inset Formula $a<-1$
+\end_inset
+
+ if 
+\begin_inset Formula $a^{2}>1$
+\end_inset
+
+, thus proving contrapositively that if 
+\begin_inset Formula $a^{2}\leq1$
+\end_inset
+
+, then 
+\begin_inset Formula $-1\leq a\leq1$
+\end_inset
+
+.
+ This completes the proof.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Proof by Contradiction
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ be statements.
+ Draw a truth table with columns labeled 
+\begin_inset Formula $R,$
+\end_inset
+
+ 
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula $\neg R$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(\neg R\right)\implies S$
+\end_inset
+
+.
+ Verify that the only row where 
+\begin_inset Formula $S$
+\end_inset
+
+ is false and 
+\begin_inset Formula $\left(\neg R\right)\implies S$
+\end_inset
+
+ is true occurs when 
+\begin_inset Formula $R$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\neg R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\neg R\implies S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Prove the following statement directly, contrapositively, and by contradiction.
+ Give 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+, if 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $5x+2$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Exercise
+Before we show the main proof, we begin with the following lemma.
+ 
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:Cont1"
+
+\end_inset
+
+If 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ is even then 
+\begin_inset Formula $x$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Proof
+We suppose contrapositively that 
+\begin_inset Formula $x$
+\end_inset
+
+ is even such that 
+\begin_inset Formula $x=2k$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Substituting this into 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ gives us 
+\begin_inset Formula 
+\begin{align*}
+3x+1 & =6k+1\\
+ & =2\left(3k\right)+1,
+\end{align*}
+
+\end_inset
+
+which is odd.
+ Thus if 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ is even then 
+\begin_inset Formula $x$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:Cont2"
+
+\end_inset
+
+If 
+\begin_inset Formula $5x+2$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $x$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Proof
+We suppose contrapositively that 
+\begin_inset Formula $x$
+\end_inset
+
+ is odd such that 
+\begin_inset Formula $x=2k+1$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Substituting this into 
+\begin_inset Formula $5x+1$
+\end_inset
+
+ gives us 
+\begin_inset Formula 
+\begin{align*}
+5x+2 & =10k+7\\
+ & =2\left(5k+3\right)+1,
+\end{align*}
+
+\end_inset
+
+which is odd.
+ Thus if 
+\begin_inset Formula $5x+2$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $x$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Directly
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ is even.
+ According to lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Cont1"
+
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ is odd which is equivalent to saying that 
+\begin_inset Formula $x=2k+1$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Substituting this into 
+\begin_inset Formula $5x+2$
+\end_inset
+
+ gives 
+\begin_inset Formula 
+\begin{align*}
+5x+2 & =5\left(2k+1\right)+2\\
+ & =10k+6\\
+ & =2\left(5k+3\right)
+\end{align*}
+
+\end_inset
+
+which is even.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Contrapositively
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose contrapositively that 
+\begin_inset Formula $5x+2$
+\end_inset
+
+ is even.
+ According to lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Cont2"
+
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ is even which is equivalent to saying that 
+\begin_inset Formula $x=2k$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Substituting this into 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ gives 
+\begin_inset Formula 
+\begin{align*}
+3x+1 & =6k+1\\
+ & =2\left(3k\right)+1,
+\end{align*}
+
+\end_inset
+
+which is odd.
+ Which shows that if 
+\begin_inset Formula $5x+2$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ is odd.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Contradiction
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+By contradiction we suppose that 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ is even and 
+\begin_inset Formula $5x+2$
+\end_inset
+
+ is even.
+ According to lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Cont1"
+
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ is odd which is equivalent to saying that 
+\begin_inset Formula $x=2k+1$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Substituting this into 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ and 
+\begin_inset Formula $5x+2$
+\end_inset
+
+ give us 
+\begin_inset Formula 
+\begin{align*}
+3x+1 & =6k+4\\
+ & =2\left(3k+2\right),
+\end{align*}
+
+\end_inset
+
+which is even, and 
+\begin_inset Formula 
+\begin{align*}
+5x+2 & =5\left(2k+1\right)+2\\
+ & =10k+7\\
+ & =2\left(5k+3\right)+1,
+\end{align*}
+
+\end_inset
+
+which is odd
+\begin_inset Formula 
+\[
+\rightarrow\leftarrow
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove, by way of contradiction, the following statement: Given 
+\begin_inset Formula $a,b,c\in\mathbb{Z}$
+\end_inset
+
+ with 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $a$
+\end_inset
+
+ is even or 
+\begin_inset Formula $b$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Proof
+By contradiction we suppose that 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ is odd and 
+\begin_inset Formula $b$
+\end_inset
+
+ is odd.
+ For some 
+\begin_inset Formula $k,l\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $a=2k+1$
+\end_inset
+
+ and 
+\begin_inset Formula $b=2l+1$
+\end_inset
+
+.
+ Substituting these into 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+a^{2}+b^{2}=c^{2} & =4k^{2}+4k+1+4l^{2}+4l+1\\
+ & =4\left(k^{2}+l^{2}\right)+4\left(k+l\right)+2\\
+ & =4\left(k+l\right)^{2}-4\left(k+l\right)+2\\
+ & =4x^{2}-4x+2.
+\end{align*}
+
+\end_inset
+
+In order for 
+\begin_inset Formula $c^{2}=4x^{2}-4x+2$
+\end_inset
+
+, there must exist a number 
+\begin_inset Formula $\left(x+y\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $y\in\mathbb{Z}$
+\end_inset
+
+, such that 
+\begin_inset Formula $\left(x+y\right)^{2}=x^{2}-x+\frac{1}{2}$
+\end_inset
+
+.
+ Factoring out the term 
+\begin_inset Formula $\left(x+y\right)^{2}$
+\end_inset
+
+ gives us 
+\begin_inset Formula 
+\[
+\left(x+y\right)^{2}=x^{2}+2xy+y^{2},
+\]
+
+\end_inset
+
+which creates the system of equations
+\begin_inset Formula 
+\begin{align*}
+2xy & =-x\\
+y & =-\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{align*}
+y^{2} & =\frac{1}{2}\\
+\left|y\right| & =\frac{1}{\sqrt{2}},
+\end{align*}
+
+\end_inset
+
+which is contradictory.
+ Thus there is not an integer that is the square root of 
+\begin_inset Formula $4x^{2}-4x+2$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+.
+ In other words the statement 
+\begin_inset Formula $c^{2}=4x^{2}-4x+2$
+\end_inset
+
+ is false.
+ This proves that given 
+\begin_inset Formula $a,b,c\in\mathbb{Z}$
+\end_inset
+
+ with 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $a$
+\end_inset
+
+ is even or 
+\begin_inset Formula $b$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Exercise
+Prove that 
+\begin_inset Formula $\sqrt{3}$
+\end_inset
+
+ is irrational.
+\end_layout
+
+\begin_layout Proof
+We assume by contradiction that 
+\begin_inset Formula $\sqrt{3}$
+\end_inset
+
+ is rational, and thus can be written as 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ where 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\mathbb{Z}-\left\{ 0\right\} $
+\end_inset
+
+.
+ We assume that 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ is in lowest terms.
+ By squaring and clearing by denominators we have 
+\begin_inset Formula $a^{2}=3b^{2}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $3\mid a^{2}$
+\end_inset
+
+, and hence 
+\begin_inset Formula $3\mid a$
+\end_inset
+
+.
+ We can write 
+\begin_inset Formula $a=3x$
+\end_inset
+
+ for some 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+.
+ Plugging 
+\begin_inset Formula $a=3x$
+\end_inset
+
+ into the equality 
+\begin_inset Formula $a^{2}=3b^{2}$
+\end_inset
+
+ yields 
+\begin_inset Formula $9a^{2}=3b^{2}$
+\end_inset
+
+, or in other words 
+\begin_inset Formula $b^{2}=3a^{2}$
+\end_inset
+
+ which means that 
+\begin_inset Formula $3\mid b^{2}$
+\end_inset
+
+, and hence 
+\begin_inset Formula $3\mid b$
+\end_inset
+
+.
+ However, note both 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ can be divided by 
+\begin_inset Formula $3$
+\end_inset
+
+ which contradicts the fact that 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ was assumed to be in lowest terms.
+ Hence 
+\begin_inset Formula $\sqrt{3}$
+\end_inset
+
+ is irrational.
+\end_layout
+
+\begin_layout Exercise
+Prove that 
+\begin_inset Formula $\sqrt[3]{2}$
+\end_inset
+
+ is irrational.
+ 
+\end_layout
+
+\begin_layout Proof
+We assume by contradiction that 
+\begin_inset Formula $\sqrt[3]{2}$
+\end_inset
+
+ is rational.
+ And thus can be written as 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ where 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\mathbb{Z}-\left\{ 0\right\} $
+\end_inset
+
+.
+ We assume that 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ is in lowest terms.
+ By cubing and clearing by denominators we have 
+\begin_inset Formula $a^{3}=2b^{3}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $2\mid a^{3}$
+\end_inset
+
+, and hence 
+\begin_inset Formula $2\mid a$
+\end_inset
+
+.
+ We can write 
+\begin_inset Formula $a=2x$
+\end_inset
+
+ for some 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+.
+ Plugging 
+\begin_inset Formula $a=2x$
+\end_inset
+
+ into the equality 
+\begin_inset Formula $a^{3}=2b^{3}$
+\end_inset
+
+ yields 
+\begin_inset Formula $8a^{3}=2b^{3}$
+\end_inset
+
+, or in other words 
+\begin_inset Formula $b^{3}=2\left(2a^{3}\right)$
+\end_inset
+
+ which means that 
+\begin_inset Formula $2\mid b^{3}$
+\end_inset
+
+, and hence 
+\begin_inset Formula $2\mid b$
+\end_inset
+
+.
+ However, note both 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ can be divided by 
+\begin_inset Formula $2$
+\end_inset
+
+ which contradicts the fact that 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ was assumed to be in lowest terms.
+ Hence 
+\begin_inset Formula $\sqrt[3]{2}$
+\end_inset
+
+ is irrational.
+\end_layout
+
+\begin_layout Exercise
+Prove if 
+\begin_inset Formula $x\in\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+, then 
+\begin_inset Formula $x+y\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We assume by contradiction that 
+\begin_inset Formula $x\in\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $x+y\not\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $x$
+\end_inset
+
+ is a rational number it can be written as 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ for some 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\mathbb{Z}-\left\{ 0\right\} $
+\end_inset
+
+, and since 
+\begin_inset Formula $x+y$
+\end_inset
+
+ is rational, it can be written as 
+\begin_inset Formula $\frac{c}{d}$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $d\in\mathbb{Z}-\left\{ 0\right\} $
+\end_inset
+
+.
+ We can solve for 
+\begin_inset Formula $y$
+\end_inset
+
+ by subtracting 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ from 
+\begin_inset Formula $\frac{c}{d}$
+\end_inset
+
+ which yields 
+\begin_inset Formula $\frac{cb-ad}{bd}$
+\end_inset
+
+ which must be rational and hence 
+\begin_inset Formula $y\not\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Prove: If we are given a nonzero rational number 
+\begin_inset Formula $x$
+\end_inset
+
+ and an irrational number 
+\begin_inset Formula $y$
+\end_inset
+
+, then the number 
+\begin_inset Formula $xy$
+\end_inset
+
+ is irrational.
+ 
+\end_layout
+
+\begin_layout Proof
+We assume by contradiction that 
+\begin_inset Formula $x\in\mathbb{Q}-\left\{ 0\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $y\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $xy\in\mathbb{Q}$
+\end_inset
+
+.
+ The rational number 
+\begin_inset Formula $x$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ for some 
+\begin_inset Formula $a,b\in\mathbb{Z}-\left\{ 0\right\} $
+\end_inset
+
+, and the rational number 
+\begin_inset Formula $xy$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $\frac{c}{d}$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $d\in\mathbb{Z}-\left\{ 0\right\} $
+\end_inset
+
+.
+ Solving for 
+\begin_inset Formula $y$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+y & =xy/x\\
+ & =\frac{c}{d}\frac{b}{a}\\
+ & =\frac{cb}{da},
+\end{align*}
+
+\end_inset
+
+which is rational.
+ This is contradictory since 
+\begin_inset Formula $y$
+\end_inset
+
+ was stated to be irrational.
+ Therefore if 
+\begin_inset Formula $x\in\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+, then 
+\begin_inset Formula $x+y\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Prove there is no smallest positive irrational number.
+\end_layout
+
+\begin_layout Proof
+We suppose by contradiction that there is a smallest positive irrational
+ number 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ We know from the previous proof that given a nonzero rational number 
+\begin_inset Formula $x$
+\end_inset
+
+ and an irrational number 
+\begin_inset Formula $y$
+\end_inset
+
+, then the number 
+\begin_inset Formula $xy$
+\end_inset
+
+ is irrational.
+ Thus 
+\begin_inset Formula $xz$
+\end_inset
+
+ must be irrational.
+ Let 
+\begin_inset Formula $x=\frac{1}{b}$
+\end_inset
+
+ such that 
+\begin_inset Formula $b\in\left\{ x\in\mathbb{Z},x>1\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $xz>0$
+\end_inset
+
+, is still positive and an irrational number.
+ In fact 
+\begin_inset Formula $xz=\frac{z}{b}$
+\end_inset
+
+ which must be smaller than 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ This is contradictory to our assumption that 
+\begin_inset Formula $z$
+\end_inset
+
+ was the smallest positive irrational number.
+ Thus there is not smallest positive irrational number.
+\end_layout
+
+\begin_layout Example
+Given 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+, prove that 
+\begin_inset Formula $33x+132y\neq57$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We suppose by contradiction that 
+\begin_inset Formula $33x+132y=57$
+\end_inset
+
+ which can be written 
+\begin_inset Formula $33\left(x+4y\right)=57$
+\end_inset
+
+ or equivalently as 
+\begin_inset Formula 
+\[
+x+4y=\frac{19}{11}.
+\]
+
+\end_inset
+
+Solving for 
+\begin_inset Formula $x$
+\end_inset
+
+ yields 
+\begin_inset Formula $x=\frac{19}{11}-4y$
+\end_inset
+
+ which is not an integer since 
+\begin_inset Formula $\frac{19}{11}$
+\end_inset
+
+ is not an integer.
+ Therefore 
+\begin_inset Formula $33x+132y\neq57$
+\end_inset
+
+ if 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are integers.
+\end_layout
+
+\end_body
+\end_document
