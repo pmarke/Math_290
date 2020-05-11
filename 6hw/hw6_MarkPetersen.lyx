@@ -1,0 +1,2115 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\addtocounter{section}{9}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\begin_modules
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 6
+\end_layout
+
+\begin_layout After Title Text
+Sections 10 and 11
+\end_layout
+
+\begin_layout Title
+Mark Petersen
+\end_layout
+
+\begin_layout Section
+Proofs in Set Theory
+\end_layout
+
+\begin_layout Exercise
+For each element and set listed below, explain why the element does or does
+ not belong to the set.
+\end_layout
+
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $3\in\left\{ 1,2,3,4,5,6,7\right\} $
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Yes, the integer 
+\begin_inset Formula $3$
+\end_inset
+
+ is listed in the set.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $\pi\in\left\{ 1,2,3,4,5,6,7\right\} $
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+No, 
+\begin_inset Formula $\pi$
+\end_inset
+
+ is not listed in the set
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $\pi\in\mathbb{R}$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Yes, 
+\begin_inset Formula $\pi$
+\end_inset
+
+ is an irrational number, and the set of irrational numbers is a subset
+ of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\pi\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $\frac{2}{3}\in\left\{ x\in\mathbb{R}:x<1\right\} $
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Yes, the set 
+\begin_inset Formula $\left\{ x\in\mathbb{R}:x<1\right\} $
+\end_inset
+
+ is the set of all real numbers less than 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\frac{2}{3}<1$
+\end_inset
+
+ and is a real number, it is in the set.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $\frac{2}{3}\in\left\{ x\in\mathbb{Z}:x<1\right\} $
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+No, this is because 
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+ is not an integer.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula 
+\[
+A=\left\{ \left(x,y\right)\in\mathbb{Z}\times\mathbb{Z}:4\mid\left(x-y\right)\right\} 
+\]
+
+\end_inset
+
+and let 
+\begin_inset Formula 
+\[
+B=\left\{ \left(x,y\right)\in\mathbb{Z}\times\mathbb{Z}:\,x\text{ and }y\text{ have the same parity}\right\} .
+\]
+
+\end_inset
+
+Prove 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\left(x,y\right)\in\mathbb{Z}\times\mathbb{Z}$
+\end_inset
+
+ and that 
+\begin_inset Formula $4|\left(x-y\right)$
+\end_inset
+
+.
+ This means that there exists an integer 
+\begin_inset Formula $k$
+\end_inset
+
+ such that 
+\begin_inset Formula $x-y=4k=2\left(2k\right)$
+\end_inset
+
+, or in other words 
+\begin_inset Formula $x-y$
+\end_inset
+
+ is even.
+ We need to show that the difference of two integers is even if and only
+ if they have the same parity.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We suppose contrapositively that two integers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ do not have the same parity.
+ Without loss in generality let 
+\begin_inset Formula $a=2l+1$
+\end_inset
+
+ and 
+\begin_inset Formula $b=2m$
+\end_inset
+
+ for some 
+\begin_inset Formula $l,m\in\mathbb{Z}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\begin{align*}
+a-b & =2l+1-2m\\
+ & =2\left(l-m\right)+1,
+\end{align*}
+
+\end_inset
+
+which is odd.
+ Thus if the difference of two integers is even, then the two integers have
+ the same parity.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We suppose directly that two integers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ have the same parity.
+ Then 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are either both even or odd.
+ Thus we have two cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ be even integers such that 
+\begin_inset Formula $a=2l$
+\end_inset
+
+ and 
+\begin_inset Formula $b=2m$
+\end_inset
+
+ for some 
+\begin_inset Formula $l,m\in\mathbb{Z}$
+\end_inset
+
+, Then 
+\begin_inset Formula 
+\begin{align*}
+a-b & =2l-2m\\
+ & =2\left(l-m\right),
+\end{align*}
+
+\end_inset
+
+which is even.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ be odd integers such that 
+\begin_inset Formula $a=2l+1$
+\end_inset
+
+ and 
+\begin_inset Formula $b=2m+1$
+\end_inset
+
+ for some 
+\begin_inset Formula $l,m\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+a-b & =2l+1-2m-1\\
+ & =2\left(l-m\right),
+\end{align*}
+
+\end_inset
+
+which is even.
+\end_layout
+
+\begin_layout Standard
+Thus if two integers have the same parity, then their difference is even.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Returning to the main argument of the proof.
+ Since 
+\begin_inset Formula $x-y$
+\end_inset
+
+ is even, the integers 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ have the same parity and are thus a subset of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be the set of integers which are congruent to 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $6$
+\end_inset
+
+ (
+\begin_inset Formula $X=\left\{ x\in\mathbb{Z}:\:x\equiv-1\,\mod\,6\right\} $
+\end_inset
+
+) and let 
+\begin_inset Formula $Y$
+\end_inset
+
+ be the set of integers which are congruent to 
+\begin_inset Formula $2$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+ (
+\begin_inset Formula $Y=\left\{ y\in\mathbb{Z}:\,y\equiv2\,\mod\,3\right\} $
+\end_inset
+
+.
+ Prove 
+\begin_inset Formula $X\subseteq Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Suppose directly that 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\equiv-1\,\mod\,6$
+\end_inset
+
+.
+ If follows that 
+\begin_inset Formula $6\mid x+1$
+\end_inset
+
+, or equivalently 
+\begin_inset Formula $x=6k-1$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ This statement can be modified as follows
+\begin_inset Formula 
+\begin{align*}
+x & =6k-1\\
+ & =6k-1-2+2\\
+ & =3\left(2k-1\right)+2\\
+ & =3m+2,
+\end{align*}
+
+\end_inset
+
+for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $3\mid x-2$
+\end_inset
+
+ or equivalently 
+\begin_inset Formula $x\equiv2\,\mod\,3$
+\end_inset
+
+.
+ Therefore if 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, then 
+\begin_inset Formula $x\in Y$
+\end_inset
+
+ and 
+\begin_inset Formula $X\subseteq Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:1.4"
+
+\end_inset
+
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be sets inside some universal set 
+\begin_inset Formula $U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $\overline{A\cap B}\subseteq\overline{A}\cup\overline{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $x\in\overline{A\cap B}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\neg\left(x\in A\cap B\right)$
+\end_inset
+
+.
+ Using De Morgan's law we have 
+\begin_inset Formula $x\in\overline{A}$
+\end_inset
+
+ or 
+\begin_inset Formula $x\in\overline{B}$
+\end_inset
+
+.
+ In other words 
+\begin_inset Formula $x\in\overline{A}\cup\overline{B}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $\overline{A}\cup\overline{B}\subseteq\overline{A\cap B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $x\in\overline{A}\cup\overline{B}$
+\end_inset
+
+, which means that 
+\begin_inset Formula $x\in\overline{A}$
+\end_inset
+
+ or 
+\begin_inset Formula $x\in\overline{B}$
+\end_inset
+
+.
+ Using De Morgan's law we have 
+\begin_inset Formula $x\not\ni A\cap B$
+\end_inset
+
+.
+ This is equivalent to 
+\begin_inset Formula $x\in\overline{A\cap B}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Putting the two previous parts together, we have proved that 
+\begin_inset Formula $\overline{A\cap B}=\overline{A}\cup\overline{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ be sets.
+ Prove 
+\begin_inset Formula $X-\left(X-Y\right)\subseteq X\cap Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Assume directly that 
+\begin_inset Formula $m\in X-\left(X-Y\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $m\in X$
+\end_inset
+
+ and 
+\begin_inset Formula $m\not\in X-Y$
+\end_inset
+
+.
+ From 
+\begin_inset Formula $m\not\in X-Y$
+\end_inset
+
+, we can deduce that 
+\begin_inset Formula $m\not\in X$
+\end_inset
+
+ or 
+\begin_inset Formula $m\in Y$
+\end_inset
+
+.
+ However, since 
+\begin_inset Formula $m\in X$
+\end_inset
+
+, 
+\begin_inset Formula $m$
+\end_inset
+
+ must be an element of 
+\begin_inset Formula $Y$
+\end_inset
+
+ in order for 
+\begin_inset Formula $m\not\in X-Y$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $m$
+\end_inset
+
+ is in 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ and 
+\begin_inset Formula $X-\left(X-Y\right)\subseteq X\cap Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Given a set 
+\begin_inset Formula $X$
+\end_inset
+
+, show that 
+\begin_inset Formula $X\cup\emptyset=X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Assume directly that 
+\begin_inset Formula $m\in X\cup\emptyset$
+\end_inset
+
+, which means that 
+\begin_inset Formula $m\in X$
+\end_inset
+
+ or 
+\begin_inset Formula $m\in\emptyset$
+\end_inset
+
+.
+ Since the empty set doesn't have any elements, 
+\begin_inset Formula $m$
+\end_inset
+
+ must be an element of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $X\cup\emptyset=X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula 
+\[
+\left\{ x\in\mathbb{Z}:n\mid x\right\} =\left\{ x\in\mathbb{Z}:x\equiv0\,\mod\,n\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+This is a biconditional statement so we prove both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\subseteq\right):$
+\end_inset
+
+ We directly suppose that 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+ and that 
+\begin_inset Formula $n\mid x$
+\end_inset
+
+.
+ This is equivalent to 
+\begin_inset Formula $x=nk$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+, which is also equivalent to 
+\begin_inset Formula $x-0=nk$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ In other words 
+\begin_inset Formula $n\mid x-0$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $x\equiv0\,\mod\,n$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $\left\{ x\in\mathbb{Z}:n\mid x\right\} \subseteq\left\{ x\in\mathbb{Z}:x\equiv0\,\mod\,n\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\supseteq\right):$
+\end_inset
+
+ We directly suppose that 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+ and that 
+\begin_inset Formula $x\equiv0\,\mod\,n$
+\end_inset
+
+, which can be stated as 
+\begin_inset Formula $n\mid x-0$
+\end_inset
+
+ or in other words 
+\begin_inset Formula $x-0=nk$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ This statement can be reduced to 
+\begin_inset Formula $x=nk$
+\end_inset
+
+ and equivalently stated as 
+\begin_inset Formula $n\mid x$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $\left\{ x\in\mathbb{Z}:x\equiv0\,\mod\,n\right\} \subseteq\left\{ x\in\mathbb{Z}:n\mid x\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+By proving both ways, we have shown 
+\begin_inset Formula $\left\{ x\in\mathbb{Z}:n\mid x\right\} =\left\{ x\in\mathbb{Z}:x\equiv0\,\mod\,n\right\} .$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+, and 
+\begin_inset Formula $C$
+\end_inset
+
+ be sets.
+ Prove 
+\begin_inset Formula 
+\[
+A-\left(B\cap C\right)\subseteq\left(A-B\right)\cup\left(A-C\right).
+\]
+
+\end_inset
+
+Is the other inclusion true?
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $m\in A-\left(B\cap C\right)$
+\end_inset
+
+ which indicates that 
+\begin_inset Formula $m\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $m\not\in B\cap C$
+\end_inset
+
+ .
+ In other words 
+\begin_inset Formula $m\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $m\in\overline{B\cap C}$
+\end_inset
+
+ (
+\begin_inset Formula $m\in A\cap\overline{B\cap C}$
+\end_inset
+
+).
+ Using De Morgans law proved in exercise 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:1.4"
+
+\end_inset
+
+ we can say that 
+\begin_inset Formula $m\in A\cap\left(\overline{B}\cup\overline{C}\right)$
+\end_inset
+
+.
+ Using the distributive law we get 
+\begin_inset Formula $m\in\left(A\cap\overline{B}\right)\cup\left(A\cap\overline{C}\right)$
+\end_inset
+
+.
+ Which is equivalent to 
+\begin_inset Formula $\left(A-B\right)\cup\left(A-C\right)$
+\end_inset
+
+.
+ Since we have only used equivalent expressions in deriving this proof,
+ 
+\begin_inset Formula $A-\left(B\cap C\right)=\left(A-B\right)\cup\left(A-C\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+Prove that 
+\begin_inset Formula $\cup_{n\in\mathbb{Z}}\left\{ m\in\mathbb{Z}:m\leq n\right\} =\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since this is a set equality we must prove that 
+\begin_inset Formula $\cup_{n\in\mathbb{Z}}\left\{ m\in\mathbb{Z}:m\leq n\right\} \subseteq\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $\cup_{n\in\mathbb{Z}}\left\{ m\in\mathbb{Z}:m\leq n\right\} \supseteq\mathbb{Z}$
+\end_inset
+
+.
+ To show this, set 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ denote the set 
+\begin_inset Formula $\left\{ m\in\mathbb{Z}:m\leq n\right\} $
+\end_inset
+
+ for some 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\subseteq\right):$
+\end_inset
+
+ Suppose directly that 
+\begin_inset Formula $x\in\cup_{n\in\mathbb{Z}}S_{n}$
+\end_inset
+
+, by the construction of the set 
+\begin_inset Formula $\left\{ m\in\mathbb{Z}:m\leq n\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ must be an element of 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\supseteq\right):$
+\end_inset
+
+ Suppose directly that 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+, then for all 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+ there is some set 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ for which 
+\begin_inset Formula $x\in S_{n}$
+\end_inset
+
+.
+ If we let 
+\begin_inset Formula $n=x$
+\end_inset
+
+ then 
+\begin_inset Formula $x\in S_{n}$
+\end_inset
+
+ and must also be an element of 
+\begin_inset Formula $\cup_{n\in\mathbb{Z}}S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+The set 
+\begin_inset Formula $S\left(n\right)=\left\{ m\in\mathbb{Z}:m\leq n\right\} $
+\end_inset
+
+, is the set of all integers that are less than or equal to the integer
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ such that 
+\begin_inset Formula $S\left(n\right)\subseteq\mathbb{N}$
+\end_inset
+
+.
+ Since we are taking the union of 
+\begin_inset Formula $S\left(n\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+ one of the sets 
+\begin_inset Formula $S\left(n\right)$
+\end_inset
+
+ must be equal to 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ Hence the union of these sets must include the union with 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ which is the largest set.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Existence Proofs and Counterexamples
+\end_layout
+
+\begin_layout Exercise
+Prove the following
+\end_layout
+
+\begin_layout Enumerate
+There exists 
+\begin_inset Formula $a,b\in\mathbb{Q}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a^{b}\in\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $a=b=1$
+\end_inset
+
+, then 
+\begin_inset Formula $a^{b}=1^{1}=1$
+\end_inset
+
+ which is an element of 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+There exists 
+\begin_inset Formula $a,b\in\mathbb{Q}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a^{b}\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $a=2$
+\end_inset
+
+ and 
+\begin_inset Formula $b=\frac{1}{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $a^{b}=2^{\left(1/2\right)}=\sqrt{2}$
+\end_inset
+
+ which is an irrational number according to a proof in a previous assignment.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+There exists 
+\begin_inset Formula $a,b\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a^{b}\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We note that 
+\begin_inset Formula $\sqrt{2}^{\sqrt{2}}\cdot\sqrt{2}^{1-\sqrt{2}}=\sqrt{2}$
+\end_inset
+
+.
+ This implies that either 
+\begin_inset Formula $\sqrt{2}^{\sqrt{2}}$
+\end_inset
+
+ or 
+\begin_inset Formula $\sqrt{2}^{1-\sqrt{2}}$
+\end_inset
+
+ must be irrational since 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ is irrational and the product of two rational numbers is rational.
+ Hence 
+\begin_inset Formula $a=\sqrt{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ is either 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ or 
+\begin_inset Formula $1-\sqrt{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+There exists 
+\begin_inset Formula $a\in\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a^{b}\in\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We show this with a non constructive proof.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $a=2$
+\end_inset
+
+ and 
+\begin_inset Formula $b=\sqrt{2}$
+\end_inset
+
+, if 
+\begin_inset Formula $a^{b}\in\mathbb{Q}$
+\end_inset
+
+ then the statement is true.
+ 
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $a=2^{\sqrt{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $b=\sqrt{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $a^{b}=2^{\sqrt{2}\cdot\sqrt{2}}=2^{2}=4$
+\end_inset
+
+ which is a rational number.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+There exists 
+\begin_inset Formula $a\in\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a^{b}\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We show this non-constructively.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $a=2$
+\end_inset
+
+ and 
+\begin_inset Formula $b=\frac{1}{\sqrt{2}}$
+\end_inset
+
+, if 
+\begin_inset Formula $a^{b}\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+, then the statement is true.
+ Otherwise, 
+\begin_inset Formula $2^{\frac{1}{\sqrt{2}}}$
+\end_inset
+
+ is rational
+\end_layout
+
+\begin_layout Case
+If 
+\begin_inset Formula $2^{\frac{1}{\sqrt{2}}}$
+\end_inset
+
+ is rational, let 
+\begin_inset Formula $a=2^{\frac{1}{\sqrt{2}}}$
+\end_inset
+
+ and 
+\begin_inset Formula $b=\frac{1}{\sqrt{2}}$
+\end_inset
+
+, then 
+\begin_inset Formula $a^{b}=2^{\frac{1}{\sqrt{2}}\cdot\frac{1}{\sqrt{2}}}=2^{\frac{1}{2}}=\sqrt{2}$
+\end_inset
+
+ which is an irrational number.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+There exists 
+\begin_inset Formula $a\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\mathbb{Q}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a^{b}\in\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $a=\sqrt{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $b=2$
+\end_inset
+
+, then 
+\begin_inset Formula $a^{b}=\sqrt{2}^{2}=2$
+\end_inset
+
+ which is a rational number.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+There exists 
+\begin_inset Formula $a\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\mathbb{Q}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a^{b}\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $a=\sqrt{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $b=1$
+\end_inset
+
+, then 
+\begin_inset Formula $a^{b}=\sqrt{2}^{1}=\sqrt{2}$
+\end_inset
+
+ which is an irrational number.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove or disprove: given 
+\begin_inset Formula $x\in\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+, then 
+\begin_inset Formula $xy\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ Let 
+\begin_inset Formula $x=0$
+\end_inset
+
+ then 
+\begin_inset Formula $xy=0$
+\end_inset
+
+ which is a rational number and hence not in 
+\begin_inset Formula $xy\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Prove or disprove: Let 
+\begin_inset Formula $s\in\mathbb{Z}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $6s-3$
+\end_inset
+
+ is odd, then 
+\begin_inset Formula $s$
+\end_inset
+
+ is odd.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ We suppose that 
+\begin_inset Formula $s$
+\end_inset
+
+ is even and that 
+\begin_inset Formula $6s-3$
+\end_inset
+
+ is odd.
+ Since 
+\begin_inset Formula $s$
+\end_inset
+
+ is even, it can be written as 
+\begin_inset Formula $s=2k$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Substituting this into 
+\begin_inset Formula $6s-3$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+6s-3 & =6\left(2k\right)-3\\
+ & =2\left(6k\right)-4+1\\
+ & =2\left(6k-2\right)+1,
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+which is odd.
+ Hence the statement if 
+\begin_inset Formula $6s-3$
+\end_inset
+
+ is odd, then 
+\begin_inset Formula $s$
+\end_inset
+
+ is odd, is false.
+\end_layout
+
+\begin_layout Exercise
+Prove or disprove: There exists an integer 
+\begin_inset Formula $x$
+\end_inset
+
+ such that 
+\begin_inset Formula $x^{2}+x$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ We show that if 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $x^{2}+x$
+\end_inset
+
+ is even.
+ In fact this statement is trivially true.
+ We show this by factoring 
+\begin_inset Formula $x^{2}+x$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+x^{2}+x & =x\left(x+1\right)\\
+ & =xy,
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $y=x+1$
+\end_inset
+
+ and has a different parity than 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ According to lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Product_different_parity"
+
+\end_inset
+
+, the product of two integers with different parity is an even integer.
+ This means that since 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ have different parity, then 
+\begin_inset Formula $xy$
+\end_inset
+
+ is even.
+ Hence 
+\begin_inset Formula $x^{2}+x$
+\end_inset
+
+ is always even.
+ 
+\end_layout
+
+\begin_layout Exercise
+Prove or disprove: Given any positive rational number 
+\begin_inset Formula $a$
+\end_inset
+
+, there is an irrational number 
+\begin_inset Formula $x\in\left(0,a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $a\in\mathbb{Q}$
+\end_inset
+
+ and that 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $y$
+\end_inset
+
+ be a positive irrational number and let 
+\begin_inset Formula $x$
+\end_inset
+
+ be a positive rational number such that 
+\begin_inset Formula $x>y$
+\end_inset
+
+.
+ According to lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:prod_rat_irrat_irrat"
+
+\end_inset
+
+, 
+\begin_inset Formula $xy\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+, and is positive.
+ Since 
+\begin_inset Formula $x>y$
+\end_inset
+
+, 
+\begin_inset Formula $0<\frac{y}{x}<1$
+\end_inset
+
+, and 
+\begin_inset Formula $0<\frac{y}{x}a<a$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $\frac{y}{x}a$
+\end_inset
+
+ is an irrational number in the interval 
+\begin_inset Formula $\left(0,a\right)$
+\end_inset
+
+.
+ This is only possible since there is no smallest positive rational number
+ according to lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:no_smallest_pos_Q"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Prove that for any two real numbers 
+\begin_inset Formula $x<y,$
+\end_inset
+
+ there exists a rational number in the interval 
+\begin_inset Formula $\left(x,y\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $y>x$
+\end_inset
+
+.
+ According to lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:more_than_1_away"
+
+\end_inset
+
+, there exists a number 
+\begin_inset Formula $\ell\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $10^{-\ell+1}y$
+\end_inset
+
+ is more than 
+\begin_inset Formula $1$
+\end_inset
+
+ away from 
+\begin_inset Formula $10^{-\ell+1}x$
+\end_inset
+
+.
+ This means that there is an integer 
+\begin_inset Formula $z\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $10^{-\ell+1}y>z>10^{-\ell+1}x$
+\end_inset
+
+.
+ Multiplying everything by 
+\begin_inset Formula $10^{\ell-1}$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\[
+y>z\cdot10^{\ell-1}>x,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $z\cdot10^{\ell-1}$
+\end_inset
+
+ is a rational number.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Appendices
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:Product_different_parity"
+
+\end_inset
+
+The product of two integers with different parity is an even integer.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $x=2k$
+\end_inset
+
+ and 
+\begin_inset Formula $y=2m+1$
+\end_inset
+
+ for some 
+\begin_inset Formula $k,m\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+xy & =2k\left(2m+1\right)\\
+ & =2\left(2km+k\right),
+\end{align*}
+
+\end_inset
+
+which is even.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:no_smallest_pos_Q"
+
+\end_inset
+
+There is no smallest positive rational number.
+\end_layout
+
+\begin_layout Proof
+We suppose by contradiction that 
+\begin_inset Formula $z\in\mathbb{Q}$
+\end_inset
+
+ is the smallest positive rational number.
+ Let 
+\begin_inset Formula $a=\frac{1}{b}$
+\end_inset
+
+ for some 
+\begin_inset Formula $b\in\mathbb{Z}-\left\{ 0\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $az=\frac{z}{b}$
+\end_inset
+
+ which is smaller than 
+\begin_inset Formula $z$
+\end_inset
+
+ which contradicts our assumption that 
+\begin_inset Formula $z$
+\end_inset
+
+ is the smallest positive rational number.
+ Hence there is no smallest positive rational number.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:prod_rat_irrat_irrat"
+
+\end_inset
+
+The product of a nonzero rational number and an irrational number is irrational.
+\end_layout
+
+\begin_layout Proof
+We assume by contradiction that 
+\begin_inset Formula $x\in\mathbb{Q}-\left\{ 0\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $y\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $xy\in\mathbb{Q}$
+\end_inset
+
+.
+ The rational number 
+\begin_inset Formula $x$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ for some 
+\begin_inset Formula $a,b\in\mathbb{Z}-\left\{ 0\right\} $
+\end_inset
+
+, and the rational number 
+\begin_inset Formula $xy$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $\frac{c}{d}$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $d\in\mathbb{Z}-\left\{ 0\right\} $
+\end_inset
+
+.
+ Solving for 
+\begin_inset Formula $y$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+y & =xy/x\\
+ & =\frac{c}{d}\frac{b}{a}\\
+ & =\frac{cb}{da},
+\end{align*}
+
+\end_inset
+
+which is rational.
+ This is contradictory since 
+\begin_inset Formula $y$
+\end_inset
+
+ was stated to be irrational.
+ Therefore if 
+\begin_inset Formula $x\in\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+, then 
+\begin_inset Formula $xy\in\mathbb{R}-\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:decimal_expansion"
+
+\end_inset
+
+For any two real numbers 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ where 
+\begin_inset Formula $y>x$
+\end_inset
+
+, their difference 
+\begin_inset Formula $y-x$
+\end_inset
+
+ has at least one nonzero decimal digit.
+\end_layout
+
+\begin_layout Proof
+Suppose directly that 
+\begin_inset Formula $y>x$
+\end_inset
+
+, then 
+\begin_inset Formula $y-x>0$
+\end_inset
+
+.
+ The decimal expansion of 
+\begin_inset Formula $y-x$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $d_{k}d_{k-1}\ldots d_{1}d_{0}.d_{-1}d_{-2}\ldots$
+\end_inset
+
+ where 
+\begin_inset Formula $d_{k}=10^{k}m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:more_than_1_away"
+
+\end_inset
+
+For any two real numbers 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ where 
+\begin_inset Formula $y>x$
+\end_inset
+
+, there is a number 
+\begin_inset Formula $\ell$
+\end_inset
+
+ such that 
+\begin_inset Formula $10^{-\ell+1}y$
+\end_inset
+
+ is more than 
+\begin_inset Formula $1$
+\end_inset
+
+ away form 
+\begin_inset Formula $10^{-\ell+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Suppose directly that 
+\begin_inset Formula $y>x$
+\end_inset
+
+.
+ From lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:decimal_expansion"
+
+\end_inset
+
+, we know that 
+\begin_inset Formula $y-x$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $d_{k}d_{k-1}\ldots d_{1}d_{0}.d_{-1}d_{-2}\ldots$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $d_{\ell}$
+\end_inset
+
+ be the non-zero decimal digit with the greatest index 
+\begin_inset Formula $\ell$
+\end_inset
+
+, e.g.
+ 
+\begin_inset Formula $d_{\ell}=d_{k}$
+\end_inset
+
+ if 
+\begin_inset Formula $d_{k}\neq0$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $d_{\ell}=m10^{\ell}$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $d_{\ell}>10^{\ell-1}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $y-x>10^{\ell-1}$
+\end_inset
+
+.
+ Multiplying both sides by 
+\begin_inset Formula $10^{-\ell+1}$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\[
+10^{-\ell+1}y-10^{-\ell+1}x>1.
+\]
+
+\end_inset
+
+This shows that 
+\begin_inset Formula $10^{-\ell+1}y$
+\end_inset
+
+ is more than 
+\begin_inset Formula $1$
+\end_inset
+
+ away from 
+\begin_inset Formula $10^{-\ell+1}x$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
