@@ -1701,6 +1701,65 @@ Prove that for any two real numbers
 \end_layout
 
 \begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $y>x$
+\end_inset
+
+.
+ According to lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:more_than_1_away"
+
+\end_inset
+
+, there exists a number 
+\begin_inset Formula $\ell\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $10^{-\ell+1}y$
+\end_inset
+
+ is more than 
+\begin_inset Formula $1$
+\end_inset
+
+ away from 
+\begin_inset Formula $10^{-\ell+1}x$
+\end_inset
+
+.
+ This means that there is an integer 
+\begin_inset Formula $z\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $10^{-\ell+1}y>z>10^{-\ell+1}x$
+\end_inset
+
+.
+ Multiplying everything by 
+\begin_inset Formula $10^{\ell-1}$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\[
+y>z\cdot10^{\ell-1}>x,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $z\cdot10^{\ell-1}$
+\end_inset
+
+ is a rational number.
+ 
+\end_layout
+
+\begin_layout Proof
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1930,6 +1989,12 @@ Suppose directly that
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:more_than_1_away"
+
+\end_inset
+
 For any two real numbers 
 \begin_inset Formula $x$
 \end_inset
