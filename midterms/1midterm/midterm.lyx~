@@ -1,0 +1,1841 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Midterm 1
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Exercise
+Prove or disprove the following statements.
+ For these statements we assume that 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, and 
+\begin_inset Formula $b$
+\end_inset
+
+ are integers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $n\mid\left(ab\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $n\nmid a$
+\end_inset
+
+, then 
+\begin_inset Formula $n\mid b$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We prove this by contradiction by assuming directly 
+\begin_inset Formula $n\mid ab$
+\end_inset
+
+ and 
+\begin_inset Formula $n\nmid a$
+\end_inset
+
+, and 
+\begin_inset Formula $n\nmid b$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $ab=nk$
+\end_inset
+
+, 
+\begin_inset Formula $a\neq nm$
+\end_inset
+
+ and that 
+\begin_inset Formula $b\neq n\ell$
+\end_inset
+
+ for some 
+\begin_inset Formula $k,m,\ell\in\mathbb{Z}$
+\end_inset
+
+.
+ By multiplying 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ we get that 
+\begin_inset Formula $ab\neq n^{2}m\ell\neq n\left(nm\ell\right)$
+\end_inset
+
+ which is a contradiction since we assumed 
+\begin_inset Formula $ab=nk$
+\end_inset
+
+.
+ Hence if 
+\begin_inset Formula $n\mid\left(ab\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $n\nmid a$
+\end_inset
+
+, then 
+\begin_inset Formula $n\mid b$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a\mid n$
+\end_inset
+
+ and 
+\begin_inset Formula $b\mid n$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(ab\right)\mid n$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ Let 
+\begin_inset Formula $n=12$
+\end_inset
+
+, 
+\begin_inset Formula $a=6$
+\end_inset
+
+, and 
+\begin_inset Formula $b=4$
+\end_inset
+
+ then 
+\begin_inset Formula $a\mid n$
+\end_inset
+
+ and 
+\begin_inset Formula $b\mid n$
+\end_inset
+
+, however 
+\begin_inset Formula $ab\nmid n$
+\end_inset
+
+ since 
+\begin_inset Formula $12\neq24k$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+There exists irrational numbers 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ such that 
+\begin_inset Formula $a^{b}$
+\end_inset
+
+ is rational.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We show this considering two cases or possibilities.
+ We use the irrational number 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+, which was proven to be irrational on a homework assignment.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $a=b=\sqrt{2}$
+\end_inset
+
+, then if 
+\begin_inset Formula $a^{b}=\sqrt{2}^{\sqrt{2}}$
+\end_inset
+
+ is rational we are done, otherwise consider the next case.
+\end_layout
+
+\begin_layout Case
+If 
+\begin_inset Formula $\sqrt{2}^{\sqrt{2}}$
+\end_inset
+
+ is irrational, let 
+\begin_inset Formula $a=\sqrt{2}^{\sqrt{2}}$
+\end_inset
+
+ and let 
+\begin_inset Formula $b=\sqrt{2}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+a^{b} & =\sqrt{2}^{\sqrt{2}^{\sqrt{2}}}\\
+ & =\sqrt{2}^{\sqrt{2}\cdot\sqrt{2}},\text{ using the property of powers}\\
+ & =\sqrt{2}^{2}\\
+ & =2,
+\end{align*}
+
+\end_inset
+
+which is rational.
+ 
+\end_layout
+
+\begin_layout Standard
+Hence we have shown that there exists irrational numbers 
+\begin_inset Formula $a,b$
+\end_inset
+
+ such that 
+\begin_inset Formula $a^{b}$
+\end_inset
+
+ is rational.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $s=\left\{ \emptyset,\left\{ \emptyset\right\} ,\left\{ \left\{ \emptyset\right\} \right\} \right\} $
+\end_inset
+
+ and answer the following questions.
+\end_layout
+
+\begin_layout Enumerate
+How many elements does 
+\begin_inset Formula $S$
+\end_inset
+
+ have?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S$
+\end_inset
+
+ has three elements, the empty set, the set containing the empty set, and
+ the set containing the set that contains the empty set.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Which of the following are elements of 
+\begin_inset Formula $S$
+\end_inset
+
+ and which are subsets 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ \emptyset\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ \emptyset,\left\{ \emptyset\right\} \right\} $
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The empty set 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ is an element of 
+\begin_inset Formula $S$
+\end_inset
+
+ as shown in the listing of 
+\begin_inset Formula $S$
+\end_inset
+
+, and the empty set is a subset of every set so it must be a subset of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The set 
+\begin_inset Formula $\left\{ \emptyset\right\} $
+\end_inset
+
+ is an element of 
+\begin_inset Formula $S$
+\end_inset
+
+ as shown in the listing of 
+\begin_inset Formula $S$
+\end_inset
+
+, and it is a subset because the set 
+\begin_inset Formula $\left\{ \emptyset\right\} $
+\end_inset
+
+ only contains the empty set which is an element of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The set 
+\begin_inset Formula $\left\{ \emptyset,\left\{ \emptyset\right\} \right\} $
+\end_inset
+
+ is not an element of 
+\begin_inset Formula $S$
+\end_inset
+
+ since it is not shown in the listing of 
+\begin_inset Formula $S$
+\end_inset
+
+; however, it is a subset since both 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ \emptyset\right\} $
+\end_inset
+
+ are elements of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calculate the following, 
+\begin_inset Formula $\left\{ \emptyset\right\} \cap S$
+\end_inset
+
+ and 
+\begin_inset Formula $\emptyset\cup S$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \emptyset\right\} \cap S=\left\{ \emptyset\right\} $
+\end_inset
+
+ since the empty set is the only element they have in common.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\cup S=S$
+\end_inset
+
+ since the empty set doesn't have any elements.
+ The union of the empty set with any set 
+\begin_inset Formula $A$
+\end_inset
+
+ must be 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove the following statement in three ways, directly, contrapositively
+ and by contradiction.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Thm.
+ 
+\series default
+For all integers 
+\begin_inset Formula $n$
+\end_inset
+
+ if 
+\begin_inset Formula $n+3$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $3n+4$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Directly
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $n+3$
+\end_inset
+
+ is even.
+ This means that 
+\begin_inset Formula $n+3=2k$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Solving for 
+\begin_inset Formula $n$
+\end_inset
+
+ we get 
+\begin_inset Formula $n=2k-3$
+\end_inset
+
+.
+ Substituting this into 
+\begin_inset Formula $3n+4$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+3n+4 & =3\left(2k-3\right)+4\\
+ & =3\left(2k\right)-9+4\\
+ & =3\left(2k\right)-5\\
+ & =3\left(2k-2\right)+1,
+\end{align*}
+
+\end_inset
+
+which is odd.
+ Hence if 
+\begin_inset Formula $n+3$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $3n+4$
+\end_inset
+
+ is odd.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Contrapositively
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose contrapositively that 
+\begin_inset Formula $3n+4$
+\end_inset
+
+ is even.
+ This means that 
+\begin_inset Formula $3n+4=2k$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Solving for 
+\begin_inset Formula $3n$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{align*}
+3n & =2k-4\\
+ & =2\left(k-2\right),
+\end{align*}
+
+\end_inset
+
+which is positive.
+ According to the corollary 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:Product_odd_even"
+
+\end_inset
+
+, since 
+\begin_inset Formula $3$
+\end_inset
+
+ is odd (can be written as 
+\begin_inset Formula $2+1$
+\end_inset
+
+), 
+\begin_inset Formula $n$
+\end_inset
+
+ must be even in order for their product to be even.
+ This means that 
+\begin_inset Formula $n=2m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+ Substituting 
+\begin_inset Formula $2m$
+\end_inset
+
+ for 
+\begin_inset Formula $n$
+\end_inset
+
+ in 
+\begin_inset Formula $n+3$
+\end_inset
+
+ yields
+\begin_inset Formula 
+\begin{align*}
+n+3 & =2m+3\\
+ & =2\left(m+1\right)+1,
+\end{align*}
+
+\end_inset
+
+which is odd.
+ Hence if 
+\begin_inset Formula $3n+4$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $n+3$
+\end_inset
+
+ is odd.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Contradiction
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume that 
+\begin_inset Formula $n+3$
+\end_inset
+
+ is even and that 
+\begin_inset Formula $3n+4$
+\end_inset
+
+ is even.
+ We have previously shown that in order for 
+\begin_inset Formula $3n+4$
+\end_inset
+
+ to be even, 
+\begin_inset Formula $n$
+\end_inset
+
+ must be even.
+ This means that 
+\begin_inset Formula $n=2m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+ Substituting this into 
+\begin_inset Formula $n+3$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+n+3 & =2m+3\\
+ & =2\left(m+1\right)+1,
+\end{align*}
+
+\end_inset
+
+which is odd.
+ This is a contradiction since we assumed that 
+\begin_inset Formula $n+3$
+\end_inset
+
+ is even.
+ Hence the compound statement 
+\begin_inset Formula $n+3$
+\end_inset
+
+ is even and 
+\begin_inset Formula $3n+4$
+\end_inset
+
+ is even is false.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Write a truth table for the statement 
+\begin_inset Formula $\left(P\lor Q\right)\implies\left(Q\land R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P\lor Q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q\land R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(P\lor Q\right)\implies\left(Q\land R\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+For sets 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ prove that 
+\begin_inset Formula $A\cap\left(B\cup C\right)=\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We must show that 
+\begin_inset Formula $A\cap\left(B\cup C\right)\subseteq\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $A\cap\left(B\cup C\right)\supseteq\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\subseteq\right):$
+\end_inset
+
+ We assume directly that 
+\begin_inset Formula $x\in A\cap\left(B\cup C\right)$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in B\cup C$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $x$
+\end_inset
+
+ must be in either 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ or both we have three cases.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Assume that 
+\begin_inset Formula $x\in B$
+\end_inset
+
+, then 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+ In other words 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $x\in C$
+\end_inset
+
+, then 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.
+ In other words 
+\begin_inset Formula $x\in A\cap C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in C$
+\end_inset
+
+, then the two previous cases hold and 
+\begin_inset Formula $x\in A\cap B\cap C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Regardless of which cases are true, since one of them must be true we know
+ that 
+\begin_inset Formula $x$
+\end_inset
+
+ is an element of 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+, 
+\begin_inset Formula $A\cap C$
+\end_inset
+
+, or 
+\begin_inset Formula $A\cap B\cap C$
+\end_inset
+
+.
+ In other words 
+\begin_inset Formula $x\in\left(A\cap B\right)\cup\left(A\cap C\right)\cup\left(A\cap B\cap C\right)$
+\end_inset
+
+.
+ This can be simplified by noting that if 
+\begin_inset Formula $x\in A\cap B\cap C$
+\end_inset
+
+ then it must be in 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ and 
+\begin_inset Formula $A\cap C$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $x$
+\end_inset
+
+ is in both 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ and 
+\begin_inset Formula $A\cap C$
+\end_inset
+
+, then it is also in 
+\begin_inset Formula $\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+, thus the expression can be reduced to 
+\begin_inset Formula $x\in\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $A\cap\left(B\cup C\right)\subseteq\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $\left(\supseteq\right):$
+\end_inset
+
+ We assume directly that 
+\begin_inset Formula $x\in\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $x$
+\end_inset
+
+ is in 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ or 
+\begin_inset Formula $A\cap C$
+\end_inset
+
+.
+ We now consider the following three cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Assume that 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in A\cap C$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, 
+\begin_inset Formula $x\in B$
+\end_inset
+
+, and 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Regardless of the case, 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+ is either and element of 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ or both.
+ In other words, 
+\begin_inset Formula $x\in A\cap\left(B\cup C\cup B\cap C\right)$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $x\in B\cap C$
+\end_inset
+
+ then 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.
+ This is stricter than 
+\begin_inset Formula $x\in B\cup C$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $B\cap C\subseteq B\cup C$
+\end_inset
+
+, so we can reduce 
+\begin_inset Formula $x\in A\cap\left(B\cup C\cup B\cap C\right)$
+\end_inset
+
+ to 
+\begin_inset Formula $x\in A\cap\left(B\cup C\right)$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $A\cap\left(B\cup C\right)\supseteq\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Of course we could've applied De Morgan's law to simply get 
+\begin_inset Formula 
+\[
+A\cap\left(B\cup C\right)=\left(A\cap B\right)\cup\left(A\cap C\right)
+\]
+
+\end_inset
+
+, but that's too easy.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Appendix
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:product_odd_even"
+
+\end_inset
+
+The product of two even numbers is even, the product of an even number and
+ an odd number is even, and the product of two odd numbers is odd.
+\end_layout
+
+\begin_layout Proof
+We show this by proving all three cases.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ be even, then they can be written as 
+\begin_inset Formula $a=2k$
+\end_inset
+
+ and 
+\begin_inset Formula $b=2m$
+\end_inset
+
+ for some 
+\begin_inset Formula $k,m\in\mathbb{Z}$
+\end_inset
+
+.
+ Their product is 
+\begin_inset Formula $ab=\left(2k\right)\left(2m\right)=2\left(2km\right)$
+\end_inset
+
+ which is even.
+\end_layout
+
+\begin_layout Case
+Without loss in generality, let 
+\begin_inset Formula $a$
+\end_inset
+
+ be even and 
+\begin_inset Formula $b$
+\end_inset
+
+ be odd.
+ Then they can be written as 
+\begin_inset Formula $a=2k$
+\end_inset
+
+ and 
+\begin_inset Formula $b=2m+1$
+\end_inset
+
+ for some 
+\begin_inset Formula $k,m\in\mathbb{Z}$
+\end_inset
+
+.
+ Their product is 
+\begin_inset Formula 
+\begin{align*}
+ab & =2k\left(2m+1\right)\\
+ & 2\left(2mk+k\right),
+\end{align*}
+
+\end_inset
+
+which is even.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ be odd, then they can be written as 
+\begin_inset Formula $a=2k+1$
+\end_inset
+
+ and 
+\begin_inset Formula $b=2m+1$
+\end_inset
+
+ for some 
+\begin_inset Formula $k,m\in\mathbb{Z}$
+\end_inset
+
+.
+ Their product is 
+\begin_inset Formula 
+\begin{align*}
+ab & =\left(2k+1\right)\left(2m+1\right)\\
+ & 2\left(2km+k+m\right)+1,
+\end{align*}
+
+\end_inset
+
+which is odd.
+ 
+\end_layout
+
+\begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:Product_odd_even"
+
+\end_inset
+
+The product of an odd integer 
+\begin_inset Formula $a$
+\end_inset
+
+ with another integer 
+\begin_inset Formula $b$
+\end_inset
+
+ is even if and only if 
+\begin_inset Formula $b$
+\end_inset
+
+ is even.
+ 
+\end_layout
+
+\begin_layout Proof
+This proof follows directly from lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:product_odd_even"
+
+\end_inset
+
+.
+ If 
+\begin_inset Formula $b$
+\end_inset
+
+ is odd, then 
+\begin_inset Formula $ab$
+\end_inset
+
+ is even.
+ And if 
+\begin_inset Formula $b$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $ab$
+\end_inset
+
+ is even.
+ Hence, 
+\begin_inset Formula $ab$
+\end_inset
+
+ is even only if 
+\begin_inset Formula $b$
+\end_inset
+
+ is even.
+\end_layout
+
+\end_body
+\end_document
