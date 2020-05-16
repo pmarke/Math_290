@@ -2676,12 +2676,12 @@ Base Cases
  are true
 \begin_inset Formula 
 \begin{align*}
-P\left(44\right):\\
-P\left(45\right):\\
-P\left(46\right):\\
-P\left(47\right):\\
-P\left(48\right):\\
-P\left(49\right):
+P\left(44\right): & 44=6\cdot4+9\cdot0+20\cdot1\\
+P\left(45\right): & 45=6\cdot0+9\cdot5+20\cdot0\\
+P\left(46\right): & 46=6\cdot1+9\cdot0+20\cdot2\\
+P\left(47\right): & 47=6\cdot1+9\cdot3+20\cdot1\\
+P\left(48\right): & 48=6\cdot5+9\cdot2+20\cdot0\\
+P\left(49\right): & 49=6\cdot0+9\cdot1+20\cdot2
 \end{align*}
 
 \end_inset
@@ -2689,6 +2689,902 @@ P\left(49\right):
 
 \end_layout
 
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: We assume that for each natural number 
+\begin_inset Formula $k\geq49$
+\end_inset
+
+ the open sentence 
+\begin_inset Formula 
+\[
+Q:\,P\left(49\right)\land P\left(50\right)\land\ldots\land P\left(k\right),
+\]
+
+\end_inset
+
+is true.
+ We wish to show that 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+, which is the statement 
+\begin_inset Formula 
+\[
+k+1=6x_{n}+9y_{n}+20z_{n},
+\]
+
+\end_inset
+
+is true.
+ We begin by manipulating the left hand side
+\begin_inset Formula 
+\begin{align*}
+k+1 & =\left(k-5\right)+6\\
+ & =6x_{k-5}+9y_{k-5}+20z_{k-5}+6\\
+ & =6\left(x_{k-5}+1\right)+9y_{k-5}+20z_{k-5},
+\end{align*}
+
+\end_inset
+
+hence 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true.
+ Therefore, 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for each natural number 
+\begin_inset Formula $n>43$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+Next we prove that 
+\begin_inset Formula $43$
+\end_inset
+
+ cannot be written in the form described.
+\end_layout
+
+\begin_layout Proof
+We assume by contradiction that 
+\begin_inset Formula $43=6x+9y+20z$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ nonnegative integers.
+ We can easily see that 
+\begin_inset Formula $z$
+\end_inset
+
+ must be less than 
+\begin_inset Formula $3$
+\end_inset
+
+, since 
+\begin_inset Formula $20\cdot3=60>43$
+\end_inset
+
+.
+ This leaves us with three cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Assume that 
+\begin_inset Formula $z=2$
+\end_inset
+
+ so that 
+\begin_inset Formula $43=6x+9y+40$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $3=6x+9y$
+\end_inset
+
+ which isn't possible since 
+\begin_inset Formula $3<6<9$
+\end_inset
+
+.
+ So there is no nonnegative integer such that 
+\begin_inset Formula $3=6x+9y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $z=1$
+\end_inset
+
+ so that 
+\begin_inset Formula $43=6x+9y+20$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $23=6x+9y$
+\end_inset
+
+.
+ From this we can see that 
+\begin_inset Formula $y<3$
+\end_inset
+
+ since 
+\begin_inset Formula $9\cdot3=27>23$
+\end_inset
+
+.
+ This gives us three cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Assume that 
+\begin_inset Formula $y=2$
+\end_inset
+
+, then 
+\begin_inset Formula $23=6x+18$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $5=6x$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $6$
+\end_inset
+
+ does not divide 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ So this is false.
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $y=1$
+\end_inset
+
+, then 
+\begin_inset Formula $23=6x+9$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $14=6x$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $6$
+\end_inset
+
+ does not divide 
+\begin_inset Formula $14$
+\end_inset
+
+.
+ So this is false.
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $y=0$
+\end_inset
+
+, then 
+\begin_inset Formula $23=6x$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $6$
+\end_inset
+
+ does not divide 
+\begin_inset Formula $14$
+\end_inset
+
+ so this is false.
+\end_layout
+
+\begin_layout Standard
+Since all sub cases are false, case 2 must be false.
+\end_layout
+
+\end_deeper
+\begin_layout Case
+Assume that 
+\begin_inset Formula $z=0$
+\end_inset
+
+ so that 
+\begin_inset Formula $43=6x+9y$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $9\cdot2m=6\cdot3m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{N}$
+\end_inset
+
+.
+ This means that for every even positive natural number value of 
+\begin_inset Formula $y$
+\end_inset
+
+, the term 
+\begin_inset Formula $9y=6x$
+\end_inset
+
+ holds for some 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ We also note since 
+\begin_inset Formula $9\cdot5=45>43$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ must be less than 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ These two facts give us to only have to look at the 
+\begin_inset Formula $y$
+\end_inset
+
+ for the values 
+\begin_inset Formula $\left\{ 0,1,3\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Assume 
+\begin_inset Formula $y=3$
+\end_inset
+
+ so that 
+\begin_inset Formula $43=6x+27$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $16=6x$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $6$
+\end_inset
+
+ doesn't divide 
+\begin_inset Formula $16$
+\end_inset
+
+.
+ This is false.
+\end_layout
+
+\begin_layout Case
+Assume 
+\begin_inset Formula $y=1$
+\end_inset
+
+ so that 
+\begin_inset Formula $43=6x+9$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $34=6x$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $6$
+\end_inset
+
+ doesn't divide 
+\begin_inset Formula $16$
+\end_inset
+
+.
+ This is false.
+\end_layout
+
+\begin_layout Case
+Assume 
+\begin_inset Formula $y=0$
+\end_inset
+
+ so that 
+\begin_inset Formula $43=6x$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $6$
+\end_inset
+
+ doesn't divide 
+\begin_inset Formula $16$
+\end_inset
+
+.
+ This is false.
+\end_layout
+
+\begin_layout Standard
+Since all sub cases are false, case 3 must be false.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+This all cases are false, the statement 
+\begin_inset Formula $43=6x+9y+20z$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ nonnegative integers is false.
+ Therefore, 
+\begin_inset Formula $43\neq6x+9y+20z$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ nonnegative integers is false.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Find the largest postage that cannot be paid that cannot be paid with 
+\begin_inset Formula $4$
+\end_inset
+
+, 
+\begin_inset Formula $10$
+\end_inset
+
+, and 
+\begin_inset Formula $15$
+\end_inset
+
+ stamps.
+ Prove that your answer is correct.
+ 
+\end_layout
+
+\begin_layout Exercise
+This can be done by proving the statement two statements.
+ The first is that every integer 
+\begin_inset Formula $n>29$
+\end_inset
+
+ can be written in the form 
+\begin_inset Formula $n=4x_{n}+10y_{n}+15z_{n}$
+\end_inset
+
+ for some 
+\begin_inset Formula $x_{n},y_{n},z_{n}$
+\end_inset
+
+ nonnegative integers where the subscript denotes dependency on 
+\begin_inset Formula $n$
+\end_inset
+
+, and the second is that 
+\begin_inset Formula $21\neq4x_{30}+10y_{30}+15z_{30}$
+\end_inset
+
+ for some 
+\begin_inset Formula $x_{30},y_{30},z_{30}$
+\end_inset
+
+ nonnegative integers.
+ We begin by proving the first statement.
+\end_layout
+
+\begin_layout Proof
+We want to show that the for all integers 
+\begin_inset Formula $n>30$
+\end_inset
+
+, the open sentence 
+\begin_inset Formula 
+\[
+P\left(n\right):\:n=4x_{n}+10y_{n}+15z_{n},
+\]
+
+\end_inset
+
+is true for some 
+\begin_inset Formula $x_{n},y_{n},z_{n}$
+\end_inset
+
+ nonnegative integers.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify that 
+\begin_inset Formula $P\left(22\right),P\left(23\right)$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(24\right)$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(25\right)$
+\end_inset
+
+ are true.
+ 
+\begin_inset Formula 
+\begin{align*}
+P\left(22\right): & 22=4\cdot3+10\cdot1+15\cdot0\\
+P\left(23\right): & 23=4\cdot2+10\cdot0+15\cdot1\\
+P\left(24\right): & 24=4\cdot1+10\cdot2+15\cdot0\\
+P\left(25\right): & 25=4\cdot0+10\cdot1+15\cdot1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $k\in\mathbb{N}\geq25$
+\end_inset
+
+, and the open sentence 
+\begin_inset Formula $Q\left(k\right)$
+\end_inset
+
+ be 
+\begin_inset Formula 
+\[
+Q\left(k\right):\:P\left(25\right)\land\ldots\land P\left(k\right).
+\]
+
+\end_inset
+
+We assume that 
+\begin_inset Formula $Q\left(k\right)$
+\end_inset
+
+ is true and want to show that 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true.
+ We show this as follows: 
+\begin_inset Formula 
+\begin{align*}
+k+1 & =\left(k-3\right)+4\\
+ & =4x_{k-3}+10y_{k-3}+15z_{k-3}+4\\
+ & =4\left(x_{k-3}+1\right)+10y_{k-3}+15z_{k-3},
+\end{align*}
+
+\end_inset
+
+hence 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true.
+ Therefore the open sentence 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for all integers 
+\begin_inset Formula $n>30$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We now want to show that 
+\begin_inset Formula $21$
+\end_inset
+
+ cannot be written as 
+\begin_inset Formula $4x+10y+15z$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ nonnegative integers.
+\end_layout
+
+\begin_layout Proof
+We assume by contradiction that 
+\begin_inset Formula $21=4x+10y+15z$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ nonnegative integers.
+ Since 
+\begin_inset Formula $15\cdot2>21$
+\end_inset
+
+, 
+\begin_inset Formula $z$
+\end_inset
+
+ must be smaller than 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ This gives us the following cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Assume that 
+\begin_inset Formula $z=1$
+\end_inset
+
+ so that 
+\begin_inset Formula $21=4x+10y+15$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $6=4x+10y$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $10>6$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ must equal 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ This leaves us with 
+\begin_inset Formula $6=4x$
+\end_inset
+
+.
+ However, 
+\begin_inset Formula $4\nmid6$
+\end_inset
+
+, thus this is false.
+ 
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $z=0$
+\end_inset
+
+ so that 
+\begin_inset Formula $21=4x+10y$
+\end_inset
+
+.
+ We only have to consider the cases 
+\begin_inset Formula $y=\left\{ 0,1,2\right\} $
+\end_inset
+
+ since 
+\begin_inset Formula $10\cdot3>29$
+\end_inset
+
+.
+ Also, since 
+\begin_inset Formula $4\cdot5=10\cdot2$
+\end_inset
+
+ we really only need to consider the cases 
+\begin_inset Formula $y=\left\{ 0,1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Assume 
+\begin_inset Formula $y=1$
+\end_inset
+
+ so that 
+\begin_inset Formula $21=4x+10$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $11=4x$
+\end_inset
+
+.
+ This is false since 
+\begin_inset Formula $4\nmid11$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Assume 
+\begin_inset Formula $y=0$
+\end_inset
+
+ so that 
+\begin_inset Formula $21=4x$
+\end_inset
+
+.
+ This is false since 
+\begin_inset Formula $4\nmid21$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Since both sub cases are false, the second case is false.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Since both case are false statements, 
+\begin_inset Formula $21\neq4x+10y+15z$
+\end_inset
+
+ or some 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ nonnegative integers.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Recall the definition of the Fibonacci numbers from Exercise 14.6.
+ Prove that every positive integer is a sum of one or more distinct Fibonacci
+ numbers.
+\end_layout
+
+\begin_layout Proof
+We wish to show that the open sentence 
+\begin_inset Formula 
+\[
+P\left(n\right):\:\text{every positive integer is a sum of one or more distinct Fibonacci numbers.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $Q\left(n\right)$
+\end_inset
+
+ be the statement 
+\begin_inset Formula 
+\[
+Q\left(n\right):\:P\left(1\right)\land\ldots\land P\left(n\right).
+\]
+
+\end_inset
+
+We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+1=1=F_{1},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+ is the 
+\begin_inset Formula $n^{th}$
+\end_inset
+
+ Fibonacci number in the sequence.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: We assume that for every positive integer 
+\begin_inset Formula $k$
+\end_inset
+
+ that 
+\begin_inset Formula $Q\left(k\right)$
+\end_inset
+
+ is true.
+ We want to show that 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true, which is the statement that 
+\begin_inset Formula $k+1$
+\end_inset
+
+ can be written as a sum of one or more distinct Fibonacci numbers.
+ We know that for each 
+\begin_inset Formula $k>0$
+\end_inset
+
+, we can find some 
+\begin_inset Formula $m$
+\end_inset
+
+ so that 
+\begin_inset Formula $F_{m}\leq k+1<F_{m+1}$
+\end_inset
+
+.
+ This allows us to write
+\begin_inset Formula 
+\begin{align*}
+k+1 & =F_{m}+\left(k+1-F_{m}\right).
+\end{align*}
+
+\end_inset
+
+ We have two cases to consider.
+ When 
+\begin_inset Formula $k+1-F_{m}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $k+1-F_{m}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Assume that 
+\begin_inset Formula $k+1-F_{m}=0$
+\end_inset
+
+, then 
+\begin_inset Formula $k+1=F_{m}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $k+1-F_{m}>0$
+\end_inset
+
+ so that 
+\begin_inset Formula $k+1=F_{m}+y$
+\end_inset
+
+ where 
+\begin_inset Formula $y=k+1-F_{m}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $y<k+1$
+\end_inset
+
+, we know that 
+\begin_inset Formula $y<F_{m}$
+\end_inset
+
+, and since we assume that 
+\begin_inset Formula $Q\left(k\right)$
+\end_inset
+
+ is true, 
+\begin_inset Formula $P\left(y\right)$
+\end_inset
+
+ must be true.
+ Since 
+\begin_inset Formula $F_{m}>y$
+\end_inset
+
+, 
+\begin_inset Formula $F_{m}$
+\end_inset
+
+ cannot be a term in the sum of Fibonacci numbers that add up to 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $F_{m}+y$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
 \begin_layout --Separator--
 
 \end_layout
