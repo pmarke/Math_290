@@ -1,0 +1,1973 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\addtocounter{section}{15}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\begin_modules
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 3in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 9
+\end_layout
+
+\begin_layout After Title Text
+Sections 16 and 17
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Section
+The Binomial Theorem
+\end_layout
+
+\begin_layout Exercise
+Use the definition of the binomial coefficient to prove that for each integer
+ 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left(\begin{matrix}n\\
+0
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n
+\end{matrix}\right)=1,\quad\text{and}\quad\left(\begin{matrix}n\\
+1
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n-1
+\end{matrix}\right)=n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We will first show that for each integer 
+\begin_inset Formula $n\geq0,$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\left(\begin{matrix}n\\
+0
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n
+\end{matrix}\right)=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $n\in\mathbb{Z}\geq0$
+\end_inset
+
+.
+ We will first show that 
+\begin_inset Formula $\left(\begin{matrix}n\\
+0
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n
+\end{matrix}\right)$
+\end_inset
+
+.
+ According to the definition of the binomial coefficient
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+0
+\end{matrix}\right) & =\frac{n!}{0!\left(n-0\right)!}\\
+ & =\frac{n!}{\left(n-0\right)!0!}\\
+ & =\frac{n!}{n!\left(n-n\right)!}\\
+ & =\left(\begin{matrix}n\\
+n
+\end{matrix}\right),
+\end{align*}
+
+\end_inset
+
+hence 
+\begin_inset Formula $\left(\begin{matrix}n\\
+0
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n
+\end{matrix}\right).$
+\end_inset
+
+ We now evaluate the expression to get 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+0
+\end{matrix}\right) & =\frac{n!}{0!\left(n-0\right)!}\\
+ & =\frac{n!}{n!}\\
+ & =\frac{1}{1}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Therefore the statement 
+\begin_inset Formula $\left(\begin{matrix}n\\
+0
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n
+\end{matrix}\right)=1$
+\end_inset
+
+ is true.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+We now show that for each integer 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left(\begin{matrix}n\\
+1
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n-1
+\end{matrix}\right)=n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $n\in\mathbb{Z}\geq0$
+\end_inset
+
+.
+ We will first show that 
+\begin_inset Formula $\left(\begin{matrix}n\\
+1
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n-1
+\end{matrix}\right)$
+\end_inset
+
+.
+ According to the definition of the binomial coefficient
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+1
+\end{matrix}\right) & =\frac{n!}{1!\left(n-1\right)!}\\
+ & =\frac{n!}{\left(n-1\right)!1!}\\
+ & =\left(\begin{matrix}n\\
+n-1
+\end{matrix}\right),
+\end{align*}
+
+\end_inset
+
+hence 
+\begin_inset Formula $\left(\begin{matrix}n\\
+1
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n-1
+\end{matrix}\right)$
+\end_inset
+
+.
+ We now evaluate the expression to get 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+1
+\end{matrix}\right) & =\frac{n!}{1!\left(n-1\right)!}\\
+ & =\frac{n\left(\left(n-1\right)!\right)}{1!\left(n-1\right)!}\\
+ & =n,
+\end{align*}
+
+\end_inset
+
+Therefore the statement 
+\begin_inset Formula $\left(\begin{matrix}n\\
+1
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n-1
+\end{matrix}\right)=n$
+\end_inset
+
+ is true for each 
+\begin_inset Formula $n\in\mathbb{Z}\geq0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove that for any 
+\begin_inset Formula $n,k\in\mathbb{Z}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n-k
+\end{matrix}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $n,k\in\mathbb{Z}$
+\end_inset
+
+.
+ We have two cases to consider: case 1) 
+\begin_inset Formula $0\leq k\leq n$
+\end_inset
+
+ and case 2) 
+\begin_inset Formula $\neg\left(0\leq k\leq n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let 
+\begin_inset Formula $\neg\left(0\leq k\leq n\right)$
+\end_inset
+
+ be true, then 
+\begin_inset Formula $\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=0$
+\end_inset
+
+ and according to the definition of the binomial coefficients.
+ Noting that 
+\begin_inset Formula $\neg\left(0\leq k\leq n\right)$
+\end_inset
+
+ is equivalent to 
+\begin_inset Formula $k<0$
+\end_inset
+
+, 
+\begin_inset Formula $n<0$
+\end_inset
+
+, or 
+\begin_inset Formula $n<k$
+\end_inset
+
+, we know that 
+\begin_inset Formula $\left(\begin{matrix}n\\
+n-k
+\end{matrix}\right)=0$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n-k
+\end{matrix}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $\left(0\leq k\leq n\right)$
+\end_inset
+
+ be true, then according to the definition of binomial coefficients we get
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+k
+\end{matrix}\right) & =\frac{n!}{k!\left(n-k\right)!}\\
+ & =\frac{n!}{\left(n-k\right)!k!}\\
+ & =\frac{n!}{\left(n-k\right)!\left(n-n+k\right)!}\\
+ & =\left(\begin{matrix}n\\
+n-k
+\end{matrix}\right),
+\end{align*}
+
+\end_inset
+
+hence 
+\begin_inset Formula $\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n-k
+\end{matrix}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Since both cases hold true, we have shown that for any 
+\begin_inset Formula $n,k\in\mathbb{Z}$
+\end_inset
+
+ that 
+\begin_inset Formula $\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+n-k
+\end{matrix}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $n,h,k\in\mathbb{Z}$
+\end_inset
+
+.
+ Using the definition of the binomial coefficient, prove that 
+\begin_inset Formula 
+\[
+\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $n,h,k\in\mathbb{Z}$
+\end_inset
+
+.
+ We know that 
+\begin_inset Formula $\left(\begin{matrix}n\\
+h
+\end{matrix}\right)=0$
+\end_inset
+
+ when 
+\begin_inset Formula $n<0$
+\end_inset
+
+, 
+\begin_inset Formula $h<0$
+\end_inset
+
+ or 
+\begin_inset Formula $h>n$
+\end_inset
+
+, 
+\begin_inset Formula $\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=0$
+\end_inset
+
+ when 
+\begin_inset Formula $n<0$
+\end_inset
+
+, 
+\begin_inset Formula $k<0$
+\end_inset
+
+ or 
+\begin_inset Formula $k>n$
+\end_inset
+
+, 
+\begin_inset Formula $\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right)=0$
+\end_inset
+
+ when 
+\begin_inset Formula $k<0$
+\end_inset
+
+, 
+\begin_inset Formula $n-h<0$
+\end_inset
+
+ or 
+\begin_inset Formula $k+h>n$
+\end_inset
+
+, and we know that 
+\begin_inset Formula $\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right)=0$
+\end_inset
+
+ when 
+\begin_inset Formula $h<0$
+\end_inset
+
+, 
+\begin_inset Formula $n-k<0$
+\end_inset
+
+ or 
+\begin_inset Formula $h+k>n$
+\end_inset
+
+ according to the definition of binomial coefficients.
+ In order for 
+\begin_inset Formula $n<h+k$
+\end_inset
+
+, the two statements 
+\begin_inset Formula $n<h$
+\end_inset
+
+ and 
+\begin_inset Formula $n<k$
+\end_inset
+
+ must be true.
+ Therefore we really only have five cases to consider: 
+\begin_inset Formula $n<0$
+\end_inset
+
+, 
+\begin_inset Formula $n<h+k$
+\end_inset
+
+, 
+\begin_inset Formula $k<0$
+\end_inset
+
+, 
+\begin_inset Formula $h<0$
+\end_inset
+
+ and 
+\begin_inset Formula $0\leq h+k\leq n$
+\end_inset
+
+ since at least one of these is always true.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+We suppose directly that 
+\begin_inset Formula $n,h,k\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $n<0$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right) & =0\cdot\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right)\\
+ & =0
+\end{align*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right) & =0\cdot\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right)\\
+ & =0
+\end{align*}
+
+\end_inset
+
+hence we have shown that
+\begin_inset Formula $\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right)$
+\end_inset
+
+ when 
+\begin_inset Formula $n<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+We suppose directly that 
+\begin_inset Formula $n,h,k\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $h<0$
+\end_inset
+
+, then
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right) & =0\cdot\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right)\\
+ & =0
+\end{align*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right) & =\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\cdot0\\
+ & =0
+\end{align*}
+
+\end_inset
+
+hence we have shown that
+\begin_inset Formula $\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right)$
+\end_inset
+
+ when 
+\begin_inset Formula $h<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+We suppose directly that 
+\begin_inset Formula $n,h,k\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $k<0$
+\end_inset
+
+, then
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right) & =\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\cdot0\\
+ & =0
+\end{align*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right) & =0\cdot\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right)\\
+ & =0
+\end{align*}
+
+\end_inset
+
+ hence we have shown that
+\begin_inset Formula $\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right)$
+\end_inset
+
+ when 
+\begin_inset Formula $k<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+We suppose directly that 
+\begin_inset Formula $n,h,k\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $n<h+k$
+\end_inset
+
+, then
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right) & =0\cdot0\\
+ & =0
+\end{align*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right) & =0\cdot0\\
+ & =0
+\end{align*}
+
+\end_inset
+
+hence we have shown that
+\begin_inset Formula $\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right)$
+\end_inset
+
+ when 
+\begin_inset Formula $n<h+k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+We suppose directly that 
+\begin_inset Formula $n,h,k\in\mathbb{Z}$
+\end_inset
+
+ and that 
+\begin_inset Formula $0\leq k+h\leq n$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right) & =\frac{n!}{h!\left(n-h\right)!}\cdot\frac{\left(n-h\right)!}{k!\left(n-h-k\right)!}\\
+ & =\frac{n!}{h!k!\left(n-h-k\right)!}\\
+ & =\frac{n!\left(n-k\right)!}{h!k!\left(n-h-k\right)!\left(n-k\right)!}\\
+ & =\frac{n!}{k!\left(n-k\right)!}\cdot\frac{\left(n-k\right)!}{h!\left(n-k-h\right)!}\\
+ & =\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right),
+\end{align*}
+
+\end_inset
+
+hence we have shown that
+\begin_inset Formula $\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right)$
+\end_inset
+
+ when 
+\begin_inset Formula $0\leq k+h\leq n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since all cases hold, we have shown that the statement 
+\begin_inset Formula $\left(\begin{matrix}n\\
+h
+\end{matrix}\right)\left(\begin{matrix}n-h\\
+k
+\end{matrix}\right)=\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\left(\begin{matrix}n-k\\
+h
+\end{matrix}\right)$
+\end_inset
+
+ is true for any 
+\begin_inset Formula $n,h,k\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove that for any integer 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\sum_{k=0}^{n}\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=2^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+We wish to show that the open sentence
+\begin_inset Formula 
+\[
+P\left(n\right):\:\sum_{k=0}^{n}\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=2^{n}
+\]
+
+\end_inset
+
+is true for any integer 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+.
+ We show this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify that 
+\begin_inset Formula $P\left(0\right)$
+\end_inset
+
+ is true.
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=0}^{0}\left(\begin{matrix}0\\
+k
+\end{matrix}\right) & =\frac{0!}{0!\left(0-0\right)!}\\
+ & =\frac{1}{1}\\
+ & =2^{0}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: We suppose that 
+\begin_inset Formula $m\geq0$
+\end_inset
+
+, and that 
+\begin_inset Formula $P\left(m\right)$
+\end_inset
+
+ is true which is the statement
+\begin_inset Formula 
+\[
+\sum_{k=0}^{m}\left(\begin{matrix}m\\
+k
+\end{matrix}\right)=2^{m},
+\]
+
+\end_inset
+
+and we want to show that 
+\begin_inset Formula $P\left(m+1\right)$
+\end_inset
+
+ is true.
+ We begin with 
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=0}^{m+1}\left(\begin{matrix}m+1\\
+k
+\end{matrix}\right) & =\sum_{k=0}^{m}\left(\begin{matrix}m+1\\
+k
+\end{matrix}\right)+\left(\begin{matrix}m+1\\
+m+1
+\end{matrix}\right)\\
+ & =\sum_{k=0}^{m}\left(\left(\begin{matrix}m\\
+k
+\end{matrix}\right)+\left(\begin{matrix}m\\
+k-1
+\end{matrix}\right)\right)+1,\quad\text{(Using Pascal's Equality)}\\
+ & =2^{m}+1+\sum_{k=0}^{m}\left(\begin{matrix}m\\
+k-1
+\end{matrix}\right),\quad\text{(Since \ensuremath{P\left(m\right)} is true)}\\
+ & =2^{m}+1+\sum_{k=0}^{m-1}\left(\begin{matrix}m\\
+k
+\end{matrix}\right)\\
+ & =2^{m}+\sum_{k=0}^{m}\left(\begin{matrix}m\\
+k
+\end{matrix}\right)\\
+ & =2^{m}+2^{m}\\
+ & =2^{m+1}
+\end{align*}
+
+\end_inset
+
+hence 
+\begin_inset Formula $P\left(m+1\right)$
+\end_inset
+
+ is true.
+ Therefore the statement 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for any integer 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Prove that for any 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\sum_{k=0}^{n}\left(-1\right)^{k}\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+We wish to show that the statement 
+\begin_inset Formula 
+\[
+P\left(n\right):\:\sum_{k=0}^{n}\left(-1\right)^{k}\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=0
+\]
+
+\end_inset
+
+is true for any 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify that 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ is true
+\begin_inset Formula 
+\[
+\sum_{k=0}^{1}\left(-1\right)^{k}\left(\begin{matrix}1\\
+k
+\end{matrix}\right)=1-1=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: We assume that 
+\begin_inset Formula $P\left(m\right)$
+\end_inset
+
+ is true for any 
+\begin_inset Formula $m\in\mathbb{N},$
+\end_inset
+
+ which is the statement
+\begin_inset Formula 
+\[
+\sum_{k=0}^{m}\left(-1\right)^{k}\left(\begin{matrix}m\\
+k
+\end{matrix}\right)=0,
+\]
+
+\end_inset
+
+and we want to show that 
+\begin_inset Formula $P\left(m+1\right)$
+\end_inset
+
+ is true.
+ We begin with 
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=0}^{m+1}\left(-1\right)^{k}\left(\begin{matrix}m+1\\
+k
+\end{matrix}\right) & =\sum_{k=0}^{m}\left(-1\right)^{k}\left(\begin{matrix}m+1\\
+k
+\end{matrix}\right)+\left(-1\right)^{m+1}\left(\begin{matrix}m+1\\
+m+1
+\end{matrix}\right)\\
+ & =\sum_{k=0}^{m}\left(\left(-1\right)^{k}\left(\begin{matrix}m\\
+k
+\end{matrix}\right)+\left(-1\right)^{k}\left(\begin{matrix}m\\
+k-1
+\end{matrix}\right)\right)+\left(-1\right)^{m+1}1,\quad\text{(Using Pascal's Equality)}\\
+ & =0+\sum_{k=0}^{m}\left(-1\right)^{k}\left(\begin{matrix}m\\
+k-1
+\end{matrix}\right)+\left(-1\right)^{m+1}1,\quad\text{(Since \ensuremath{P\left(m\right)} is true)}\\
+ & =\sum_{k=0}^{m-1}\left(-1\right)^{k}\left(\begin{matrix}m\\
+k
+\end{matrix}\right)+\left(-1\right)^{m+1}1\\
+ & =\sum_{k=0}^{m-1}\left(-1\right)^{k}\left(\begin{matrix}m\\
+k
+\end{matrix}\right)+\left(-1\right)^{m+1}1+\left(-1\right)^{m}1-\left(-1\right)^{m}\\
+ & =\sum_{k=0}^{m}\left(-1\right)^{k}\left(\begin{matrix}m\\
+k
+\end{matrix}\right)+\left(-1\right)^{m+1}1-\left(-1\right)^{m}\\
+ & =0+\left(-1\right)^{m}\left(-1\right)-\left(-1\right)^{m}\\
+ & =\left(-1\right)^{m}\left(1-1\right)\\
+ & =0,
+\end{align*}
+
+\end_inset
+
+hence 
+\begin_inset Formula $P\left(m+1\right)$
+\end_inset
+
+ is true.
+ Therefore the statement 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for any 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Determine the coefficient of 
+\begin_inset Formula $x^{5}y^{3}$
+\end_inset
+
+ in the expansion of 
+\begin_inset Formula $\left(2x+3y\right)^{8}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+According to the binomial theorem, if 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are variables and 
+\begin_inset Formula $n$
+\end_inset
+
+ is a non-negative integer, then
+\begin_inset Formula 
+\[
+\left(z+q\right)^{n}=\sum_{k=0}^{n}\left(\begin{matrix}n\\
+k
+\end{matrix}\right)z^{n-k}q^{k}.
+\]
+
+\end_inset
+
+The term 
+\begin_inset Formula $x^{5}y^{3}$
+\end_inset
+
+ must correspond to 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}8\\
+3
+\end{matrix}\right)\left(2x\right)^{8-3}\left(3y\right)^{3} & =56\cdot32\cdot27\left(x^{5}y^{3}\right)\\
+ & =48384x^{5}y^{3}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Use the definition of the binomial coefficient to prove that for any 
+\begin_inset Formula $n,k\in\mathbb{Z},$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+k\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=n\left(\begin{matrix}n-1\\
+k-1
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+We show this directly assuming that 
+\begin_inset Formula $n,k\in\mathbb{Z}$
+\end_inset
+
+.
+ The binomial coefficient 
+\begin_inset Formula $\left(\begin{matrix}n\\
+k
+\end{matrix}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $0$
+\end_inset
+
+ when 
+\begin_inset Formula $n<0$
+\end_inset
+
+, 
+\begin_inset Formula $k<0$
+\end_inset
+
+ or 
+\begin_inset Formula $n<k$
+\end_inset
+
+, and the binomial coefficient 
+\begin_inset Formula $\left(\begin{matrix}n-1\\
+k-1
+\end{matrix}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $0$
+\end_inset
+
+ when 
+\begin_inset Formula $n<1$
+\end_inset
+
+, 
+\begin_inset Formula $k<1$
+\end_inset
+
+ or 
+\begin_inset Formula $n<k$
+\end_inset
+
+.
+ This leads to three different cases: case 1) 
+\begin_inset Formula $n<0$
+\end_inset
+
+, 
+\begin_inset Formula $k<1$
+\end_inset
+
+, or 
+\begin_inset Formula $n<k$
+\end_inset
+
+, case 2) 
+\begin_inset Formula $n=0$
+\end_inset
+
+, 
+\begin_inset Formula $k<1$
+\end_inset
+
+, or 
+\begin_inset Formula $n<k$
+\end_inset
+
+ and case 3) 
+\begin_inset Formula $0<k\leq n$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let 
+\begin_inset Formula $n<0$
+\end_inset
+
+, 
+\begin_inset Formula $k<1$
+\end_inset
+
+, or 
+\begin_inset Formula $n<k$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+k\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=0
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+n\left(\begin{matrix}n-1\\
+k-1
+\end{matrix}\right)=0,
+\]
+
+\end_inset
+
+hence 
+\begin_inset Formula 
+\[
+k\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=n\left(\begin{matrix}n-1\\
+k-1
+\end{matrix}\right)=0.
+\]
+
+\end_inset
+
+Thus this case is always true.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $n=0$
+\end_inset
+
+, 
+\begin_inset Formula $k<1$
+\end_inset
+
+, or 
+\begin_inset Formula $n<k$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $n=0$
+\end_inset
+
+, the binomial coefficient 
+\begin_inset Formula $\left(\begin{matrix}n\\
+k
+\end{matrix}\right)$
+\end_inset
+
+ is not 
+\begin_inset Formula $0$
+\end_inset
+
+ when 
+\begin_inset Formula $k=0$
+\end_inset
+
+ and is 
+\begin_inset Formula $0$
+\end_inset
+
+ when 
+\begin_inset Formula $k<0$
+\end_inset
+
+.
+ This means that
+\begin_inset Formula 
+\[
+k\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=0,
+\]
+
+\end_inset
+
+In addition 
+\begin_inset Formula 
+\[
+n\left(\begin{matrix}n-1\\
+k-1
+\end{matrix}\right)=0,
+\]
+
+\end_inset
+
+hence 
+\begin_inset Formula 
+\[
+k\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=n\left(\begin{matrix}n-1\\
+k-1
+\end{matrix}\right)=0.
+\]
+
+\end_inset
+
+Thus this case is always true.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $0<k\leq n$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+k\left(\begin{matrix}n\\
+k
+\end{matrix}\right) & =k\frac{n!}{k!\left(n-k\right)!}\\
+ & =\frac{n\left(\left(n-1\right)!\right)k}{k\left(k-1\right)!\left(n-1-k+1\right)!}\\
+ & =n\frac{\left(\left(n-1\right)!\right)}{\left(k-1\right)!\left(n-1-k+1\right)!}\\
+ & n\left(\begin{matrix}n-1\\
+k-1
+\end{matrix}\right),
+\end{align*}
+
+\end_inset
+
+hence this case is true.
+\end_layout
+
+\begin_layout Standard
+Since all possible cases are true, the statement 
+\begin_inset Formula $k\left(\begin{matrix}n\\
+k
+\end{matrix}\right)=n\left(\begin{matrix}n-1\\
+k-1
+\end{matrix}\right)$
+\end_inset
+
+ is true for any 
+\begin_inset Formula $n,k\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove that for 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, the 
+\begin_inset Quotes eld
+\end_inset
+
+middle
+\begin_inset Quotes erd
+\end_inset
+
+ binomial coefficient
+\begin_inset Formula 
+\[
+\left(\begin{matrix}2n\\
+n
+\end{matrix}\right)
+\]
+
+\end_inset
+
+is an even integer.
+ 
+\end_layout
+
+\begin_layout Proof
+We wish to show that the open sentence 
+\begin_inset Formula 
+\[
+P\left(n\right):\:\left(\begin{matrix}2n\\
+n
+\end{matrix}\right)\text{ is an even integer}
+\]
+
+\end_inset
+
+is true for any 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify that 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ is true.
+\begin_inset Formula 
+\[
+\left(\begin{matrix}2\\
+1
+\end{matrix}\right)=\frac{2!}{1!1!}=2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: We assume that for 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(k\right)$
+\end_inset
+
+ is true.
+ We want to show that 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true.
+ We begin with
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}2\left(k+1\right)\\
+k+1
+\end{matrix}\right) & =\left(\begin{matrix}2k+2\\
+k+1
+\end{matrix}\right)\\
+ & =\left(\begin{matrix}2k+1\\
+k
+\end{matrix}\right)+\left(\begin{matrix}2k+1\\
+k+1
+\end{matrix}\right),\quad\text{(Using Pascal's triangle)}\\
+ & =\left(\begin{matrix}2k\\
+k
+\end{matrix}\right)+\left(\begin{matrix}2k\\
+k-1
+\end{matrix}\right)+\left(\begin{matrix}2k\\
+k
+\end{matrix}\right)+\left(\begin{matrix}2k\\
+k+1
+\end{matrix}\right)\quad\text{(Using Pascal's triangle on each term)}\\
+ & =2\left(\begin{matrix}2k\\
+k
+\end{matrix}\right)+2\left(\begin{matrix}2k\\
+k-1
+\end{matrix}\right),\quad\text{(Using the fact \ensuremath{\left(\begin{matrix}2k\\
+k+1
+\end{matrix}\right)=\left(\begin{matrix}2k\\
+k-1
+\end{matrix}\right)}, proven in exercise 2}\\
+ & =2\left(\left(\begin{matrix}2k\\
+k
+\end{matrix}\right)+\left(\begin{matrix}2k\\
+k-1
+\end{matrix}\right)\right),
+\end{align*}
+
+\end_inset
+
+which is an even integer since the binomial coefficient is always an integer.
+ Therefore 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for any 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $n,k\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Use induction to prove that for 
+\begin_inset Formula $n>8$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left(\begin{matrix}n\\
+k
+\end{matrix}\right)<2^{n-2},\quad\text{for each \ensuremath{k\in\mathbb{Z}}.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that the open sentence
+\begin_inset Formula 
+\[
+P\left(n\right):\:\left(\begin{matrix}n\\
+k
+\end{matrix}\right)<2^{n-2}
+\]
+
+\end_inset
+
+is true for 
+\begin_inset Formula $n\in\mathbb{Z}>8$
+\end_inset
+
+ and 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We will verify 
+\begin_inset Formula $P\left(9\right)$
+\end_inset
+
+.
+ We have two cases to consider: when 
+\begin_inset Formula $k<0$
+\end_inset
+
+ or 
+\begin_inset Formula $9<k$
+\end_inset
+
+ and when 
+\begin_inset Formula $0\leq k\leq9$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let 
+\begin_inset Formula $k<0$
+\end_inset
+
+ or 
+\begin_inset Formula $9<k$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}9\\
+k
+\end{matrix}\right) & =0\\
+ & <2^{m},
+\end{align*}
+
+\end_inset
+
+for any 
+\begin_inset Formula $m\in\mathbb{N}$
+\end_inset
+
+.
+ Thus this case holds.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $0\leq k\leq9$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\left(\begin{matrix}9\\
+k
+\end{matrix}\right)=\frac{9!}{k!\left(n-k\right)!},
+\]
+
+\end_inset
+
+which is largest when 
+\begin_inset Formula $k\in\left\{ 4,5\right\} $
+\end_inset
+
+ according to Pascal's triangle (Figure 16.5 in the book).
+ Thus 
+\begin_inset Formula 
+\[
+\left(\begin{matrix}9\\
+k
+\end{matrix}\right)\leq126
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Using this information we note that 
+\begin_inset Formula 
+\begin{align*}
+126 & <2^{9-2}\\
+ & <128,
+\end{align*}
+
+\end_inset
+
+Hence this case holds.
+\end_layout
+
+\begin_layout Standard
+Since both cases hold, 
+\begin_inset Formula $P\left(9\right)$
+\end_inset
+
+ is true.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Induction Step
+\series default
+: Assume that 
+\begin_inset Formula $m\in\mathbb{Z}>8$
+\end_inset
+
+ and 
+\begin_inset Formula $P\left(m\right)$
+\end_inset
+
+ is true.
+ We want to show that 
+\begin_inset Formula $P\left(m+1\right)$
+\end_inset
+
+ is true.
+ We being with 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}m+1\\
+k
+\end{matrix}\right) & =\left(\begin{matrix}m\\
+k
+\end{matrix}\right)+\left(\begin{matrix}m\\
+k+1
+\end{matrix}\right),\quad\text{(Using Pascal's triangle equality)}\\
+ & <2^{m-2}+2^{m-2},\quad\text{(Since we assume \ensuremath{P\left(m\right)} to be true)}\\
+ & <2^{m+1-2},
+\end{align*}
+
+\end_inset
+
+hence the statement 
+\begin_inset Formula $P\left(m+1\right)$
+\end_inset
+
+ is true.
+ Therefore 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for any 
+\begin_inset Formula $n\in\mathbb{Z}>8$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use induction to prove that for 
+\begin_inset Formula $n>7$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left(\begin{matrix}n\\
+k
+\end{matrix}\right)<\left(n-3\right)!\quad\text{for each \ensuremath{k\in\mathbb{Z}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that the open sentence 
+\begin_inset Formula 
+\[
+P\left(n\right):\:\left(\begin{matrix}n\\
+k
+\end{matrix}\right)<\left(n-3\right)!
+\]
+
+\end_inset
+
+is true for each 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $n\in\mathbb{N}>7$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify that 
+\begin_inset Formula $P\left(8\right)$
+\end_inset
+
+ is true.
+ We show this using two cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let 
+\begin_inset Formula $k<0$
+\end_inset
+
+ or 
+\begin_inset Formula $k>8$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}8\\
+k
+\end{matrix}\right) & =0\\
+ & <120\\
+ & =\left(8-3\right)!,
+\end{align*}
+
+\end_inset
+
+hence this case holds.
+ 
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $0\leq k\leq8$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}8\\
+k
+\end{matrix}\right) & \leq70,\quad\text{according to Pascal's triangle (Figure 16.5 in the book)}\\
+ & <120\\
+ & =\left(8-3\right)!
+\end{align*}
+
+\end_inset
+
+hence this case holds.
+\end_layout
+
+\begin_layout Standard
+Since both cases hold, 
+\begin_inset Formula $P\left(8\right)$
+\end_inset
+
+ is true.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: We assume that 
+\begin_inset Formula $k\in\mathbb{Z}>7$
+\end_inset
+
+ and that 
+\begin_inset Formula $P\left(k\right)$
+\end_inset
+
+ is true.
+ We want to show that 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Divisibility
+\end_layout
+
+\end_body
+\end_document
