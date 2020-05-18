@@ -1937,20 +1937,56 @@ Since both cases hold,
 Induction Step
 \series default
 : We assume that 
-\begin_inset Formula $k\in\mathbb{Z}>7$
+\begin_inset Formula $m\in\mathbb{Z}>7$
 \end_inset
 
  and that 
-\begin_inset Formula $P\left(k\right)$
+\begin_inset Formula $P\left(m\right)$
 \end_inset
 
  is true.
  We want to show that 
-\begin_inset Formula $P\left(k+1\right)$
+\begin_inset Formula $P\left(m+1\right)$
 \end_inset
 
  is true.
- 
+ We begin with 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}m+1\\
+k
+\end{matrix}\right) & =\left(\begin{matrix}m\\
+k
+\end{matrix}\right)+\left(\begin{matrix}m\\
+k+1
+\end{matrix}\right),\quad\text{(Using Pascal's triangle equality)}\\
+ & \leq\left(m-3\right)!+\left(m-3\right)!,\quad\text{(Since we assume \ensuremath{P\left(m\right)} to be true)}\\
+ & =2\left(m-3\right)!\\
+ & =2\frac{\left(m+1-3\right)}{\left(m+1-3\right)}\left(m-3\right)!\\
+ & =2\frac{\left(m+1-3\right)!}{\left(m+1-3\right)}\\
+ & \leq\left(m+1-3\right)!,\quad\text{(Since \ensuremath{m>7}, we know that \ensuremath{m+1-3}>5, thus \ensuremath{0<\frac{2}{m+1-3}<1})}.
+\end{align*}
+
+\end_inset
+
+Hence 
+\begin_inset Formula $P\left(m+1\right)$
+\end_inset
+
+ is true.
+ Therefore 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for 
+\begin_inset Formula $n\in\mathbb{N}>7$
+\end_inset
+
+ and 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -1969,5 +2005,269 @@ Induction Step
 Divisibility
 \end_layout
 
+\begin_layout Exercise
+For the given values of 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+, compute the values of 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ guaranteed by the division algorithm.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=17$
+\end_inset
+
+, 
+\begin_inset Formula $d=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $17=3\cdot5+2$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=3$
+\end_inset
+
+ and 
+\begin_inset Formula $r=2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=17$
+\end_inset
+
+, 
+\begin_inset Formula $d=-5$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $17=\left(-3\right)\cdot\left(-5\right)+2$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=-3$
+\end_inset
+
+ and 
+\begin_inset Formula $r=2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=-17$
+\end_inset
+
+, 
+\begin_inset Formula $d=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-17=\left(-4\right)\cdot\left(5\right)+3$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=-4$
+\end_inset
+
+ and 
+\begin_inset Formula $r=3$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=-17$
+\end_inset
+
+, 
+\begin_inset Formula $d=-5$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-17=$
+\end_inset
+
+
+\begin_inset Formula $4\cdot\left(-5\right)+3$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=4$
+\end_inset
+
+ and 
+\begin_inset Formula $r=3$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=256$
+\end_inset
+
+, 
+\begin_inset Formula $d=25$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $256=10\cdot25+6$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=10$
+\end_inset
+
+ and 
+\begin_inset Formula $r=6$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=256$
+\end_inset
+
+, 
+\begin_inset Formula $d=-25$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $256=\left(-10\right)\cdot\left(-25\right)+6$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=-10$
+\end_inset
+
+ and 
+\begin_inset Formula $r=6$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=-256$
+\end_inset
+
+, 
+\begin_inset Formula $d=25$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-256=\left(-11\right)\cdot25+19$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=-11$
+\end_inset
+
+ and 
+\begin_inset Formula $r=19$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=-256$
+\end_inset
+
+, 
+\begin_inset Formula $d=-25$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-256=11\cdot\left(-25\right)+19$
+\end_inset
+
+.
+ thus 
+\begin_inset Formula $q=11$
+\end_inset
+
+ and 
+\begin_inset Formula $r=19$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

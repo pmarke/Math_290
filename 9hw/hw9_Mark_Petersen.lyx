@@ -2005,5 +2005,562 @@ Hence
 Divisibility
 \end_layout
 
+\begin_layout Exercise
+For the given values of 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+, compute the values of 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ guaranteed by the division algorithm.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=17$
+\end_inset
+
+, 
+\begin_inset Formula $d=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $17=3\cdot5+2$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=3$
+\end_inset
+
+ and 
+\begin_inset Formula $r=2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=17$
+\end_inset
+
+, 
+\begin_inset Formula $d=-5$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $17=\left(-3\right)\cdot\left(-5\right)+2$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=-3$
+\end_inset
+
+ and 
+\begin_inset Formula $r=2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=-17$
+\end_inset
+
+, 
+\begin_inset Formula $d=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-17=\left(-4\right)\cdot\left(5\right)+3$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=-4$
+\end_inset
+
+ and 
+\begin_inset Formula $r=3$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=-17$
+\end_inset
+
+, 
+\begin_inset Formula $d=-5$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-17=$
+\end_inset
+
+
+\begin_inset Formula $4\cdot\left(-5\right)+3$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=4$
+\end_inset
+
+ and 
+\begin_inset Formula $r=3$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=256$
+\end_inset
+
+, 
+\begin_inset Formula $d=25$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $256=10\cdot25+6$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=10$
+\end_inset
+
+ and 
+\begin_inset Formula $r=6$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=256$
+\end_inset
+
+, 
+\begin_inset Formula $d=-25$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $256=\left(-10\right)\cdot\left(-25\right)+6$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=-10$
+\end_inset
+
+ and 
+\begin_inset Formula $r=6$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=-256$
+\end_inset
+
+, 
+\begin_inset Formula $d=25$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-256=\left(-11\right)\cdot25+19$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $q=-11$
+\end_inset
+
+ and 
+\begin_inset Formula $r=19$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $n=-256$
+\end_inset
+
+, 
+\begin_inset Formula $d=-25$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $-256=11\cdot\left(-25\right)+19$
+\end_inset
+
+.
+ thus 
+\begin_inset Formula $q=11$
+\end_inset
+
+ and 
+\begin_inset Formula $r=19$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a$
+\end_inset
+
+ be an integer.
+ Recall that 
+\begin_inset Formula $a$
+\end_inset
+
+ is even if there is some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a=2k$
+\end_inset
+
+, and 
+\begin_inset Formula $a$
+\end_inset
+
+ is odd if there is some 
+\begin_inset Formula $\ell\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a=2\ell+1$
+\end_inset
+
+.
+ Prove the following statements, which we took for granted previously: Every
+ integer is even or odd and no integer is both even and odd.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+ According to the division algorithm, given a number 
+\begin_inset Formula $d\in\mathbb{Z}$
+\end_inset
+
+, we can represent 
+\begin_inset Formula $m$
+\end_inset
+
+ as 
+\begin_inset Formula $m=qd+r$
+\end_inset
+
+ where 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ are unique integers and with 
+\begin_inset Formula $0\leq r<\left|d\right|$
+\end_inset
+
+.
+ By letting 
+\begin_inset Formula $d=2$
+\end_inset
+
+, we can then write every integer 
+\begin_inset Formula $m$
+\end_inset
+
+ as 
+\begin_inset Formula $m=2q+r$
+\end_inset
+
+ with 
+\begin_inset Formula $0\leq r<2$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $r\in\left\{ 0,1\right\} $
+\end_inset
+
+.
+ This gives us two cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let 
+\begin_inset Formula $r=0$
+\end_inset
+
+, then 
+\begin_inset Formula $m=2q$
+\end_inset
+
+ and is even.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $r=1$
+\end_inset
+
+, then 
+\begin_inset Formula $m=2q+1$
+\end_inset
+
+ and is odd.
+\end_layout
+
+\begin_layout Standard
+Hence every integer is either even or odd and cannot be both.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Write out all the divisors of 
+\begin_inset Formula $60$
+\end_inset
+
+ in a list, and then all the divisors of 
+\begin_inset Formula $42$
+\end_inset
+
+ is a separate list.
+ Write the common divisors in a third list, and find the GCD.
+ 
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $T=\left\{ x\in\mathbb{Z}:x\mid60\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $S=\left\{ x\in\mathbb{Z}:\:x\mid42\right\} $
+\end_inset
+
+, and 
+\begin_inset Formula $U=\left\{ x\in\mathbb{Z}:\:x\mid60\,\text{and}\,x\mid42\right\} $
+\end_inset
+
+.
+ These sets can be written out as 
+\begin_inset Formula 
+\begin{align*}
+T & =\left\{ -60,-30,-15,-12,-10,-6,-5,-3,-2,-1,1,2,3,5,6,10,12,15,30,60\right\} \\
+S & =\left\{ -42,-21,-7,-6,-3,-2,-1,1,2,3,6,7,21,42\right\} \\
+U & =\left\{ -3,-2,-1,1,2,3\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+We can easily see now that 
+\begin_inset Formula $\text{GCD}\left(60,42\right)=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Use the Euclidean algorithm to compute the following GCDs.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{GCD}\left(60,42\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We use the Division algorithm to multiple times
+\begin_inset Formula 
+\begin{align*}
+60 & =1\cdot42+18\\
+42 & =2\cdot18+6\\
+18 & =3\cdot6
+\end{align*}
+
+\end_inset
+
+to get that 
+\begin_inset Formula $\text{GCD}\left(60,42\right)=6$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{GCD}\left(667,851\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We use the Division algorithm to multiple times
+\begin_inset Formula 
+\begin{align*}
+851 & =1\cdot667+184\\
+667 & =3\cdot184+115\\
+184 & =115+69\\
+115 & =69+46\\
+69 & =46+23\\
+49 & =2\cdot23+0
+\end{align*}
+
+\end_inset
+
+to get that 
+\begin_inset Formula $\text{GCD}\left(667,851\right)=23$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{GCD}\left(1855,2345\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We use the Division algorithm to multiple times
+\begin_inset Formula 
+\begin{align*}
+2345 & =1855+490\\
+1855 & =3\cdot490+385\\
+490 & =385+105\\
+385 & =3\cdot105+70\\
+105 & =70+35\\
+70 & =2\cdot35
+\end{align*}
+
+\end_inset
+
+to get that 
+\begin_inset Formula $\text{GCD}\left(1855,2345\right)=35$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{GCD}\left(589,437\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We use the Division algorithm to multiple times
+\begin_inset Formula 
+\begin{align*}
+589 & =437+152\\
+437 & =2\cdot152+133\\
+152 & =133+19\\
+133 & =7\cdot19
+\end{align*}
+
+\end_inset
+
+to get that 
+\begin_inset Formula $\text{GCD}\left(589,437\right)=19$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
