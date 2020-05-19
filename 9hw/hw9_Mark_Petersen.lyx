@@ -2562,5 +2562,475 @@ to get that
 \end_layout
 
 \end_deeper
+\begin_layout Exercise
+Recall that the Fibonacci numbers are defined by the relations 
+\begin_inset Formula $F_{1}=1$
+\end_inset
+
+, 
+\begin_inset Formula $F_{2}=1$
+\end_inset
+
+, and for 
+\begin_inset Formula $n>2$
+\end_inset
+
+ the recursion 
+\begin_inset Formula $F_{n}=F_{n-1}+F_{n-2}$
+\end_inset
+
+.
+ Prove by induction that for each 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ we have 
+\begin_inset Formula $GCD\left(F_{n+1},F_{n}\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We want to show that the open sentence
+\begin_inset Formula 
+\[
+P\left(n\right):\,\text{GCD}\left(F_{n+1},F_{n}\right)=1
+\]
+
+\end_inset
+
+is true for each 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify that 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ is true using the division algorithm 
+\begin_inset Formula 
+\begin{align*}
+F_{2} & =F_{1}+0\\
+1 & =1+0,
+\end{align*}
+
+\end_inset
+
+hence the GCD is 
+\begin_inset Formula $1$
+\end_inset
+
+ and 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Case
+\series default
+: We assume that 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ and that 
+\begin_inset Formula $P\left(k\right)$
+\end_inset
+
+ is true, which is the statement 
+\begin_inset Formula 
+\[
+\text{GCD}\left(F_{k+1},F_{k}\right)=1,
+\]
+
+\end_inset
+
+and we want to show that 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true, which is the statement
+\begin_inset Formula 
+\[
+\text{GCD}\left(F_{k+2},F_{k+1}\right)=1.
+\]
+
+\end_inset
+
+To show that 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ we will use the division algorithm which states
+\begin_inset Formula 
+\begin{align*}
+F_{k+2} & =F_{k+1}+F_{k},\quad\text{(By definition of the division algorithm and the Fibonacci numbers)}
+\end{align*}
+
+\end_inset
+
+From the division algorithm,and using the GCD switching theorem, we can
+ see that the 
+\begin_inset Formula $\text{GCD}(F_{k+2},F_{k+1})=\text{GCD}\left(F_{k+1},F_{k}\right)$
+\end_inset
+
+, and since we assume 
+\begin_inset Formula $P\left(k\right)$
+\end_inset
+
+ we know that 
+\begin_inset Formula 
+\begin{align*}
+\text{GCD}\left(F_{k+2},F_{k+1}\right) & =\text{GCD}\left(F_{k+1},F_{k}\right)\\
+ & =1,
+\end{align*}
+
+\end_inset
+
+hence the statement 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true.
+ Therefore the open sentence 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $\text{GCD}\left(2n+1,4n+3\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+, and we want to show that 
+\begin_inset Formula $\text{GCD}\left(2k+1,4k+3\right)=1$
+\end_inset
+
+.
+ We show this using the division algorithm which states 
+\begin_inset Formula 
+\[
+4k+3=2\left(2k+1\right)+1,
+\]
+
+\end_inset
+
+thus, according to the GCD switching theorem, we see that 
+\begin_inset Formula $\text{GCD}\left(2k+1,4k+3\right)=\text{GCD}\left(2k+1,1\right)$
+\end_inset
+
+ which must be 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Therefore if 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+, then the open sentence 
+\begin_inset Formula $\text{GCD}\left(2n+1,4n+3\right)=1$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $\text{GCD}\left(6n+2,12n+6\right)=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+, and we want to show that 
+\begin_inset Formula $\text{GCD}\left(6k+2,12k+6\right)=2$
+\end_inset
+
+.
+ We show this using the division algorithm in combination with the GCD switching
+ theorem which states
+\begin_inset Formula 
+\begin{align*}
+12k+6 & =2\left(6k+2\right)+2\\
+6k+2 & =2\left(3k+1\right)+0\\
+2 & =1\cdot2+0,
+\end{align*}
+
+\end_inset
+
+hence the 
+\begin_inset Formula $\text{GCD}\left(6k+2,12k+6\right)=2$
+\end_inset
+
+.
+ Therefore we have proven that the open sentence 
+\begin_inset Formula $\text{GCD}\left(6n+2,12n+6\right)=2$
+\end_inset
+
+ is true for any integer 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Complete the proof of Theorem 
+\begin_inset Formula $17.13$
+\end_inset
+
+ as follows.
+\end_layout
+
+\begin_layout Enumerate
+Using the fact that the theorem is true for nonnegative 
+\begin_inset Formula $n$
+\end_inset
+
+ and positive 
+\begin_inset Formula $d$
+\end_inset
+
+, prove the theorem for arbitrary 
+\begin_inset Formula $n$
+\end_inset
+
+ and positive 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+ is a positive integer.
+ The statement in theorem 17.13 has already been proven for nonnegative 
+\begin_inset Formula $n$
+\end_inset
+
+ and positive 
+\begin_inset Formula $d$
+\end_inset
+
+, therefore we only need to show for when 
+\begin_inset Formula $n<0$
+\end_inset
+
+.
+ We can show this by writing the division algorithm as 
+\begin_inset Formula 
+\[
+-m=qd+r,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $m=-n$
+\end_inset
+
+ such that 
+\begin_inset Formula $m>0$
+\end_inset
+
+, 
+\begin_inset Formula $q,r\in\mathbb{Z}$
+\end_inset
+
+, and 
+\begin_inset Formula $0\leq r<\left|d\right|$
+\end_inset
+
+.
+ Multiplying the equation on both sides by 
+\begin_inset Formula $-1$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+m & =-qd-r\\
+ & =\left(-q\right)d-r.
+\end{align*}
+
+\end_inset
+
+If 
+\begin_inset Formula $r=0$
+\end_inset
+
+, then the equation reduces to 
+\begin_inset Formula 
+\[
+m=\left(-q\right)d,
+\]
+
+\end_inset
+
+and this statement has already been proven to be true.
+ If 
+\begin_inset Formula $r\neq0$
+\end_inset
+
+, then we can manipulate the equation
+\begin_inset Formula 
+\begin{align*}
+m & =\left(-q\right)d-r+d-d\\
+ & =\left(-q\right)\left(d+1\right)+\left(d-r\right)\\
+ & =\left(-q\right)\ell+k,
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\ell=d+1$
+\end_inset
+
+ is a positive integer, and 
+\begin_inset Formula $k=d-r$
+\end_inset
+
+ is a positive integer since 
+\begin_inset Formula $d>r>0$
+\end_inset
+
+.
+ This also means that 
+\begin_inset Formula $0\leq k<\ell$
+\end_inset
+
+ which is in the form already proven.
+ Therefore Theorem 17.13 is true for arbitrary 
+\begin_inset Formula $n$
+\end_inset
+
+ and positive 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Using the fact that the theorem is true for positive 
+\begin_inset Formula $d$
+\end_inset
+
+, prove the theorem for negative 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $d<0$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $k=-d$
+\end_inset
+
+ so that 
+\begin_inset Formula $k>0$
+\end_inset
+
+.
+ The division algorithm can be written as 
+\begin_inset Formula 
+\begin{align*}
+n & =qd+r\\
+ & =\left(-q\right)k+r,
+\end{align*}
+
+\end_inset
+
+since we know that the theorem is true for positive 
+\begin_inset Formula $d$
+\end_inset
+
+ we know that the theorem applied to the equation 
+\begin_inset Formula 
+\[
+n=\left(-q\right)k+r
+\]
+
+\end_inset
+
+is true.
+ Therefore, theorem is true for negative 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
