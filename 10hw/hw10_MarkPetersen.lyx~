@@ -1,0 +1,1562 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\addtocounter{section}{17}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\begin_modules
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 3in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 10
+\end_layout
+
+\begin_layout After Title Text
+Sections 18 and 19
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Section
+The Extended Euclidean Algorithm
+\end_layout
+
+\begin_layout Exercise
+For each pair of numbers 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ below, calculate 
+\begin_inset Formula $\text{GCD}\left(a,b\right)$
+\end_inset
+
+ and find 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\text{GCD}\left(a,b\right)=ax+by$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Take 
+\begin_inset Formula $a=15$
+\end_inset
+
+ and 
+\begin_inset Formula $b=27$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Using the switching algorithm we can find the 
+\begin_inset Formula $\text{GCD}\left(a,b\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+27 & =1\cdot15+12\\
+15 & =1\cdot12+3\\
+12 & =4\cdot3
+\end{align*}
+
+\end_inset
+
+which shows that 
+\begin_inset Formula $\text{GCD}\left(a,b\right)=3$
+\end_inset
+
+.
+ We can solve for 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ using the steps in the switch algorithm.
+\begin_inset Formula 
+\begin{align*}
+3 & =15-12\\
+ & =15-\left(27-15\right)\\
+ & =2\cdot15-1\cdot27\\
+ & =x\cdot15+y\cdot27,
+\end{align*}
+
+\end_inset
+
+with 
+\begin_inset Formula $x=2$
+\end_inset
+
+ and 
+\begin_inset Formula $y=-1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Take 
+\begin_inset Formula $a=29$
+\end_inset
+
+ and 
+\begin_inset Formula $b=23$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Using the switching algorithm we can find the 
+\begin_inset Formula $\text{GCD}\left(a,b\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+29 & =1\cdot23+6\\
+23 & =3\cdot6+5\\
+6 & =1\cdot5+1,
+\end{align*}
+
+\end_inset
+
+which shows that 
+\begin_inset Formula $\text{GCD}\left(a,b\right)=1$
+\end_inset
+
+.
+ We can solve for 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ using the steps in the switch algorithm.
+\begin_inset Formula 
+\begin{align*}
+1 & =6-5\\
+ & =6-\left(23-3\cdot6\right)\\
+ & =4\cdot6-23\\
+ & =4\left(29-23\right)-23\\
+ & =4\cdot29-5\cdot23
+\end{align*}
+
+\end_inset
+
+with 
+\begin_inset Formula $x=4$
+\end_inset
+
+ and 
+\begin_inset Formula $y=-5$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Take 
+\begin_inset Formula $a=91$
+\end_inset
+
+ and 
+\begin_inset Formula $b=133$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Using the switching algorithm we can find the 
+\begin_inset Formula $\text{GCD}\left(a,b\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+133 & =1\cdot91+42\\
+91 & =2\cdot42+7\\
+42 & =6\cdot7+0
+\end{align*}
+
+\end_inset
+
+which shows that 
+\begin_inset Formula $\text{GCD}\left(a,b\right)=7$
+\end_inset
+
+.
+ We can solve for 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ using the steps in the switch algorithm.
+\begin_inset Formula 
+\begin{align*}
+7 & =91-2\cdot42\\
+ & =91-2\left(133-91\right)\\
+ & =3\cdot91-2\cdot133
+\end{align*}
+
+\end_inset
+
+with 
+\begin_inset Formula $x=3$
+\end_inset
+
+ and 
+\begin_inset Formula $y=-2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Take 
+\begin_inset Formula $a=221$
+\end_inset
+
+ and 
+\begin_inset Formula $b=377$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Using the switching algorithm we can find the 
+\begin_inset Formula $\text{GCD}\left(a,b\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+377 & =1\cdot221+156\\
+221 & =1\cdot156+65\\
+156 & =2\cdot65+26\\
+65 & =2\cdot26+13\\
+26 & =2\cdot13
+\end{align*}
+
+\end_inset
+
+which shows that 
+\begin_inset Formula $\text{GCD}\left(a,b\right)=13$
+\end_inset
+
+.
+ We can solve for 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ using the steps in the switch algorithm.
+\begin_inset Formula 
+\begin{align*}
+13 & =65-2\cdot26\\
+ & =65-2\left(156-2\cdot65\right)\\
+ & =5\cdot65-2\cdot156\\
+ & =5\left(221-156\right)-2\cdot156\\
+ & =5\cdot221-7\cdot156\\
+ & =5\cdot221-7\left(377-221\right)\\
+ & =12\cdot221-7\cdot377
+\end{align*}
+
+\end_inset
+
+with 
+\begin_inset Formula $x=12$
+\end_inset
+
+ and 
+\begin_inset Formula $y=-7$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a,n\in\mathbb{Z}.$
+\end_inset
+
+Assume that 
+\begin_inset Formula $\text{GCD}\left(a,n\right)=1$
+\end_inset
+
+.
+ Prove that there is some 
+\begin_inset Formula $b\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $ab\equiv1\,\text{mod\,}n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\text{GCD}\left(a,n\right)=1$
+\end_inset
+
+ with 
+\begin_inset Formula $a,n\in\mathbb{Z}$
+\end_inset
+
+.
+ From Thm 18.5 we know that the 
+\begin_inset Formula $\text{GCD}\left(a,n\right)$
+\end_inset
+
+ is the smallest positive integral linear combination of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Thus we can write 
+\begin_inset Formula $1=ax+ny$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+.
+ Manipulating this equation yields 
+\begin_inset Formula $1-ax=ny$
+\end_inset
+
+.
+ Thus we can see that 
+\begin_inset Formula $n\mid1-ax$
+\end_inset
+
+ which is equivalent to 
+\begin_inset Formula $ax\equiv1\,\text{mod}\:n$
+\end_inset
+
+.
+ By letting 
+\begin_inset Formula $x=b$
+\end_inset
+
+, we have shown that if the 
+\begin_inset Formula $\text{GCD}\left(a,n\right)=1$
+\end_inset
+
+, then there exists some 
+\begin_inset Formula $b\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $ab\equiv1\,\text{mod\,}n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+The following exercise proves the existence and uniqueness of the lowest
+ terms representation of a rational number.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+, not both zero, and let 
+\begin_inset Formula $d=\text{GCD}\left(a,b\right)$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula 
+\[
+\text{GCD}\left(\frac{a}{d},\frac{b}{d}\right)=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $d=\text{GCD}\left(a,b\right)$
+\end_inset
+
+.
+ From Thm 18.5 we can write 
+\begin_inset Formula $d=ax+by$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+.
+ We know 
+\begin_inset Formula $d$
+\end_inset
+
+ must be positive so we can divide both sides by 
+\begin_inset Formula $d$
+\end_inset
+
+ to get 
+\begin_inset Formula 
+\[
+1=\frac{a}{d}x+\frac{b}{d}y.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $d\mid a$
+\end_inset
+
+ and 
+\begin_inset Formula $d\mid b$
+\end_inset
+
+ we know that 
+\begin_inset Formula $\frac{a}{d},\frac{b}{d}\in\mathbb{Z}$
+\end_inset
+
+.
+ Thus, using Thm 18.10 we can conclude that 
+\begin_inset Formula 
+\[
+\text{GCD}\left(\frac{a}{d},\frac{b}{d}\right)=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that any rational number can be represented as a fraction 
+\begin_inset Formula $\frac{r}{s}$
+\end_inset
+
+ with 
+\begin_inset Formula $r,s\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $s\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $\text{GCD}\left(r,s\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $p_{i}\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{i}\in\mathbb{Z}-\left\{ 0\right\} $
+\end_inset
+
+ where 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+ is an indexing term.
+ We suppose directly that 
+\begin_inset Formula $m$
+\end_inset
+
+ is a rational number of the form 
+\begin_inset Formula $\frac{p_{1}}{q_{1}}$
+\end_inset
+
+.
+ We have two cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let 
+\begin_inset Formula $\text{GCD}\left(p_{1},q_{1}\right)=1$
+\end_inset
+
+, then 
+\begin_inset Formula $\frac{p_{1}}{q_{1}}$
+\end_inset
+
+ is already in lowest terms.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $\text{GCD}\left(p_{1},q_{1}\right)=k_{1}$
+\end_inset
+
+ for some 
+\begin_inset Formula $k_{1}\in\mathbb{N}>1$
+\end_inset
+
+, then 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ divides both 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ such that 
+\begin_inset Formula $p_{1}=k_{1}p_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{1}=kq_{2}$
+\end_inset
+
+.
+ We can then write the rational number 
+\begin_inset Formula $m$
+\end_inset
+
+ as 
+\begin_inset Formula $\frac{p_{2}}{q_{2}}$
+\end_inset
+
+.
+ This process can be repeated until 
+\begin_inset Formula $\text{GCD}\left(p_{n},q_{n}\right)=1$
+\end_inset
+
+.
+ At this point we can write 
+\begin_inset Formula $m=\frac{p_{n}}{q_{n}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Therefore, any rational number can be represented as a fraction 
+\begin_inset Formula $\frac{r}{s}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\text{GCD}\left(r,s\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that every rational number has a unique representation, as in part
+ (b), with 
+\begin_inset Formula $s\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose by contradiction that 
+\begin_inset Formula $m$
+\end_inset
+
+ is a rational number that can be written as 
+\begin_inset Formula $\frac{r}{s}$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ where 
+\begin_inset Formula $r,a\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $s,b\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $r\neq a$
+\end_inset
+
+, 
+\begin_inset Formula $b\neq s$
+\end_inset
+
+, 
+\begin_inset Formula $\text{GCD}\left(r,s\right)=1$
+\end_inset
+
+, and 
+\begin_inset Formula $\text{GCD}\left(a,b\right)=1$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $m=\frac{r}{s}=\frac{a}{b}.$
+\end_inset
+
+ This statement gives us two equations: 
+\begin_inset Formula $r=\frac{sa}{b}$
+\end_inset
+
+ and 
+\begin_inset Formula $a=\frac{rb}{s}$
+\end_inset
+
+.
+ From Thm 18.10 we also know that 
+\begin_inset Formula $1=rx+sy$
+\end_inset
+
+ and 
+\begin_inset Formula $1=ak+b\ell$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y,k,\ell\in\mathbb{Z}$
+\end_inset
+
+.
+ We can manipulate these equations to get 
+\begin_inset Formula 
+\begin{align*}
+1 & =rx+sy\\
+1 & =\frac{sa}{b}x+sy\\
+b & =s\left(ax+by\right),
+\end{align*}
+
+\end_inset
+
+which shows that 
+\begin_inset Formula $s\mid b$
+\end_inset
+
+.
+ In a similar manner we get 
+\begin_inset Formula 
+\begin{align*}
+1 & =ak+b\ell\\
+1 & =\frac{rb}{s}k+b\ell\\
+s & =b\left(rk+b\ell\right),
+\end{align*}
+
+\end_inset
+
+which shows that 
+\begin_inset Formula $b\mid s$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $s\mid b$
+\end_inset
+
+ and 
+\begin_inset Formula $b\mid s$
+\end_inset
+
+ we know that 
+\begin_inset Formula $\left|s\right|=\left|b\right|$
+\end_inset
+
+.
+ Using this with the fact that 
+\begin_inset Formula $\frac{r}{s}=\frac{a}{b}$
+\end_inset
+
+, we know that 
+\begin_inset Formula $\left|r\right|=\left|a\right|$
+\end_inset
+
+.
+ Under the assumption that 
+\begin_inset Formula $r\neq a$
+\end_inset
+
+, 
+\begin_inset Formula $b\neq s$
+\end_inset
+
+, this means that 
+\begin_inset Formula $r=-a$
+\end_inset
+
+ and 
+\begin_inset Formula $s=-b$
+\end_inset
+
+.
+ This is a contradiction to the assumption that 
+\begin_inset Formula $s,b\in\mathbb{N}$
+\end_inset
+
+.
+ Thus we have shown by contradiction that every rational number has a unique
+ representation 
+\begin_inset Formula $\frac{r}{s}$
+\end_inset
+
+ where 
+\begin_inset Formula $r\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $s\in\mathbb{N}$
+\end_inset
+
+, and 
+\begin_inset Formula $\text{GCD}\left(r,s\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+, with 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, and let 
+\begin_inset Formula $d=\text{GCD}\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Prove or disprove the equality 
+\begin_inset Formula $\text{GCD}\left(a,b/d\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof.
+\end_layout
+
+\end_inset
+
+ We will disprove the equality 
+\begin_inset Formula $\text{GCD}\left(a,b/d\right)=1$
+\end_inset
+
+ with a simple contradiction.
+ Let 
+\begin_inset Formula $a=10$
+\end_inset
+
+, 
+\begin_inset Formula $b=4$
+\end_inset
+
+, then 
+\begin_inset Formula $2=\text{GCD}\left(10,4\right)$
+\end_inset
+
+; however, 
+\begin_inset Formula $2=\text{GCD}\left(10,4/2\right)$
+\end_inset
+
+.
+ Hence the statement is not true.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove or disprove: If 
+\begin_inset Formula $c$
+\end_inset
+
+ is a positive common divisor of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, and 
+\begin_inset Formula $c=ax+by$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $c=d$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $c=d$
+\end_inset
+
+ under the prescribed conditions.
+ To this this we will first show that 
+\begin_inset Formula $d\leq c$
+\end_inset
+
+, and then we will show that 
+\begin_inset Formula $c\leq d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(d\leq c\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $d=\text{GCD}\left(a,b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $c\mid a$
+\end_inset
+
+, 
+\begin_inset Formula $c\mid b$
+\end_inset
+
+, 
+\begin_inset Formula $c\in\mathbb{N}$
+\end_inset
+
+, and 
+\begin_inset Formula $c=ax+by$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+.
+ According to Thm 18.5 we know that 
+\begin_inset Formula $d$
+\end_inset
+
+ is the smallest positive integral linear combination of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula $d\leq c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(c\leq d\right)$
+\end_inset
+
+: We suppose by contradiction that 
+\begin_inset Formula $c\mid a$
+\end_inset
+
+, 
+\begin_inset Formula $c\mid b$
+\end_inset
+
+, 
+\begin_inset Formula $c=ax+by$
+\end_inset
+
+, 
+\begin_inset Formula $d=\text{GCD}\left(a,b\right)$
+\end_inset
+
+ and that 
+\begin_inset Formula $c>d$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $c\mid a$
+\end_inset
+
+ and 
+\begin_inset Formula $c\mid b$
+\end_inset
+
+, then 
+\begin_inset Formula $c$
+\end_inset
+
+ is a common divisor of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Also since we assume that 
+\begin_inset Formula $c>d$
+\end_inset
+
+, this means that 
+\begin_inset Formula $\text{GCD}\left(a,b\right)\neq d$
+\end_inset
+
+.
+ This is a contradiction.
+ Therefore we know that 
+\begin_inset Formula $c\leq d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We have shown that 
+\begin_inset Formula $d\leq c$
+\end_inset
+
+ and that 
+\begin_inset Formula $c\leq d$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $c=d$
+\end_inset
+
+.
+ therefore the statement is true.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a,b,c,d\in\mathbb{Z}$
+\end_inset
+
+.
+ Assume that 
+\begin_inset Formula $\text{GCD}\left(a,b\right)=1$
+\end_inset
+
+.
+ Prove that if 
+\begin_inset Formula $c\mid a$
+\end_inset
+
+ and 
+\begin_inset Formula $d\mid b$
+\end_inset
+
+, then 
+\begin_inset Formula $\text{GCD}\left(c,d\right)=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\text{GCD}\left(a,b\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $c\mid a$
+\end_inset
+
+ and that 
+\begin_inset Formula $d\mid b$
+\end_inset
+
+ with 
+\begin_inset Formula $a,b,c,d\in\mathbb{Z}$
+\end_inset
+
+.
+ We can write 
+\begin_inset Formula $a=ck$
+\end_inset
+
+ and 
+\begin_inset Formula $b=d\ell$
+\end_inset
+
+ for some 
+\begin_inset Formula $k,\ell\in\mathbb{Z}$
+\end_inset
+
+.
+ From Thm 
+\begin_inset Formula $18.5$
+\end_inset
+
+ we can write 
+\begin_inset Formula $1=ax+by$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+.
+ Substituting in the equalities of 
+\begin_inset Formula $a,b$
+\end_inset
+
+ yields
+\begin_inset Formula 
+\begin{align*}
+1 & =ax+by\\
+ & =ckx+d\ell y\\
+ & =c\left(kx\right)+d\left(\ell y\right),
+\end{align*}
+
+\end_inset
+
+which shows that 
+\begin_inset Formula $\text{GCD}\left(c,d\right)=1$
+\end_inset
+
+ according to Thm 
+\begin_inset Formula $18.5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a,b$
+\end_inset
+
+ be positive integers.
+ A common multiple of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ is an integer 
+\begin_inset Formula $n$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\mid n$
+\end_inset
+
+ and 
+\begin_inset Formula $b\mid n$
+\end_inset
+
+.
+ The least common multiple of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, written as 
+\begin_inset Formula $\text{LCM}\left(a,b\right)$
+\end_inset
+
+, is the smallest positive common multiple of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Determine the LCM of 
+\begin_inset Formula $12$
+\end_inset
+
+ and 
+\begin_inset Formula $18$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{LCM}\left(12,18\right)=36$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine the LCM of 
+\begin_inset Formula $21$
+\end_inset
+
+ and 
+\begin_inset Formula $35$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\text{LCM}\left(21,35\right)=105$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $\text{LCM}\left(a,b\right)=\frac{ab}{d}$
+\end_inset
+
+, where 
+\begin_inset Formula $d=\text{GCD}\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that if 
+\begin_inset Formula $d=\text{GCD}\left(a,b\right)$
+\end_inset
+
+, then the
+\begin_inset Formula $\text{LCM}\left(a,b\right)=\frac{ab}{d}$
+\end_inset
+
+.
+ We do this in two steps.
+ We first show that 
+\begin_inset Formula $\text{LCM}\left(a,b\right)\leq\frac{ab}{d}$
+\end_inset
+
+, and then we will show that 
+\begin_inset Formula $\text{LCM}\left(a,b\right)\geq\frac{ab}{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\leq\right):$
+\end_inset
+
+We suppose directly that 
+\begin_inset Formula $d=\text{GCD}\left(a,b\right)$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $a'=\frac{a}{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $b'=\frac{b}{d}$
+\end_inset
+
+ where 
+\begin_inset Formula $a',b'\in\mathbb{N}$
+\end_inset
+
+ since 
+\begin_inset Formula $d\mid a$
+\end_inset
+
+ and 
+\begin_inset Formula $d\mid b$
+\end_inset
+
+.
+ We can then write the term 
+\begin_inset Formula $\frac{ab}{d}$
+\end_inset
+
+ as 
+\begin_inset Formula $a'b$
+\end_inset
+
+ or 
+\begin_inset Formula $ab'$
+\end_inset
+
+.
+ From these forms we can see that 
+\begin_inset Formula $a\mid\frac{ab}{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\mid\frac{ab}{d}$
+\end_inset
+
+.
+ This shows that 
+\begin_inset Formula $\frac{ab}{d}$
+\end_inset
+
+ is a common multiple of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ We also know that 
+\begin_inset Formula $a\mid\frac{ab}{d}k$
+\end_inset
+
+ and 
+\begin_inset Formula $b\mid\frac{ab}{d}k$
+\end_inset
+
+ for any 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+.
+ This shows that 
+\begin_inset Formula $\frac{ab}{d}$
+\end_inset
+
+ is a lower common multiple than any multiples of 
+\begin_inset Formula $\frac{ab}{d}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\text{LCM}\left(a,b\right)\leq\frac{ab}{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\geq\right)$
+\end_inset
+
+: We suppose by contradiction that 
+\begin_inset Formula $d=\text{GCD}\left(a,b\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\text{LCM}\left(a,b\right)<\frac{ab}{d}$
+\end_inset
+
+.
+ Then there exists a number 
+\begin_inset Formula $\in\mathbb{N}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\text{LCM}\left(a,b\right)=\frac{ab}{dm}<\frac{ab}{d}$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula $\frac{ab}{dm}=az$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{ab}{dm}=bw$
+\end_inset
+
+ for some 
+\begin_inset Formula $z,w\in\mathbb{N}$
+\end_inset
+
+.
+ Looking closely at the equation 
+\begin_inset Formula $\frac{ab}{dm}=az$
+\end_inset
+
+ we can reduce it to 
+\begin_inset Formula $\frac{b}{dm}=\frac{b'}{m}=z$
+\end_inset
+
+, and looking closely at the equation 
+\begin_inset Formula $\frac{ab}{dm}=bw$
+\end_inset
+
+ we can reduce it to 
+\begin_inset Formula $\frac{a}{dm}=\frac{a'}{m}=w$
+\end_inset
+
+.
+ But this is a contradiction since it states that 
+\begin_inset Formula $m\mid a$
+\end_inset
+
+ and 
+\begin_inset Formula $m\mid b$
+\end_inset
+
+ which cant be the case since 
+\begin_inset Formula $d=\mbox{\text{GCD}\left(a,b\right)}$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $\text{LCM}\left(a,b\right)\geq\frac{ab}{d}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Because
+\begin_inset Formula $\text{LCM}\left(a,b\right)\leq\frac{ab}{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $\text{LCM}\left(a,b\right)\geq\frac{ab}{d}$
+\end_inset
+
+, 
+\begin_inset Formula $\text{LCM}\left(a,b\right)=\frac{ab}{d}$
+\end_inset
+
+ if 
+\begin_inset Formula $a,b$
+\end_inset
+
+ are positive integers, and 
+\begin_inset Formula $b=\text{GCD}\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Prime Numbers
+\end_layout
+
+\begin_layout Exercise
+For each of the following integers 
+\begin_inset Formula $n$
+\end_inset
+
+, give its canonical prime factorization.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n=27$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n=3072$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n=60$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
