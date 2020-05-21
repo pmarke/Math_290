@@ -1178,7 +1178,7 @@ We suppose directly that
 \begin_inset Formula 
 \begin{align*}
 1 & =ax+by\\
- & =ckx+d\ell y\\
+ & =\left(ck\right)x+\left(d\ell\right)y\\
  & =c\left(kx\right)+d\left(\ell y\right),
 \end{align*}
 
@@ -1387,28 +1387,6 @@ We suppose directly that
 \end_inset
 
 .
- We also know that 
-\begin_inset Formula $a\mid\frac{ab}{d}k$
-\end_inset
-
- and 
-\begin_inset Formula $b\mid\frac{ab}{d}k$
-\end_inset
-
- for any 
-\begin_inset Formula $k\in\mathbb{N}$
-\end_inset
-
-.
- This shows that 
-\begin_inset Formula $\frac{ab}{d}$
-\end_inset
-
- is a lower common multiple than any multiples of 
-\begin_inset Formula $\frac{ab}{d}$
-\end_inset
-
-.
  Thus 
 \begin_inset Formula $\text{LCM}\left(a,b\right)\leq\frac{ab}{d}$
 \end_inset
@@ -1430,7 +1408,7 @@ We suppose directly that
 
 .
  Then there exists a number 
-\begin_inset Formula $\in\mathbb{N}$
+\begin_inset Formula $m\in\mathbb{N}>1$
 \end_inset
 
  such that 
@@ -1469,18 +1447,25 @@ We suppose directly that
 
 .
  But this is a contradiction since it states that 
-\begin_inset Formula $m\mid a$
+\begin_inset Formula $m\mid a'$
 \end_inset
 
  and 
-\begin_inset Formula $m\mid b$
+\begin_inset Formula $m\mid b'$
 \end_inset
 
  which cant be the case since 
 \begin_inset Formula $d=\mbox{\text{GCD}\left(a,b\right)}$
 \end_inset
 
-.
+, and according to problem 18.3 
+\begin_inset Formula 
+\[
+\text{GDC}\left(\frac{a}{d},\frac{b}{d}\right)=\text{GDC}\left(a',b'\right)=1.
+\]
+
+\end_inset
+
  Therefore, 
 \begin_inset Formula $\text{LCM}\left(a,b\right)\geq\frac{ab}{d}$
 \end_inset

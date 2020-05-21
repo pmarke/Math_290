@@ -1178,7 +1178,7 @@ We suppose directly that
 \begin_inset Formula 
 \begin{align*}
 1 & =ax+by\\
- & =ckx+d\ell y\\
+ & =\left(ck\right)x+\left(d\ell\right)y\\
  & =c\left(kx\right)+d\left(\ell y\right),
 \end{align*}
 
@@ -1387,28 +1387,6 @@ We suppose directly that
 \end_inset
 
 .
- We also know that 
-\begin_inset Formula $a\mid\frac{ab}{d}k$
-\end_inset
-
- and 
-\begin_inset Formula $b\mid\frac{ab}{d}k$
-\end_inset
-
- for any 
-\begin_inset Formula $k\in\mathbb{N}$
-\end_inset
-
-.
- This shows that 
-\begin_inset Formula $\frac{ab}{d}$
-\end_inset
-
- is a lower common multiple than any multiples of 
-\begin_inset Formula $\frac{ab}{d}$
-\end_inset
-
-.
  Thus 
 \begin_inset Formula $\text{LCM}\left(a,b\right)\leq\frac{ab}{d}$
 \end_inset
@@ -1430,7 +1408,7 @@ We suppose directly that
 
 .
  Then there exists a number 
-\begin_inset Formula $\in\mathbb{N}$
+\begin_inset Formula $m\in\mathbb{N}$
 \end_inset
 
  such that 
@@ -2632,7 +2610,7 @@ so
 \end_inset
 
 .
- There the set 
+ Thus the set 
 \begin_inset Formula $S$
 \end_inset
 
@@ -3108,12 +3086,173 @@ for some
  Equating the two equations yields
 \begin_inset Formula 
 \[
-4k
+4k-1=p_{1}p_{2}\cdots p_{n},
 \]
 
 \end_inset
 
+which can be written as 
+\begin_inset Formula 
+\[
+4k=p_{1}p_{2}\cdots p_{n}+1.
+\]
 
+\end_inset
+
+According to the division algorithm, at least one of the primes 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ with 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+ divides 
+\begin_inset Formula $4k$
+\end_inset
+
+ with a remainder of 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $p_{i}\equiv-1\,\text{\mod\,}4$
+\end_inset
+
+.
+ Therefore if 
+\begin_inset Formula $N\equiv-1\,\text{mod}\,4$
+\end_inset
+
+, then 
+\begin_inset Formula $N$
+\end_inset
+
+ is divisible by some prime 
+\begin_inset Formula $p$
+\end_inset
+
+ such that 
+\begin_inset Formula $p\equiv-1\,\text{mod}\,4$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that there are infinitely many primes 
+\begin_inset Formula $p$
+\end_inset
+
+ that are congruent to 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $4$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $S$
+\end_inset
+
+ is any finite nonempty set of prime numbers that are congruent to 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $4$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula 
+\[
+N=4\underbrace{\prod}_{p\in S}p-1,
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $N$
+\end_inset
+
+ is divisible by some prime 
+\begin_inset Formula $q$
+\end_inset
+
+ that is congruent to 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $4$
+\end_inset
+
+ by Theorem 19.7 and part c) of this problem.
+ Using the division algorithm to divide 
+\begin_inset Formula $N$
+\end_inset
+
+ by any prime 
+\begin_inset Formula $p\in S$
+\end_inset
+
+ leaves a remainder of 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ So no prime in 
+\begin_inset Formula $S$
+\end_inset
+
+ divides 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Hence, 
+\begin_inset Formula $q$
+\end_inset
+
+ must be a prime that is not in 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Thus the set 
+\begin_inset Formula $S$
+\end_inset
+
+ cannot include the set of all primes that are congruent to 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $4$
+\end_inset
+
+.
+ Since no finite set can contain all of the primes that are congruent to
+ 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $4$
+\end_inset
+
+, then there must be an infinite number of these types of primes.
+ 
 \end_layout
 
 \end_deeper
