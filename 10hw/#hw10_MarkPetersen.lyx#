@@ -1622,21 +1622,21 @@ then
 We want to show that the open sentence 
 \begin_inset Formula 
 \[
-P\left(n\right):\:\text{if \ensuremath{p\mid a_{1}a_{2}\cdots a_{n}} then \ensuremath{p\mid a_{i}} for some \ensuremath{1\leq i\leq n}}
+P\left(n\right):\,\text{if \ensuremath{p\mid a_{1}a_{2}\cdots a_{n}} then p\mid a_{i} for some 1\leq i\leq n }
 \]
 
 \end_inset
 
-where 
+is true with 
 \begin_inset Formula $p$
 \end_inset
 
- is a prime number 
-\begin_inset Formula $a_{1},\ldots,a_{n}\in\mathbb{Z}$
+ a prime number, 
+\begin_inset Formula $n\in\mathbb{N}$
 \end_inset
 
- and 
-\begin_inset Formula $n\in\mathbb{N}$
+, and 
+\begin_inset Formula $a_{1},\ldots,a_{n}\in\mathbb{Z}$
 \end_inset
 
 .
@@ -1652,16 +1652,42 @@ Base Case
 \begin_inset Formula $P\left(1\right)$
 \end_inset
 
- which is the statement 
-\begin_inset Formula 
-\[
-p\mid a_{1}\implies p\mid a_{1},
-\]
-
+ and 
+\begin_inset Formula $P\left(2\right)$
 \end_inset
 
-which is true.
- 
+.
+ For 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ we have that if 
+\begin_inset Formula $p\mid a_{1}$
+\end_inset
+
+ then 
+\begin_inset Formula $p\mid a_{i}$
+\end_inset
+
+for some 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+.
+ Since we only have one 
+\begin_inset Formula $a$
+\end_inset
+
+, then 
+\begin_inset Formula $p\mid a_{1}$
+\end_inset
+
+.
+ The statement 
+\begin_inset Formula $P\left(2\right)$
+\end_inset
+
+ was proven in Thm 19.5 of the book.
 \end_layout
 
 \begin_layout Proof
@@ -1670,31 +1696,1181 @@ which is true.
 Induction Step
 \series default
 : We suppose that 
-\begin_inset Formula $P\left(k\right)$
-\end_inset
-
- is true for some 
 \begin_inset Formula $k\in\mathbb{N}$
 \end_inset
 
-, and we what to show that 
+, and that 
+\begin_inset Formula $P\left(k\right)$
+\end_inset
+
+ is true.
+ We want to show that 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true which is the statement: if 
+\begin_inset Formula $p\mid a_{1}\cdots a_{k+1}$
+\end_inset
+
+, then 
+\begin_inset Formula $p\mid a_{i}$
+\end_inset
+
+ for some 
+\begin_inset Formula $1\leq i\leq k+1$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $b=a_{1}\cdots a_{k}$
+\end_inset
+
+ such that we can write 
+\begin_inset Formula $p\mid ba_{k+1}$
+\end_inset
+
+.
+ We know from Thm 19.5 that if 
+\begin_inset Formula $p\mid ba_{k+1}$
+\end_inset
+
+, then 
+\begin_inset Formula $p\mid b$
+\end_inset
+
+ or 
+\begin_inset Formula $p\mid a_{k+1}$
+\end_inset
+
+.
+ This gives us two cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+If 
+\begin_inset Formula $p\mid a_{k+1}$
+\end_inset
+
+, then were done.
+\end_layout
+
+\begin_layout Case
+If 
+\begin_inset Formula $p\mid b$
+\end_inset
+
+, then since we suppose 
+\begin_inset Formula $P\left(k\right)$
+\end_inset
+
+ to be true, we know that 
+\begin_inset Formula $p\mid a_{i}$
+\end_inset
+
+ for some 
+\begin_inset Formula $1\leq i\leq k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Hence 
 \begin_inset Formula $P\left(k+1\right)$
 \end_inset
 
  is true.
- From the open sentence we assume that 
+ Therefore the open sentence 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $n>1$
+\end_inset
+
+ be a natural number.
+ Prove that the smallest divisor 
+\begin_inset Formula $d$
+\end_inset
+
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+ that is greater than 
+\begin_inset Formula $1$
+\end_inset
+
+ is prime.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $n>1$
+\end_inset
+
+ is a natural number.
+ Any composite divisor 
+\begin_inset Formula $m$
+\end_inset
+
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+ can be factored into primes according to fundamental theorem of arithmetic.
+ Since the prime factors of 
+\begin_inset Formula $m$
+\end_inset
+
+ are always less than 
+\begin_inset Formula $m$
+\end_inset
+
+, we know that the a composite number cannot be the smallest divisor greater
+ than 
+\begin_inset Formula $1$
+\end_inset
+
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Therefore, we only need to look at the unique prime factorization of 
+\begin_inset Formula $n$
+\end_inset
+
+, which is 
 \begin_inset Formula 
 \[
-m\mid a_{1}a_{2}\cdots a_{k+1},
+n=p_{1}p_{2}\cdots p_{k}
 \]
 
 \end_inset
 
 where 
-\begin_inset Formula $m$
+\begin_inset Formula $p_{1}\leq p_{2}\leq\cdots\leq p_{k}$
 \end_inset
 
- is a prime number.
+ are prime numbers, and take the smallest prime number 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+.
+ Hence the smallest divisor 
+\begin_inset Formula $d$
+\end_inset
+
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+ that is greater than 
+\begin_inset Formula $1$
+\end_inset
+
+ is prime.
+ 
+\end_layout
+
+\begin_layout Exercise
+The goal of this exercise is to prove that there are infinitely many primes
+ which are congruent to 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ We will do this in a series of steps.
+\end_layout
+
+\begin_layout Enumerate
+Prove that, with only one exception, every prime number is congruent to
+ either 
+\begin_inset Formula $1$
+\end_inset
+
+ or 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 3.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $q$
+\end_inset
+
+ be a prime number greater than 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $3\nmid q$
+\end_inset
+
+.
+ Since every 3rd natural number is a multiple of 
+\begin_inset Formula $3$
+\end_inset
+
+, we know that 
+\begin_inset Formula $3\mid\left(q+1\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $3\mid\left(q+2\right)$
+\end_inset
+
+ since either 
+\begin_inset Formula $q+1$
+\end_inset
+
+ or 
+\begin_inset Formula $q+2$
+\end_inset
+
+ will be a multiple of 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $q+2$
+\end_inset
+
+ is a multiple of three, then 
+\begin_inset Formula $q+2-3=q-1$
+\end_inset
+
+ is a multiple of 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $3\mid q+1$
+\end_inset
+
+ or 
+\begin_inset Formula $3\mid q-1$
+\end_inset
+
+.
+ This is equivalent to saying that every prime number greater than 
+\begin_inset Formula $3$
+\end_inset
+
+ is congruent to either 
+\begin_inset Formula $1$
+\end_inset
+
+ or 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ The last two prime numbers that we need to investigate are 
+\begin_inset Formula $2$
+\end_inset
+
+ and 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Well 
+\begin_inset Formula $2+1=3$
+\end_inset
+
+ which implies 
+\begin_inset Formula $3\mid2+1$
+\end_inset
+
+ thus 
+\begin_inset Formula $2\equiv-1\,\text{mod}\,3$
+\end_inset
+
+.
+ Lastly 
+\begin_inset Formula $3\mid3$
+\end_inset
+
+ which implies 
+\begin_inset Formula $3\nmid\left(3\pm1\right)$
+\end_inset
+
+ and thus 
+\begin_inset Formula $3$
+\end_inset
+
+ is not congruent to either 
+\begin_inset Formula $1$
+\end_inset
+
+ or 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Thus we have shown that every prime number other than 
+\begin_inset Formula $3$
+\end_inset
+
+ is congruent to either 
+\begin_inset Formula $1$
+\end_inset
+
+ or 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that for any 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ and any 
+\begin_inset Formula $a_{1},\ldots,a_{n}\in\mathbb{Z}$
+\end_inset
+
+, if each 
+\begin_inset Formula $a_{i}\equiv1\,\text{mod}\:3$
+\end_inset
+
+, then the product 
+\begin_inset Formula $a_{1}a_{2}\cdots a_{n}\equiv1\,\text{mod}\,3$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that the open sentence 
+\begin_inset Formula 
+\[
+P\left(n\right):\,\text{if each a_{i}\equiv1\,\text{mod}\:3 , then the product a_{1}a_{2}\cdots a_{n}\equiv1\,\text{mod}\,3 }
+\]
+
+\end_inset
+
+is true for any 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+ and any 
+\begin_inset Formula $a_{1},\ldots,a_{n}\in\mathbb{Z}$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify 
+\begin_inset Formula $P\left(2\right)$
+\end_inset
+
+.
+ We assume that 
+\begin_inset Formula $a_{1}\equiv1\:\text{mod}\,3$
+\end_inset
+
+ and that 
+\begin_inset Formula $a_{2}\equiv1\:\text{\mod}\,3$
+\end_inset
+
+ which is equivalent to saying 
+\begin_inset Formula $a_{1}-1=3m_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{2}-1=3m_{2}$
+\end_inset
+
+ for some 
+\begin_inset Formula $m_{1},m_{2}\in\mathbb{Z}$
+\end_inset
+
+.
+ Using these identities, the product 
+\begin_inset Formula $a_{1}a_{2}$
+\end_inset
+
+ can be written as 
+\begin_inset Formula 
+\begin{align*}
+a_{1}a_{2} & =\left(3m_{1}+1\right)\left(3m_{2}+1\right)\\
+ & =3\cdot3m_{1}m_{2}+3m_{1}+3m_{2}+1\\
+ & =3\left(3m_{1}m_{2}+m_{1}+m_{2}\right)+1
+\end{align*}
+
+\end_inset
+
+which can be written as 
+\begin_inset Formula 
+\[
+a_{1}a_{2}-1=3k,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $k=3m_{1}m_{2}+m_{1}+m_{2}$
+\end_inset
+
+.
+ This is equivalent to saying 
+\begin_inset Formula $a_{1}a_{2}\equiv1\,\text{mod}\,3$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $P\left(2\right)$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: We suppose that 
+\begin_inset Formula $P\left(j\right)$
+\end_inset
+
+ is true for some 
+\begin_inset Formula $j\in\mathbb{N}$
+\end_inset
+
+, and we want to show that 
+\begin_inset Formula $P\left(j+1\right)$
+\end_inset
+
+ is true.
+ We begin with writing the product 
+\begin_inset Formula 
+\[
+a_{1}a_{2}\cdots a_{j}a_{j+1}=ba_{j+1}.
+\]
+
+\end_inset
+
+Since we assume 
+\begin_inset Formula $P\left(j\right)$
+\end_inset
+
+ to be true, we know that 
+\begin_inset Formula $b\equiv1\,\text{mod}\,3$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $b=3y_{b}+1$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{j+1}=3y_{j+1}+1$
+\end_inset
+
+ for some 
+\begin_inset Formula $y_{b},y_{j+1}\in\mathbb{Z}$
+\end_inset
+
+.
+ Taking their product we get 
+\begin_inset Formula 
+\begin{align*}
+ba_{j+1} & =\left(3y_{b}+1\right)\left(3y_{j+1}+1\right)\\
+ & =3\left(3y_{b}y_{j+1}+y_{b}+y_{j+1}\right)+1
+\end{align*}
+
+\end_inset
+
+which can be written as 
+\begin_inset Formula 
+\[
+ba_{j+1}=3\ell+1
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\ell=3y_{b}y_{j+1}+y_{b}+y_{j+1}$
+\end_inset
+
+.
+ This is equivalent to saying 
+\begin_inset Formula $ba_{j+1}=a_{1}a_{2}\cdots a_{j}a_{j+1}\equiv1\,\text{mod}\,3$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $P\left(j+1\right)$
+\end_inset
+
+ is true.
+ Therefore the open sentence 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for any 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Suppose that 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+, and 
+\begin_inset Formula $N\equiv-1\,\text{mod}\,3$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $N$
+\end_inset
+
+ is divisible by some prime 
+\begin_inset Formula $p$
+\end_inset
+
+ such that 
+\begin_inset Formula $p\equiv-1\,\text{mod}\,3$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $N\in n$
+\end_inset
+
+, and 
+\begin_inset Formula $N\equiv-1\,\text{mod}\,3$
+\end_inset
+
+.
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ can be factored out into primes according to the fundamental theorem of
+ arithmetic as 
+\begin_inset Formula 
+\[
+N=p_{1}p_{2}\cdots p_{k}.
+\]
+
+\end_inset
+
+From part a) we know that every prime other than 
+\begin_inset Formula $3$
+\end_inset
+
+ is congruent to either 
+\begin_inset Formula $1$
+\end_inset
+
+ or 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $N=3m-1$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{N}$
+\end_inset
+
+, we know that 
+\begin_inset Formula $3\nmid N$
+\end_inset
+
+ such that 
+\begin_inset Formula $3\neq p_{i}$
+\end_inset
+
+ for any 
+\begin_inset Formula $1\leq i\leq k$
+\end_inset
+
+.
+ Thus all the prime factors of 
+\begin_inset Formula $N$
+\end_inset
+
+ are either congruent to either 
+\begin_inset Formula $1$
+\end_inset
+
+ or 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $q$
+\end_inset
+
+ denote the product of all the prime factors of 
+\begin_inset Formula $N$
+\end_inset
+
+ that are congruent to 
+\begin_inset Formula $1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ From part b) we know that 
+\begin_inset Formula $q$
+\end_inset
+
+ is congruent to 
+\begin_inset Formula $1$
+\end_inset
+
+ module 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Hence we can write 
+\begin_inset Formula $N$
+\end_inset
+
+ as 
+\begin_inset Formula 
+\[
+N=qx_{1}x_{2}\cdots x_{j}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ denotes a prime that is congruent to 
+\begin_inset Formula $1$
+\end_inset
+
+ module 
+\begin_inset Formula $3$
+\end_inset
+
+ and 
+\begin_inset Formula $j\leq k$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $j=k$
+\end_inset
+
+, then let 
+\begin_inset Formula $q=1$
+\end_inset
+
+ with no loss in generality.
+ This just means that there are no prime factors of 
+\begin_inset Formula $n$
+\end_inset
+
+ that are congruent to 
+\begin_inset Formula $1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ According to lemma 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:odd"
+
+\end_inset
+
+, the product 
+\begin_inset Formula $x_{1}x_{2}\cdots x_{j}$
+\end_inset
+
+ is congruent to 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $j$
+\end_inset
+
+ is odd.
+ So if 
+\begin_inset Formula $j$
+\end_inset
+
+ is even, then 
+\begin_inset Formula $qx_{1}x_{2}\cdots x_{j}$
+\end_inset
+
+ is congruent to 
+\begin_inset Formula $1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+ according to part b), and if 
+\begin_inset Formula $j$
+\end_inset
+
+ is odd, then 
+\begin_inset Formula $x_{1}x_{2}\cdots x_{j}$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $3\gamma-1$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula 
+\begin{align*}
+N & =qx_{1}x_{2}\cdots x_{j}\\
+ & =\left(3m_{q}+1\right)\left(3\gamma-1\right)\\
+ & =3\left(3m_{q}m_{\gamma}-m_{q}+\gamma\right)-1,
+\end{align*}
+
+\end_inset
+
+which is congruent to 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $N\equiv-1\,\text{mod}\,3$
+\end_inset
+
+, then the prime factorization of 
+\begin_inset Formula $N$
+\end_inset
+
+ contains an odd number of primes that are congruent to 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that there are infinitely many primes 
+\begin_inset Formula $p$
+\end_inset
+
+ that are congruent to 
+\begin_inset Formula $-1$
+\end_inset
+
+ modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Appendix
+
+\end_layout
+
+\begin_layout Lemma
+Every prime number other than 
+\begin_inset Formula $2$
+\end_inset
+
+ is odd.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $p$
+\end_inset
+
+ is a prime number and let 
+\begin_inset Formula $q$
+\end_inset
+
+ be a prime number greater than 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Since the only positive divisors of a prime number is itself and 
+\begin_inset Formula $1$
+\end_inset
+
+ we know that 
+\begin_inset Formula $q\neq2m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{N}$
+\end_inset
+
+, otherwise the prime number 
+\begin_inset Formula $q$
+\end_inset
+
+ would have 
+\begin_inset Formula $2$
+\end_inset
+
+ as a divisor, at which point it wouldn't be a prime number.
+ Therefore 
+\begin_inset Formula $2\nmid q$
+\end_inset
+
+ thus 
+\begin_inset Formula $q$
+\end_inset
+
+ is odd.
+ Since the prime number 
+\begin_inset Formula $2=2k$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, it is even.
+ Thus we have shown that every prime number other than 
+\begin_inset Formula $2$
+\end_inset
+
+ is odd.
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:odd"
+
+\end_inset
+
+Let 
+\begin_inset Formula $p_{1},p_{2},\ldots,p_{k}$
+\end_inset
+
+ be prime numbers such that 
+\begin_inset Formula $p_{i}\equiv-1\,\text{mod}\,3$
+\end_inset
+
+ with 
+\begin_inset Formula $1\leq i\leq k$
+\end_inset
+
+.
+ The product 
+\begin_inset Formula $p_{1}p_{2}\cdots p_{k}\equiv-1\,\text{mod}\,3$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $k$
+\end_inset
+
+ is odd.
+ 
+\end_layout
+
+\begin_layout Proof
+Since this is a biconditional statement we must prove both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We want to show that the open sentence 
+\begin_inset Formula 
+\[
+Q\left(k\right):\,\text{If \ensuremath{k} is odd, then \ensuremath{p_{1}p_{2}\cdots p_{k}\equiv-1\,\text{mod}\,3}}
+\]
+
+\end_inset
+
+Since we are only concerned with proving the open sentence when 
+\begin_inset Formula $k$
+\end_inset
+
+ is odd, we can work with the open sentence 
+\begin_inset Formula $P\left(n\right)=Q\left(2n-1\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We work this by induction.
+ 
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify 
+\begin_inset Formula $P\left(2\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+p_{1}p_{2}p_{3} & =\prod_{i=1}^{3}\left(3m_{i}-1\right)\\
+ & =\left(3m_{1}-1\right)\left(3m_{2}-1\right)\left(3m_{3}-1\right)\\
+ & =3\left(9m_{1}m_{2}m_{3}-3m_{1}m_{2}-3m_{1}m_{3}-3m_{2}m_{3}+m_{1}+m_{2}+m_{3}\right)-1\\
+ & =3\alpha-1,
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $m_{i}\in\mathbb{N}$
+\end_inset
+
+, which shows that 
+\begin_inset Formula $P\left(2\right)$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $j\in\mathbb{N}.$
+\end_inset
+
+ We suppose that 
+\begin_inset Formula $P\left(j\right)$
+\end_inset
+
+ is true and we want to show that 
+\begin_inset Formula $P\left(j+1\right)$
+\end_inset
+
+ is true.
+ We begin with the product 
+\begin_inset Formula 
+\[
+p_{1}p_{2}\cdots p_{2k-1}p_{2k}p_{2\left(k+1\right)-1},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $j=2k-1$
+\end_inset
+
+ and 
+\begin_inset Formula $j+1=2\left(k+1\right)$
+\end_inset
+
+ by how we defined 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+.
+ Since we suppose 
+\begin_inset Formula $P\left(j\right)$
+\end_inset
+
+, we can replace 
+\begin_inset Formula $p_{1}p_{2}\cdots p_{2k-1}$
+\end_inset
+
+ with 
+\begin_inset Formula $3\gamma-1$
+\end_inset
+
+ with 
+\begin_inset Formula $\gamma\in\mathbb{N}$
+\end_inset
+
+.
+ This gives us the product 
+\begin_inset Formula 
+\begin{align*}
+\left(3\gamma-1\right)p_{2k}p_{2k+1} & =\left(3\gamma-1\right)\left(3m_{2k}-1\right)\left(3m_{2k+1}-1\right)\\
+ & =3\left(9\gamma m_{2k}m_{2k+1}-3\left(\gamma m_{2k}+\gamma m_{2k+1}+m_{2k}m_{2k+1}\right)+\gamma+m_{2k}+m_{2k+1}\right)-1\\
+ & =3\beta-1,
+\end{align*}
+
+\end_inset
+
+with hence 
+\begin_inset Formula $P\left(j+1\right)$
+\end_inset
+
+ is true.
+ Therefore the open sentence 
+\begin_inset Formula $Q\left(k\right)$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We suppose by contradiction that 
+\begin_inset Formula $p_{1}p_{2}\cdots p_{k}\equiv-1\,\text{mod}\,3$
+\end_inset
+
+ and 
+\begin_inset Formula $k$
+\end_inset
+
+ is even.
+ Then for 
+\begin_inset Formula $k=2$
+\end_inset
+
+ we have 
+\begin_inset Formula 
+\begin{align*}
+p_{1}p_{2} & =\left(3m_{1}-1\right)\left(3m_{2}-1\right)\\
+ & =3\left(3m_{1}m_{2}+m_{1}m_{2}\right)+1\\
+ & =3\eta+1,
+\end{align*}
+
+\end_inset
+
+for some 
+\begin_inset Formula $m_{1},m_{2},\eta\in\mathbb{N}$
+\end_inset
+
+.
+ This is a contradiction since 
+\begin_inset Formula $3\eta+1\neq3\xi-1$
+\end_inset
+
+ for some 
+\begin_inset Formula $\xi\in\mathbb{N}$
+\end_inset
+
+.
+ Hence if 
+\begin_inset Formula $p_{1}p_{2}\cdots p_{k}\equiv-1\,\text{mod}\,3$
+\end_inset
+
+ then 
+\begin_inset Formula $k$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Proof
+Since we have proven both ways, the lemma is true.
  
 \end_layout
 
