@@ -1,0 +1,2009 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\addtocounter{section}{19}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 3in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 11
+\end_layout
+
+\begin_layout After Title Text
+Sections 20 and 21
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Section
+Properties of Relations
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3,4,5,6\right\} $
+\end_inset
+
+ and let 
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,2\right),\left(1,3\right),\left(1,4\right),\left(2,3\right),\left(2,5\right),\left(2,6\right),\left(3,5\right),\left(4,5\right),\left(4,6\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give an example of elements 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $aRb$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\left(1,1\right)\in R$
+\end_inset
+
+ we have 
+\begin_inset Formula $a=1$
+\end_inset
+
+ and 
+\begin_inset Formula $b=1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Give an example of elements 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\not Rb$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\left(5,5\right)\not\in R$
+\end_inset
+
+ we have 
+\begin_inset Formula $a=5$
+\end_inset
+
+, 
+\begin_inset Formula $b=5$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, let 
+\begin_inset Formula $S_{a}=\left\{ x\in A:\,aRx\right\} $
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $S_{a}$
+\end_inset
+
+ is the set of elements to which 
+\begin_inset Formula $a$
+\end_inset
+
+ relates.
+ Write down the six Sets.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S_{1}=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{2}=\left\{ 3,5,6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{3}=\left\{ 5\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{4}=\left\{ 5,6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{5}=S_{6}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, let 
+\begin_inset Formula $T_{a}=\left\{ x\in A\,:\,xRa\right\} $
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $T_{a}$
+\end_inset
+
+ is the set of elements which relate to 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Write down the six sets 
+\begin_inset Formula $T_{1},\ldots,T_{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T_{1}=\left\{ 1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T_{2}=\left\{ 1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T_{3}=\left\{ 1,2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T_{4}=\left\{ 1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T_{5}=\left\{ 2,3,4\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T_{6}=\left\{ 2,4\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+For the relations 
+\begin_inset Formula $R$
+\end_inset
+
+ from 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ to 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ defined below, write 
+\begin_inset Formula $R$
+\end_inset
+
+ as a set using set-builder notation, and graph 
+\begin_inset Formula $R$
+\end_inset
+
+ as a subset of 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ See fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:20_2"
+
+\end_inset
+
+ for the images.
+\end_layout
+
+\begin_layout Enumerate
+Define 
+\begin_inset Formula $R$
+\end_inset
+
+ by 
+\begin_inset Formula $xRy$
+\end_inset
+
+ if 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(x,y\right)\in\mathbb{R}\times\mathbb{R}\,:\,x\leq y\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Define 
+\begin_inset Formula $R$
+\end_inset
+
+ by 
+\begin_inset Formula $xRy$
+\end_inset
+
+ if 
+\begin_inset Formula $x\geq y$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(x,y\right)\in\mathbb{R}\times\mathbb{R}\,:\,x\geq y\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Define 
+\begin_inset Formula $R$
+\end_inset
+
+ by 
+\begin_inset Formula $xRy$
+\end_inset
+
+ if 
+\begin_inset Formula $x>y$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(x,y\right)\in\mathbb{R}\times\mathbb{R}\,:\,x>y\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Define 
+\begin_inset Formula $R$
+\end_inset
+
+ by 
+\begin_inset Formula $xRy$
+\end_inset
+
+ if 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(x,y\right)\in\mathbb{R}\times\mathbb{R}\,:\,x=y\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Define 
+\begin_inset Formula $R$
+\end_inset
+
+ by 
+\begin_inset Formula $xRy$
+\end_inset
+
+ if 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(x,y\right)\in\mathbb{R}\times\mathbb{R}\,:\,x\neq y\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Exercise20_2.pdf
+	width 40col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:20_2"
+
+\end_inset
+
+The shaded region indicates that the element is in the relation set.
+ The dashed lines indicates that the element is not included in the relation
+ set.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Define a relation 
+\begin_inset Formula $R$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ by 
+\begin_inset Formula $xRy$
+\end_inset
+
+ is 
+\begin_inset Formula $xy<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Describe 
+\begin_inset Formula $R$
+\end_inset
+
+ as a set using set-builder notation.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(x,y\right)\in\mathbb{R}\times\mathbb{R}\,:\,xy<0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Graph 
+\begin_inset Formula $R$
+\end_inset
+
+ as a subset of 
+\begin_inset Formula $\mathbb{R}\times\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+See fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:20_3"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine whether 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive, symmetric, transitive, and or antisymmetric.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Reflexive
+\series default
+: We want to verify that 
+\begin_inset Formula $xRx$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+.
+ We know that 
+\begin_inset Formula $x\cdot x=x^{2}\geq0$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\left(x,x\right)\not\in R$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is not reflexive.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Symmetric
+\series default
+: We suppose that 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+ and that 
+\begin_inset Formula $xy<0$
+\end_inset
+
+.
+ Since scalar multiplication commutes, we have that 
+\begin_inset Formula $yx<0$
+\end_inset
+
+.
+ Thus if 
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(y,x\right)\in R$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitive
+\series default
+: We suppose that 
+\begin_inset Formula $x,y,z\in\mathbb{R}$
+\end_inset
+
+ and that 
+\begin_inset Formula $xRy$
+\end_inset
+
+ and 
+\begin_inset Formula $yRz$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $xy<0$
+\end_inset
+
+ and 
+\begin_inset Formula $yz<0$
+\end_inset
+
+.
+ We quickly note that in order for the product of two real numbers to be
+ less than 
+\begin_inset Formula $0$
+\end_inset
+
+, one must be negative and the other must be positive.
+ So we know that 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ must have different signs and 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+ must have different signs.
+ This meas that 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+ must have the same sign.
+ Hence 
+\begin_inset Formula $xz>0$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is not transitive.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Antisymmetric
+\series default
+: We suppose that 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+ such that 
+\begin_inset Formula $xy<0$
+\end_inset
+
+ and 
+\begin_inset Formula $yx<0$
+\end_inset
+
+.
+ As we have previously stated, in order or the product of two real numbers
+ to be less than 
+\begin_inset Formula $0$
+\end_inset
+
+, they must have opposite signs.
+ Hence 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is not antisymmetric.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Exercise_20_3.pdf
+	width 40col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:20_3"
+
+\end_inset
+
+The shaded region indicates that the element is in the relation set.
+ A depiction of the relation 
+\begin_inset Formula $xy<0$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+ as indicated by the dashed lines.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Define a relation 
+\begin_inset Formula $R$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ by 
+\begin_inset Formula $xRy$
+\end_inset
+
+ if 
+\begin_inset Formula $x-y\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Define 
+\begin_inset Formula $R$
+\end_inset
+
+ as a set using set-builder notation.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(x,y\right)\in\mathbb{R}\times\mathbb{R}\,:\,x-y\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Graph 
+\begin_inset Formula $R$
+\end_inset
+
+ as a subset of 
+\begin_inset Formula $\mathbb{R}\times\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+See fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:20_4"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine whether 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive, symmetric, transitive, and/or antisymmetric.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Reflexive
+\series default
+: Let 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+, and we suppose that 
+\begin_inset Formula $xRx$
+\end_inset
+
+ is true.
+ Then 
+\begin_inset Formula $x-x=0\not\in\mathbb{Z}$
+\end_inset
+
+.
+ This is a contradiction.
+ Thus 
+\begin_inset Formula $R$
+\end_inset
+
+ is not reflexive.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Symmetric
+\series default
+: We suppose that 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+ and that 
+\begin_inset Formula $x-y\in\mathbb{Z}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $x-y\in\mathbb{Z}$
+\end_inset
+
+ we know that 
+\begin_inset Formula $x-y=m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+ We can multiply both sides by 
+\begin_inset Formula $-1$
+\end_inset
+
+ to get 
+\begin_inset Formula $y-x=-m$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $-m\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $y-x\in\mathbb{Z}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $xRy\implies yRx$
+\end_inset
+
+, and 
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitive
+\series default
+: We suppose that 
+\begin_inset Formula $x,y,z\in\mathbb{R}$
+\end_inset
+
+ and that 
+\begin_inset Formula $x-y\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $y-z\in\mathbb{Z}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x-y=a$
+\end_inset
+
+ and 
+\begin_inset Formula $y-z=b$
+\end_inset
+
+.
+ Solving for 
+\begin_inset Formula $y$
+\end_inset
+
+ in the second equation yields 
+\begin_inset Formula $y=b+z$
+\end_inset
+
+, and substituting this into the first equation yields 
+\begin_inset Formula $x-\left(b+z\right)=a$
+\end_inset
+
+, which can be written as 
+\begin_inset Formula $x-z=b+a$
+\end_inset
+
+.
+ Since the sum of two integers is another integer, we get 
+\begin_inset Formula $x-z\in\mathbb{Z}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is transitive.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Antisymmetric
+\series default
+: Let 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+.
+ We suppose that 
+\begin_inset Formula $xRy$
+\end_inset
+
+ and 
+\begin_inset Formula $yRx$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $x=5$
+\end_inset
+
+ and 
+\begin_inset Formula $y=3$
+\end_inset
+
+ and note that they satisfy 
+\begin_inset Formula $xRy$
+\end_inset
+
+ and 
+\begin_inset Formula $yRx$
+\end_inset
+
+; however, 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+.
+ This shows that 
+\begin_inset Formula $\exists x,y\in\mathbb{R},xRy\land yRx,x\neq y$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is not antisymmetric.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/20_4.pdf
+	width 40col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:20_4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Define a relation 
+\begin_inset Formula $R$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ by 
+\begin_inset Formula $aRb$
+\end_inset
+
+ if 
+\begin_inset Formula $a-b$
+\end_inset
+
+ is even.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Describe 
+\begin_inset Formula $R$
+\end_inset
+
+ as a set using set-builder notation.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(a,b\right)\in\mathbb{Z}\times\mathbb{Z}\,:\,a-b\text{ is even}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive, symmetric, and transitive.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Reflexive
+\series default
+: Let 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $a-a=0$
+\end_inset
+
+ and 
+\begin_inset Formula $0$
+\end_inset
+
+ is even.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Symmetric
+\series default
+: Let 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+.
+ We assume directly 
+\begin_inset Formula $aRb$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $a-b=2m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+ We can multiply both sides by 
+\begin_inset Formula $-1$
+\end_inset
+
+ to get 
+\begin_inset Formula $b-a=-2m$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $-2m$
+\end_inset
+
+ is even, we know that 
+\begin_inset Formula $b-a$
+\end_inset
+
+ is even.
+ Hence 
+\begin_inset Formula $aRb\implies bRa$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitive
+\series default
+: Let 
+\begin_inset Formula $a,b,c\in\mathbb{Z}$
+\end_inset
+
+.
+ We assume directly 
+\begin_inset Formula $aRb$
+\end_inset
+
+ and 
+\begin_inset Formula $bRc$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $a-b=2m$
+\end_inset
+
+ and 
+\begin_inset Formula $b-c=2k$
+\end_inset
+
+ for some 
+\begin_inset Formula $m,k\in\mathbb{Z}$
+\end_inset
+
+.
+ Solving for 
+\begin_inset Formula $b$
+\end_inset
+
+ in the second equation yields 
+\begin_inset Formula $b=2k+c$
+\end_inset
+
+.
+ Substituting this in for 
+\begin_inset Formula $b$
+\end_inset
+
+ in the first equation gives 
+\begin_inset Formula $a-\left(2k+c\right)=2m$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $a-c=2\left(m+k\right)$
+\end_inset
+
+ which is even.
+ Hence 
+\begin_inset Formula $aRb\land bRc\implies aRc$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is transitive.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $R$
+\end_inset
+
+ is not antisymmetric.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+.
+ We suppose directly that 
+\begin_inset Formula $aRb\land bRa$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $a-b=2m$
+\end_inset
+
+ and 
+\begin_inset Formula $b-a=-2m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+ This gives the constraint 
+\begin_inset Formula $a-b=a-b$
+\end_inset
+
+ which is satisfied for any value of 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+.
+ For example let 
+\begin_inset Formula $a=5$
+\end_inset
+
+ and 
+\begin_inset Formula $b=7$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a-b=-2$
+\end_inset
+
+ and 
+\begin_inset Formula $b-a=2$
+\end_inset
+
+ which are both even numbers, but 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $\left(aRb\land bRa\not\implies R\right)$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is not antisymmetric.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For which integers 
+\begin_inset Formula $b$
+\end_inset
+
+ is it the case that 
+\begin_inset Formula $1Rb$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $1-b$
+\end_inset
+
+ must be even, we can say 
+\begin_inset Formula $1-b=2m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+ Solving for 
+\begin_inset Formula $b$
+\end_inset
+
+ yields 
+\begin_inset Formula $b=2\left(-m\right)+1$
+\end_inset
+
+.
+ Thus we see that 
+\begin_inset Formula $b$
+\end_inset
+
+ is an odd integer.
+ So any odd integer satisfies 
+\begin_inset Formula $1Rb$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+For each part, give an example of a relation 
+\begin_inset Formula $R$
+\end_inset
+
+ on the set 
+\begin_inset Formula $A=\left\{ 1,2,3\right\} $
+\end_inset
+
+ with the specified properties.
+ Write 
+\begin_inset Formula $R$
+\end_inset
+
+ as a set of ordered pairs.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive, symmetric, and transitive
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right),\left(2,2\right),\left(3,3\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive and symmetric, but not transitive.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right),\left(2,2\right),\left(2,3\right),\left(3,2\right),\left(3,3\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive and transitive, but not symmetric.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,2\right),\left(1,3\right),\left(2,2\right),\left(2,3\right),\left(3,3\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive, not symmetric, and not transitive.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,2\right),\left(2,2\right),\left(2,3\right),\left(3,3\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is not reflexive, but is symmetric and transitive.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right),\left(2,2\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is not reflexive and not transitive, but is symmetric.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,2\right),\left(2,1\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is not reflexive and not symmetric, but is transitive.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,2\right),\left(1,3\right),\left(2,3\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is not reflexive, not symmetric, and not transitive.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,2\right),\left(2,3\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} $
+\end_inset
+
+ and let 
+\begin_inset Formula $S=\left\{ \left\{ 1,2,3\right\} ,\left\{ 3,4\right\} ,\left\{ 5\right\} \right\} $
+\end_inset
+
+.
+ Define 
+\begin_inset Formula 
+\[
+R=\left\{ \left(a,b\right)\in A\times A\,:\,\text{for some }X\in S,\text{ both }a\in X\text{ and }b\in X\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Write out the elements of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,2\right),\left(1,3\right),\left(2,1\right),\left(2,2\right),\left(2,3\right),\left(3,1\right),\left(3,2\right),\left(3,3\right),\left(3,4\right),\left(4,3\right),\left(4,4\right),\left(5,5\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $R$
+\end_inset
+
+ reflexive? Symmetric? Transitive?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Reflexive
+\series default
+: To prove reflexive, we need that 
+\begin_inset Formula $\forall a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $aRa$
+\end_inset
+
+.
+ From the listing we can see that 
+\begin_inset Formula $\left(a,a\right)\in R$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Symmetric
+\series default
+: Suppose directly that 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $aRb$
+\end_inset
+
+.
+ In order for 
+\begin_inset Formula $\left(a,b\right)\in R$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ must be elements of the same element of 
+\begin_inset Formula $S$
+\end_inset
+
+ by how 
+\begin_inset Formula $R$
+\end_inset
+
+ is defined.
+ Then by how 
+\begin_inset Formula $R$
+\end_inset
+
+ is defined we also know that 
+\begin_inset Formula $\left(b,a\right)\in R$
+\end_inset
+
+ since 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $a$
+\end_inset
+
+ are elements of the same element of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitive
+\series default
+: We disprove this.
+ Let 
+\begin_inset Formula $a,b,c\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $a=1$
+\end_inset
+
+, 
+\begin_inset Formula $b=3$
+\end_inset
+
+, and 
+\begin_inset Formula $c=4$
+\end_inset
+
+.
+ From the listing of 
+\begin_inset Formula $R$
+\end_inset
+
+ we see that 
+\begin_inset Formula $aRb\land bRc$
+\end_inset
+
+; however, 
+\begin_inset Formula $a\not Rc$
+\end_inset
+
+.
+ This is a counterexample.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is not transitive.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} $
+\end_inset
+
+ and let 
+\begin_inset Formula $S=\left\{ \left\{ 1,2\right\} ,\left\{ 4,5\right\} \right\} $
+\end_inset
+
+.
+ Define 
+\begin_inset Formula 
+\[
+R=\left\{ \left(a,b\right)\in A\times A\,:\,\text{for some }X\in S,\text{ both }a\in X\text{ and }b\in X\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Write out the elements of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right),\left(2,2\right),\left(4,4\right),\left(4,5\right),\left(5,4\right),\left(5,5\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $R$
+\end_inset
+
+ reflexive, symmetric or transitive?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Reflexive
+\series default
+: Disproof.
+ The element 
+\begin_inset Formula $\left(3,3\right)\not\in R$
+\end_inset
+
+ with 
+\begin_inset Formula $3\in A$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $3\not R3$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $R$
+\end_inset
+
+ is not reflexive.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Symmetric
+\series default
+: Suppose directly that 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $aRb$
+\end_inset
+
+.
+ In order for 
+\begin_inset Formula $\left(a,b\right)\in R$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ must be elements of the same element of 
+\begin_inset Formula $S$
+\end_inset
+
+ by how 
+\begin_inset Formula $R$
+\end_inset
+
+ is defined.
+ Then by how 
+\begin_inset Formula $R$
+\end_inset
+
+ is defined we also know that 
+\begin_inset Formula $\left(b,a\right)\in R$
+\end_inset
+
+ since 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $a$
+\end_inset
+
+ are elements of the same element of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitive
+\series default
+: We suppose directly that 
+\begin_inset Formula $a,b,c\in A$
+\end_inset
+
+, 
+\begin_inset Formula $aRb$
+\end_inset
+
+, and 
+\begin_inset Formula $bRc$
+\end_inset
+
+.
+ Since the elements of 
+\begin_inset Formula $S$
+\end_inset
+
+ are disjoint sets and by the definition of 
+\begin_inset Formula $R$
+\end_inset
+
+, if 
+\begin_inset Formula $aRb$
+\end_inset
+
+ and 
+\begin_inset Formula $aRc$
+\end_inset
+
+, then 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ are all elements from the same elements of 
+\begin_inset Formula $S$
+\end_inset
+
+, and that 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ are not elements of any other element of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ must be elements of the same element of 
+\begin_inset Formula $S$
+\end_inset
+
+, then by definition of 
+\begin_inset Formula $R$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,c\right)\in R$
+\end_inset
+
+ since 
+\begin_inset Formula $a\in X$
+\end_inset
+
+ and 
+\begin_inset Formula $c\in X$
+\end_inset
+
+ for some 
+\begin_inset Formula $X\in S$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $aRc$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is transitive.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
