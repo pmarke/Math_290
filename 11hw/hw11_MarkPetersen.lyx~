@@ -16,6 +16,9 @@
 \end_preamble
 \options onecolumn
 \use_default_options true
+\begin_modules
+theorems-sec
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -1734,7 +1737,1356 @@ Symmetric
 \series bold
 Transitive
 \series default
-: 
+: We disprove this.
+ Let 
+\begin_inset Formula $a,b,c\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $a=1$
+\end_inset
+
+, 
+\begin_inset Formula $b=3$
+\end_inset
+
+, and 
+\begin_inset Formula $c=4$
+\end_inset
+
+.
+ From the listing of 
+\begin_inset Formula $R$
+\end_inset
+
+ we see that 
+\begin_inset Formula $aRb\land bRc$
+\end_inset
+
+; however, 
+\begin_inset Formula $a\not Rc$
+\end_inset
+
+.
+ This is a counterexample.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is not transitive.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} $
+\end_inset
+
+ and let 
+\begin_inset Formula $S=\left\{ \left\{ 1,2\right\} ,\left\{ 4,5\right\} \right\} $
+\end_inset
+
+.
+ Define 
+\begin_inset Formula 
+\[
+R=\left\{ \left(a,b\right)\in A\times A\,:\,\text{for some }X\in S,\text{ both }a\in X\text{ and }b\in X\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Write out the elements of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right),\left(2,2\right),\left(4,4\right),\left(4,5\right),\left(5,4\right),\left(5,5\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $R$
+\end_inset
+
+ reflexive, symmetric or transitive?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Reflexive
+\series default
+: Disproof.
+ The element 
+\begin_inset Formula $\left(3,3\right)\not\in R$
+\end_inset
+
+ with 
+\begin_inset Formula $3\in A$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $3\not R3$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $R$
+\end_inset
+
+ is not reflexive.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Symmetric
+\series default
+: Suppose directly that 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $aRb$
+\end_inset
+
+.
+ In order for 
+\begin_inset Formula $\left(a,b\right)\in R$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ must be elements of the same element of 
+\begin_inset Formula $S$
+\end_inset
+
+ by how 
+\begin_inset Formula $R$
+\end_inset
+
+ is defined.
+ Then by how 
+\begin_inset Formula $R$
+\end_inset
+
+ is defined we also know that 
+\begin_inset Formula $\left(b,a\right)\in R$
+\end_inset
+
+ since 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $a$
+\end_inset
+
+ are elements of the same element of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Transitive
+\series default
+: We suppose directly that 
+\begin_inset Formula $a,b,c\in A$
+\end_inset
+
+, 
+\begin_inset Formula $aRb$
+\end_inset
+
+, and 
+\begin_inset Formula $bRc$
+\end_inset
+
+.
+ Since the elements of 
+\begin_inset Formula $S$
+\end_inset
+
+ are disjoint sets and by the definition of 
+\begin_inset Formula $R$
+\end_inset
+
+, if 
+\begin_inset Formula $aRb$
+\end_inset
+
+ and 
+\begin_inset Formula $aRc$
+\end_inset
+
+, then 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ are all elements from the same elements of 
+\begin_inset Formula $S$
+\end_inset
+
+, and that 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ are not elements of any other element of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ must be elements of the same element of 
+\begin_inset Formula $S$
+\end_inset
+
+, then by definition of 
+\begin_inset Formula $R$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,c\right)\in R$
+\end_inset
+
+ since 
+\begin_inset Formula $a\in X$
+\end_inset
+
+ and 
+\begin_inset Formula $c\in X$
+\end_inset
+
+ for some 
+\begin_inset Formula $X\in S$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $aRc$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is transitive.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Equivalence Relations
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3\right\} $
+\end_inset
+
+ an let 
+\begin_inset Formula $R$
+\end_inset
+
+ be the relation of 
+\begin_inset Formula $A$
+\end_inset
+
+ given by
+\begin_inset Formula 
+\[
+R=\left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right),\left(2,2\right),\left(2,3\right),\left(3,2\right),\left(3,3\right)\right\} .
+\]
+
+\end_inset
+
+Is 
+\begin_inset Formula $R$
+\end_inset
+
+ reflexive, symmetric, transitive, antisymmetric? Is 
+\begin_inset Formula $R$
+\end_inset
+
+ an equivalence relation?
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Reflexive:
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ From the listing of 
+\begin_inset Formula $R$
+\end_inset
+
+ we see that 
+\begin_inset Formula $\left(a,a\right)\in R$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Symmetric
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+.
+ From the listing of 
+\begin_inset Formula $R$
+\end_inset
+
+ we see that 
+\begin_inset Formula $\left(a,b\right)\in R$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(b,a\right)\in R$
+\end_inset
+
+ for all 
+\begin_inset Formula $a,b\in R$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Transitive
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof.
+\end_layout
+
+\end_inset
+
+We want to show that for every 
+\begin_inset Formula $a,b,c\in A$
+\end_inset
+
+, if 
+\begin_inset Formula $aRb\land bRc$
+\end_inset
+
+, then 
+\begin_inset Formula $aRc$
+\end_inset
+
+.
+ However, note that 
+\begin_inset Formula $\left(1,2\right),\left(2,3\right)\in R$
+\end_inset
+
+, but 
+\begin_inset Formula $\left(1,3\right)\not\in R$
+\end_inset
+
+.
+ This is a counterexample.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is not transitive.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Since 
+\begin_inset Formula $R$
+\end_inset
+
+ is not transitive, it cannot be an equivalence relation.
+\end_layout
+
+\begin_layout Exercise
+Give an example of an equivalence relation 
+\begin_inset Formula $R$
+\end_inset
+
+ on the set 
+\begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} $
+\end_inset
+
+ that has exactly two equivalence classes.
+ Explicitly write out the relation 
+\begin_inset Formula $R$
+\end_inset
+
+ as a set of ordered pairs.
+ 
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula 
+\[
+R=\left\{ \left(1,1\right),\left(1,2\right),\left(1,3\right),\left(2,1\right),\left(2,2\right),\left(2,3\right),\left(3,1\right),\left(3,2\right),\left(3,3\right),\left(4,4\right),\left(4,5\right),\left(5,4\right),\left(5,5\right)\right\} .
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\left[1\right]=\left[2\right]=\left[3\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\left[4\right]=\left[5\right]$
+\end_inset
+
+, there are only two equivalence classes.
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be an equivalence relation on the set 
+\begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} .$
+\end_inset
+
+ Assume that 
+\begin_inset Formula $1R3$
+\end_inset
+
+ and 
+\begin_inset Formula $3R4$
+\end_inset
+
+.
+ Given these conditions, which ordered pairs must belong to 
+\begin_inset Formula $R$
+\end_inset
+
+? Let 
+\begin_inset Formula $T\subseteq R$
+\end_inset
+
+ that contains the elements of 
+\begin_inset Formula $R$
+\end_inset
+
+ that meet the conditions given.
+ Then
+\begin_inset Formula 
+\[
+T=\left\{ \left(1,1\right),\left(1,3\right),\left(1,4\right)\left(2,2\right),\left(3,1\right),\left(3,3\right),\left(3,4\right),\left(4,1\right),\left(4,3\right)\left(4,4\right),\left(5,5\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3,4,5\right\} $
+\end_inset
+
+ and let 
+\begin_inset Formula $S=\left\{ \left\{ 1,2\right\} ,\left\{ 3,4\right\} ,\left\{ 5\right\} \right\} $
+\end_inset
+
+.
+ Define 
+\begin_inset Formula 
+\[
+R=\left\{ \left(a,b\right)\in A\times A\,:\,\text{for some }X\in S,\text{ both }a\in X\text{ and }b\in X\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+We have seen that 
+\begin_inset Formula $R$
+\end_inset
+
+ is an equivalence relation.
+ What are the equivalence classes.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[1\right]=\left\{ 1,2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[2\right]=\left\{ 1,2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[3\right]=\left\{ 3,4\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[4\right]=\left\{ 3,4\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[5\right]=\left\{ 5\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $\left[1\right]=\left[2\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\left[3\right]=\left[4\right]$
+\end_inset
+
+, we have three equivalence classes.
+ 
+\begin_inset Formula $\left[1\right],\left[3\right],\left[5\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A=\mathbb{R}-\left\{ 0\right\} $
+\end_inset
+
+.
+ Define a relation 
+\begin_inset Formula $\sim$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+ by 
+\begin_inset Formula $a\sim b$
+\end_inset
+
+ if 
+\begin_inset Formula $ab>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is an equivalence relation on 
+\begin_inset Formula $A.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is an equivalence relation on 
+\begin_inset Formula $A$
+\end_inset
+
+, by showing that 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is reflexive, symmetric, and transitive.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Reflexive
+\series default
+: Suppose directly that 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a\cdot a=a^{2}>0$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $a\sim a$
+\end_inset
+
+, and 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is reflexive.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Symmetric
+\series default
+: Suppose directly that 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $ab>0$
+\end_inset
+
+.
+ Then, since multiplication commutes, 
+\begin_inset Formula $ab=ba>0$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $a\sim b\implies b\sim a$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is symmetric.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Transitive
+\series default
+: Suppose directly that 
+\begin_inset Formula $a,b,c\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $ab>0$
+\end_inset
+
+ and 
+\begin_inset Formula $bc>0$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $bc=m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{R}>0$
+\end_inset
+
+.
+ Solving for 
+\begin_inset Formula $b$
+\end_inset
+
+ we get 
+\begin_inset Formula $b=\frac{m}{c}\in\mathbb{R}$
+\end_inset
+
+ since 
+\begin_inset Formula $c\in\mathbb{R}-\left\{ 0\right\} $
+\end_inset
+
+.
+ Substituting the expression for 
+\begin_inset Formula $b$
+\end_inset
+
+ into the first equation yields 
+\begin_inset Formula $a\left(\frac{m}{c}\right)>0$
+\end_inset
+
+.
+ Multiplying both sides of the inequality by 
+\begin_inset Formula $\frac{c^{2}}{m}$
+\end_inset
+
+ gives 
+\begin_inset Formula $ac>0$
+\end_inset
+
+ since 
+\begin_inset Formula $c^{2}>0$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $\left(a\sim b\right)\land\left(b\sim c\right)\implies a\sim c$
+\end_inset
+
+.
+ Therefore the relation 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is transitive.
+\end_layout
+
+\begin_layout Proof
+Since the relation is reflexive, symmetric, and transitive it is an equivalence
+ relation on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine the equivalence classes of 
+\begin_inset Formula $\sim$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+In order for the product of two non zero real numbers to be greater than
+ zero, they must have the same sign.
+ Hence we have two equivalence classes.
+ The set of all negative real numbers and the set of all positive real numbers.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be the set of humans with English names.
+ Define a relation 
+\begin_inset Formula $\thickapprox$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+ by 
+\begin_inset Formula $\alpha\approx\beta$
+\end_inset
+
+ if 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ have the same first letter in their names.
+\end_layout
+
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is an equivalence relation on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is an equivalence relation on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ We do this by showing that 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is reflexive, symmetric, and transitive.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Reflexive
+\series default
+: Suppose directly 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a$
+\end_inset
+
+ starts with some letter 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, which is the same letter that 
+\begin_inset Formula $a$
+\end_inset
+
+ starts with since its the same word.
+ Hence 
+\begin_inset Formula $a\approx a$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is reflexive.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Symmetric
+\series default
+: Suppose directly 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $a\approx b$
+\end_inset
+
+.
+ Then the first letter of 
+\begin_inset Formula $b$
+\end_inset
+
+ is the same as the first letter of 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Well, if they have the same first letter, then the first letter of 
+\begin_inset Formula $a$
+\end_inset
+
+ is the first letter of 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $a\approx b$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is symmetric.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Transitive
+\series default
+: Suppose directly that 
+\begin_inset Formula $a,b,c\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(a\approx b\land b\approx c\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ start with the same letter, and 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ start with the same letter.
+ Hence 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ must start with the same letter, so that 
+\begin_inset Formula $a\approx b$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is transitive.
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is reflexive, symmetric, and transitive, it is an equivalence relation.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine the equivalence classes of 
+\begin_inset Formula $\approx$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Under the assumptions that every English first name starts with a letter
+ and that for every letter in the alphabet there is at least one English
+ first name that starts with it, this gives us a total of 
+\begin_inset Formula $26$
+\end_inset
+
+ equivalence classes.
+ Let 
+\begin_inset Formula $S$
+\end_inset
+
+ denote the set containing every letter of the alphabet, then for every
+ 
+\begin_inset Formula $\alpha\in S$
+\end_inset
+
+, we define the equivalence classes as such 
+\begin_inset Formula 
+\[
+\left[\alpha\right]=\left\{ x\in A\,:\,\text{\ensuremath{\alpha} is the first letter of \ensuremath{x}}\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a set.
+ Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be reflexive, symmetric, and antisymmetric relation on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $R$
+\end_inset
+
+ is equality on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ (In other words, prove that for any 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+, we have 
+\begin_inset Formula $xRy$
+\end_inset
+
+ if an only if 
+\begin_inset Formula $x=y$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+This is a biconditional statement.
+ We must show both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $R$
+\end_inset
+
+ is a reflexive, symmetric and antisymmetric relation on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Then we know that 
+\begin_inset Formula $\forall a,b\in A$
+\end_inset
+
+, 
+\begin_inset Formula $aRa$
+\end_inset
+
+, 
+\begin_inset Formula $aRb\implies bRa$
+\end_inset
+
+, and 
+\begin_inset Formula $aRb\land bRa\implies a=b$
+\end_inset
+
+.
+ The reflexive property tells us that for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,a\right)\in R$
+\end_inset
+
+.
+ The symmetric property tells us that for all 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+, if 
+\begin_inset Formula $\left(a,b\right)\in R$
+\end_inset
+
+ then 
+\begin_inset Formula $\left(b,a\right)\in R$
+\end_inset
+
+ .
+ The antisymmetric property tells us that for all 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ if 
+\begin_inset Formula $\left(a,b\right),\left(b,a\right)\in R$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(a,b\right)=\left(b,a\right)=\left(a,a\right)=\left(b,b\right)$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $R=\left\{ \left(a,b\right)\in A\times A\,:\,a=b\right\} $
+\end_inset
+
+.
+ Therefore if 
+\begin_inset Formula $R$
+\end_inset
+
+ is a reflexive, symmetric and antisymmetric relation on 
+\begin_inset Formula $A$
+\end_inset
+
+, then the relation is the equality relation.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $R$
+\end_inset
+
+ is the equality relation on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $R$
+\end_inset
+
+ can be defined as 
+\begin_inset Formula $R=\left\{ \left(a,b\right)\in A\times A\,:\,a=b\right\} $
+\end_inset
+
+.
+ We want to show that 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive, symmetric and antisymmetric.
+ 
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Reflexive
+\series default
+: Let 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ By the definition of 
+\begin_inset Formula $R$
+\end_inset
+
+ we know that 
+\begin_inset Formula $aRa$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $\left(a,a\right)\in R$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Symmetric
+\series default
+: Let 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ and suppose that 
+\begin_inset Formula $aRb$
+\end_inset
+
+.
+ Then we know 
+\begin_inset Formula $a=b$
+\end_inset
+
+ which is equivalent to 
+\begin_inset Formula $b=a$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $bRa$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is symmetric.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Antisymmetric
+\series default
+: Let 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ and suppose that 
+\begin_inset Formula $aRb\land bRa$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a=b$
+\end_inset
+
+ and 
+\begin_inset Formula $b=a$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $a=b$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $R$
+\end_inset
+
+ is antisymmetric.
+ 
+\end_layout
+
+\begin_layout Proof
+Thus if 
+\begin_inset Formula $R$
+\end_inset
+
+ is the equality relation, then 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive, symmetric, and antisymmetric.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Since we have shown both ways, we have proven that 
+\begin_inset Formula $R$
+\end_inset
+
+ is the equality relation on 
+\begin_inset Formula $R$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $R$
+\end_inset
+
+ is reflexive, symmetric, and antisymmetric.
 \end_layout
 
 \end_deeper
