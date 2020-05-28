@@ -1,0 +1,1225 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\addtocounter{section}{21}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\begin_modules
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 12
+\end_layout
+
+\begin_layout After Title Text
+Sections 22 and 23
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Section
+Equivalence Relations
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A=\left\{ 1,2,3,4\right\} .$
+\end_inset
+
+ List one partition of 
+\begin_inset Formula $A$
+\end_inset
+
+ with one part, seven partitions of 
+\begin_inset Formula $A$
+\end_inset
+
+ with two parts, six partitions of 
+\begin_inset Formula $A$
+\end_inset
+
+ with three parts, and one partition of 
+\begin_inset Formula $A$
+\end_inset
+
+ with four parts.
+ This gives a total of fifteen partitions.
+\end_layout
+
+\begin_layout Enumerate
+One partition of 
+\begin_inset Formula $A$
+\end_inset
+
+ with one part.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P=\left\{ \left\{ 1,2,3,4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Seven partitions of 
+\begin_inset Formula $A$
+\end_inset
+
+ with two parts.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P_{1}=\left\{ \left\{ 1\right\} ,\left\{ 2,3,4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{2}=\left\{ \left\{ 1,2\right\} ,\left\{ 3,4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{3}=\left\{ \left\{ 1,2,3\right\} ,\left\{ 4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{4}=\left\{ \left\{ 2\right\} ,\left\{ 1,3,4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{5}=\left\{ \left\{ 2,3\right\} ,\left\{ 1,4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{6}=\left\{ \left\{ 2,4\right\} ,\left\{ 1,3\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{7}=\left\{ \left\{ 3\right\} ,\left\{ 1,2,4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Six partitions of 
+\begin_inset Formula $A$
+\end_inset
+
+ with three parts.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P_{1}=\left\{ \left\{ 1,2\right\} ,\left\{ 3\right\} ,\left\{ 4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{2}=\left\{ \left\{ 1\right\} ,\left\{ 2,3\right\} ,\left\{ 4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{3}=\left\{ \left\{ 1\right\} ,\left\{ 3\right\} ,\left\{ 2,4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{4}=\left\{ \left\{ 2\right\} ,\left\{ 1,3\right\} ,\left\{ 4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{5}=\left\{ \left\{ 2\right\} ,\left\{ 3\right\} ,\left\{ 1,4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{6}=\left\{ \left\{ 1\right\} ,\left\{ 2\right\} ,\left\{ 3,4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+One partition of 
+\begin_inset Formula $A$
+\end_inset
+
+ with four parts.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P=\left\{ \left\{ 1\right\} ,\left\{ 2\right\} ,\left\{ 3\right\} ,\left\{ 4\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a set with 
+\begin_inset Formula $\left|A\right|=10$
+\end_inset
+
+, and let 
+\begin_inset Formula $\sim$
+\end_inset
+
+ be an equivalence relation on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Denote the equivalence classes of 
+\begin_inset Formula $\sim$
+\end_inset
+
+ by 
+\begin_inset Formula $\left[x\right]$
+\end_inset
+
+ for 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ Suppose that we have elements 
+\begin_inset Formula $a,b,c\in A$
+\end_inset
+
+ with 
+\begin_inset Formula $\left|\left[a\right]\right|=3$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\left[b\right]\right|=5$
+\end_inset
+
+, and 
+\begin_inset Formula $\left|\left[c\right]\right|=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Are any of 
+\begin_inset Formula $a,b,$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ related by 
+\begin_inset Formula $\sim$
+\end_inset
+
+?.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+No, according to theorem 22.1 in the book, if 
+\begin_inset Formula $x\sim y$
+\end_inset
+
+ then 
+\begin_inset Formula $\left[x\right]=\left[y\right]$
+\end_inset
+
+ for any 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+.
+ And if 
+\begin_inset Formula $\left[x\right]=\left[y\right]$
+\end_inset
+
+ then they must have the same cardinality.
+ Since the cardinality of the equivalence classes of 
+\begin_inset Formula $a,b,$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are different, they cannot be the same equivalence class, and hence not
+ related.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+How many equivalence classes for 
+\begin_inset Formula $\sim$
+\end_inset
+
+ are there in 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since the cardinality of 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $10$
+\end_inset
+
+, the sum of the cardinality of the elements of its partition by 
+\begin_inset Formula $\sim$
+\end_inset
+
+ must equal 
+\begin_inset Formula $10$
+\end_inset
+
+.
+ That is 
+\begin_inset Formula $\left|\left[a\right]\right|+\left|\left[b\right]\right|+\left|\left[c\right]\right|+\cdots=10$
+\end_inset
+
+.
+ Since, 
+\begin_inset Formula $\left|\left[a\right]\right|+\left|\left[b\right]\right|+\left|\left[c\right]\right|=9$
+\end_inset
+
+ there can only be one other equivalence class of the relation 
+\begin_inset Formula $\sim$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+ whose cardinality is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Define a relation 
+\begin_inset Formula $\sim$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ by 
+\begin_inset Formula $\left(a,b\right)\sim\left(c,d\right)$
+\end_inset
+
+ if 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}+d^{2}$
+\end_inset
+
+.
+ We saw in Example 21.6 that 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is an equivalence relation.
+\end_layout
+
+\begin_layout Enumerate
+Describe the equivalence class 
+\begin_inset Formula $\left[\left(3,4\right)\right]$
+\end_inset
+
+, both as a set and geometrically.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left[\left(3,4\right)\right]=\left\{ \left(a,b\right)\in\mathbb{R}^{2}\,:\,a^{2}+b^{2}=28\right\} $
+\end_inset
+
+.
+ It is the set of points in 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ that are a distance of 
+\begin_inset Formula $\sqrt{28}$
+\end_inset
+
+ from the origin.
+ In other words, this set forms a circle around the origin with a radius
+ of 
+\begin_inset Formula $\sqrt{28}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For an arbitrary element 
+\begin_inset Formula $\left(a,b\right)\in\mathbb{R}^{2}$
+\end_inset
+
+, describe 
+\begin_inset Formula $\left[\left(a,b\right)\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left[\left(a,b\right)\right]$
+\end_inset
+
+ is the set of points in 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ that are a distance of 
+\begin_inset Formula $\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+ from the origin.
+ (I think this is what the question is asking)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that the set 
+\begin_inset Formula $\left[0,\infty\right)\times\left\{ 0\right\} $
+\end_inset
+
+ is a transversal of 
+\begin_inset Formula $\sim$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+In order to show that 
+\begin_inset Formula $T=\left[0,\infty\right)\times\left\{ 0\right\} $
+\end_inset
+
+ is a transversal of 
+\begin_inset Formula $\sim$
+\end_inset
+
+, we need to show that every element of 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ is related to at least one element 
+\begin_inset Formula $T$
+\end_inset
+
+, and we need to show that every element of 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ is related to at most one element of 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ I will separate this into show existence and uniqueness.
+ 
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Existence:
+\series default
+ Suppose directly that 
+\begin_inset Formula $\left(a,b\right)\in\mathbb{R}^{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(a,b\right)\sim\left(a^{2}+b^{2},0\right)\in T$
+\end_inset
+
+.
+ Hence there exists at least one element of 
+\begin_inset Formula $T$
+\end_inset
+
+ that is related to 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Uniqueness:
+\series default
+ Suppose by contradiction that 
+\begin_inset Formula $t_{1}\sim\left(a,b\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{2}\sim\left(a,b\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $t_{1}\neq t_{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $t_{1}=\left(a^{2}+b^{2},0\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{2}=\left(a^{2}+b^{2},0\right)$
+\end_inset
+
+.
+ This is a contradiction since 
+\begin_inset Formula $t_{1}=t_{2}$
+\end_inset
+
+.
+ Therefore, every element of 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ is related to only one element of 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $T$
+\end_inset
+
+ is a traversal of 
+\begin_inset Formula $\sim$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $W$
+\end_inset
+
+ be the set of all the words in the English language.
+ Define a relation of 
+\begin_inset Formula $W$
+\end_inset
+
+ by 
+\begin_inset Formula $\alpha\approx\beta$
+\end_inset
+
+ if 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ have the same first letter.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is an equivalence relation.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is an equivalence relation on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ We do this by showing that 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is reflexive, symmetric, and transitive.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Reflexive
+\series default
+: Suppose directly 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a$
+\end_inset
+
+ starts with some letter 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, which is the same letter that 
+\begin_inset Formula $a$
+\end_inset
+
+ starts with since its the same word.
+ Hence 
+\begin_inset Formula $a\approx a$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is reflexive.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Symmetric
+\series default
+: Suppose directly 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $a\approx b$
+\end_inset
+
+.
+ Then the first letter of 
+\begin_inset Formula $b$
+\end_inset
+
+ is the same as the first letter of 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Well, if they have the same first letter, then the first letter of 
+\begin_inset Formula $a$
+\end_inset
+
+ is the first letter of 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $a\approx b$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is symmetric.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Transitive
+\series default
+: Suppose directly that 
+\begin_inset Formula $a,b,c\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(a\approx b\land b\approx c\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ start with the same letter, and 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ start with the same letter.
+ Hence 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ must start with the same letter, so that 
+\begin_inset Formula $a\approx b$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is transitive.
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $\approx$
+\end_inset
+
+ is reflexive, symmetric, and transitive, it is an equivalence relation.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\left[\alpha\right]$
+\end_inset
+
+ be the equivalence class of 
+\begin_inset Formula $\alpha\in W$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $\alpha=\text{"cat"}$
+\end_inset
+
+, list six elements of 
+\begin_inset Formula $\left[\alpha\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+call, calling, calls, caller, car, cars
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+How may equivalence classes are there in 
+\begin_inset Formula $W$
+\end_inset
+
+ for 
+\begin_inset Formula $\approx$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since there are 26 letters in the English alphabet, there are 
+\begin_inset Formula $26$
+\end_inset
+
+ equivalence classes.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Describe a transversal of 
+\begin_inset Formula $\approx$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A transversal of 
+\begin_inset Formula $\approx$
+\end_inset
+
+ would contain for every letter of the alphabet one word that starts with
+ a letter of the alphabet.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a set with 
+\begin_inset Formula $n$
+\end_inset
+
+ elements.
+ Define a relation 
+\begin_inset Formula $\sim$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ by 
+\begin_inset Formula $X\sim A$
+\end_inset
+
+ if 
+\begin_inset Formula $\left|X\right|=\left|Y\right|$
+\end_inset
+
+, for any 
+\begin_inset Formula $X,Y\in\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is an equivalence relation.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is an equivalence relation on 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+ We do this by showing that 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is reflexive, symmetric, and transitive.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Reflexive
+\series default
+: Suppose directly 
+\begin_inset Formula $a\in\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left|a\right|=x$
+\end_inset
+
+ for some 
+\begin_inset Formula $x\in\mathbb{Z}\geq0$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $\left|a\right|=x=\left|a\right|$
+\end_inset
+
+, which shows that 
+\begin_inset Formula $\left|a\right|R\left|a\right|$
+\end_inset
+
+, thus 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is reflexive.
+ 
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Symmetric
+\series default
+: Suppose directly 
+\begin_inset Formula $a,b\in\mathcal{P}\left(A\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $a\sim b$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left|a\right|=x$
+\end_inset
+
+ and 
+\begin_inset Formula $\left|b\right|=x$
+\end_inset
+
+ for some 
+\begin_inset Formula $x\in\mathbb{Z}\geq0$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\left|b\right|=\left|a\right|$
+\end_inset
+
+, which shows that 
+\begin_inset Formula $\left|b\right|R\left|a\right|$
+\end_inset
+
+, thus 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is symmetric.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Transitive
+\series default
+: Suppose directly that 
+\begin_inset Formula $a,b,c\in\mathcal{P}\left(A\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(a\sim b\land b\sim c\right)$
+\end_inset
+
+.
+ hen 
+\begin_inset Formula $\left|a\right|=x$
+\end_inset
+
+, 
+\begin_inset Formula $\left|b\right|=x$
+\end_inset
+
+, and 
+\begin_inset Formula $\left|c\right|=x$
+\end_inset
+
+ for some 
+\begin_inset Formula $x\in\mathbb{Z}\geq0$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $\left|a\right|=\left|c\right|$
+\end_inset
+
+, which shows that 
+\begin_inset Formula $\left|a\right|R\left|c\right|$
+\end_inset
+
+, thus 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is reflexive.
+ 
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $\sim$
+\end_inset
+
+ is reflexive, symmetric, and transitive, it is an equivalence relation.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Describe the equivalence classes for 
+\begin_inset Formula $\sim$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The equivalence classes for 
+\begin_inset Formula $\sim$
+\end_inset
+
+, contains the subsets of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ with the same cardinality.
+ Hence, there are 
+\begin_inset Formula $n+1$
+\end_inset
+
+ equivalence classes, since one equivalence class contains just the empty
+ set.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+How many equivalence classes are there for 
+\begin_inset Formula $\sim$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+As stated earlier, there are 
+\begin_inset Formula $n+1$
+\end_inset
+
+ equivalence classes, since one equivalence class contains just the empty
+ set.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Describe a transversal of 
+\begin_inset Formula $\sim$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The transversal of 
+\begin_inset Formula $\sim$
+\end_inset
+
+ would contain one element of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ for every distinct cardinality.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+How many elements of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ are in each equivalence class?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\left[m\right]$
+\end_inset
+
+ denote the equivalence class for 
+\begin_inset Formula $\sim$
+\end_inset
+
+ that contains all the elements of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ with cardinality 
+\begin_inset Formula $m$
+\end_inset
+
+, them 
+\begin_inset Formula $\left|\left[m\right]\right|=\left(\begin{matrix}n\\
+m
+\end{matrix}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+asdf
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Appendix
+
+\end_layout
+
+\end_body
+\end_document
