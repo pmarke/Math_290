@@ -44,7 +44,7 @@ theorems-sec
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_package amsmath 1
+\use_package amsmath 2
 \use_package amssymb 1
 \use_package cancel 1
 \use_package esint 1
@@ -1905,7 +1905,2178 @@ We suppose directly that the equivalence relations
 \end_layout
 
 \begin_layout Section
-asdf
+Integers modulo 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $0\in\bar{a}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We wish to show that 
+\begin_inset Formula $0\in\bar{a}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+.
+ This is a biconditional statement, so we will show both implications.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We assume directly that 
+\begin_inset Formula $0\in\bar{a}$
+\end_inset
+
+, then 
+\begin_inset Formula $a\equiv0\,\left(\mod\:n\right)$
+\end_inset
+
+.
+ In other words 
+\begin_inset Formula $n\mid a-0$
+\end_inset
+
+ which is equivalent to 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We assume directly that 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+.
+ This can be written as 
+\begin_inset Formula $n\mid\left(a-0\right)$
+\end_inset
+
+, which is equivalent to 
+\begin_inset Formula $a\equiv0\,\left(\mod\:n\right)$
+\end_inset
+
+, hence 
+\begin_inset Formula $0\in\bar{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since both implications hold, the statement that 
+\begin_inset Formula $0\in\bar{a}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Exercise
+Compute the following.
+ Write the results as 
+\begin_inset Formula $\bar{r}$
+\end_inset
+
+, with 
+\begin_inset Formula $r\in\mathbb{Z}$
+\end_inset
+
+ non-negative and as small as possible.
+ For this problem let 
+\begin_inset Formula $\%$
+\end_inset
+
+ denote modulus 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bar{6}+\bar{7}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{9}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(6+7\right)\%9=4$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bar{6}\cdot\bar{7}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{9}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(6\cdot7\right)\%9=6$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{6}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\overline{59}\cdot\overline{119}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{30}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(59\cdot119\right)\%30=1$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bar{6}\cdot\bar{5}+\overline{85}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{7}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(6\cdot5+85\right)\%7=3$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bar{2}^{10}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(2^{10}\right)\%5=\left(2^{4}\cdot2^{4}\cdot2^{2}\right)\%5=4$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:multiplicationTable"
+
+\end_inset
+
+Create addition and multiplication tables for 
+\begin_inset Formula $\mathbb{Z}_{5}$
+\end_inset
+
+.
+ Be sure to write each entry of the tables as one of 
+\begin_inset Formula $\bar{0},\bar{1},\bar{2},\bar{3}$
+\end_inset
+
+ or 
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ Prove the following facts about addition and multiplication in 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For all 
+\begin_inset Formula $X,Y\in\mathbb{Z}_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $X+Y=Y+X$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $X,Y\in\mathbb{Z}_{n}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $X=\bar{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y=\bar{y}$
+\end_inset
+
+.
+ According to Theorem 23.4, 
+\begin_inset Formula $\bar{x}=\left\{ x+kn\,:k\in\mathbb{Z}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{y}=\left\{ y+\ell n\,:\ell\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Adding the two together gives me 
+\begin_inset Formula 
+\begin{align*}
+\overline{x+y} & =\left\{ x+kn+y+\ell n\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ y+\ell n+x+kn\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\overline{y+x}\\
+ & =\bar{y}+\bar{x}\\
+ & =Y+X
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For all 
+\begin_inset Formula $X,Y\in\mathbb{Z}_{n},$
+\end_inset
+
+ 
+\begin_inset Formula $X\cdot Y=Y\cdot X$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $X,Y\in\mathbb{Z}_{n}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $X=\bar{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y=\bar{y}$
+\end_inset
+
+.
+ According to Theorem 23.4, 
+\begin_inset Formula $\bar{x}=\left\{ x+kn\,:k\in\mathbb{Z}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{y}=\left\{ y+\ell n\,:\ell\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Multiplying the two together gives
+\begin_inset Formula 
+\begin{align*}
+\overline{x\cdot y} & =\left\{ \left(x+kn\right)\left(y+\ell n\right)\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ \left(y+\ell n\right)\left(x+kn\right)\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\overline{y\cdot x}\\
+ & =\bar{y}\cdot\bar{x}\\
+ & =Y\cdot X
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For all 
+\begin_inset Formula $X\in\mathbb{Z}_{n},$
+\end_inset
+
+ 
+\begin_inset Formula $X\cdot\bar{0}=\bar{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $X,\bar{0}\in\mathbb{Z}_{n}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $X=\bar{x}$
+\end_inset
+
+.
+ According to Theorem 23.4, 
+\begin_inset Formula $\bar{x}=\left\{ x+kn\,:k\in\mathbb{Z}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{0}=\left\{ 0+\ell n\,:\ell\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Multiplying the two together gives
+\begin_inset Formula 
+\begin{align*}
+\overline{x\cdot0} & =\left\{ \left(x+kn\right)\left(0+\ell n\right)\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ \left(x+kn\right)\ell n\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ 0+mn\,:\,m\in\mathbb{Z}\right\} \\
+ & =\bar{0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For all 
+\begin_inset Formula $X\in\mathbb{Z}_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $X\cdot\bar{1}=X$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $X,\bar{1}\in\mathbb{Z}_{n}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $X=\bar{x}$
+\end_inset
+
+.
+ According to Theorem 23.4, 
+\begin_inset Formula $\bar{x}=\left\{ x+kn\,:k\in\mathbb{Z}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{1}=\left\{ 1+\ell n\,:\ell\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Multiplying the two together gives
+\begin_inset Formula 
+\begin{align*}
+\overline{x\cdot0} & =\left\{ \left(x+kn\right)\left(1+\ell n\right)\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ x+kn+x\ell n+kn\ell n\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ x+mn\,:\,m\in\mathbb{Z}\right\} \\
+ & =\bar{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For all 
+\begin_inset Formula $X\in\mathbb{Z}_{n},$
+\end_inset
+
+ 
+\begin_inset Formula $X\cdot\bar{2}=X+X$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $X,\bar{2}\in\mathbb{Z}_{n}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $X=\bar{x}$
+\end_inset
+
+.
+ According to Theorem 23.4, 
+\begin_inset Formula $\bar{x}=\left\{ x+kn\,:k\in\mathbb{Z}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{2}=\left\{ 2+\ell n\,:\ell\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Multiplying the two together gives
+\begin_inset Formula 
+\begin{align*}
+\overline{x\cdot0} & =\left\{ \left(x+kn\right)\left(2+\ell n\right)\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ x2+2kn+x\ell n+kn\ell n\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ x+\left(2k\right)n+x+\left(x\ell+kn\ell\right)n\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ \left(x+mn\right)+\left(x+pn\right)\,:\,m,p\in\mathbb{Z}\right\} \\
+ & =\bar{x}+\bar{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For all 
+\begin_inset Formula $X\in\mathbb{Z}_{n}$
+\end_inset
+
+, there is some 
+\begin_inset Formula $Y\in\mathbb{Z}_{n}$
+\end_inset
+
+ such that 
+\begin_inset Formula $X+Y=\bar{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $X,Y\in\mathbb{Z}_{n}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $X=\bar{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y=\bar{y}$
+\end_inset
+
+.
+ According to Theorem 23.4, 
+\begin_inset Formula $\bar{x}=\left\{ x+kn\,:k\in\mathbb{Z}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{y}=\left\{ y+\ell n\,:\ell\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Adding the two together gives
+\begin_inset Formula 
+\begin{align*}
+\bar{x}+\bar{y} & =\left\{ x+kn+y+\ell n\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ x+y+kn+\ell n\,:\,k,\ell\in\mathbb{Z}\right\} .
+\end{align*}
+
+\end_inset
+
+We can choose 
+\begin_inset Formula $y$
+\end_inset
+
+ such that 
+\begin_inset Formula $n\mid x+y$
+\end_inset
+
+.
+ In other words 
+\begin_inset Formula $x+y=nm$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\begin{align*}
+\left\{ x+y+kn+\ell n\,:\,k,\ell\in\mathbb{Z}\right\}  & =\left\{ mn+kn+\ell n\,:\,k,\ell,m\in\mathbb{Z}\right\} \\
+ & =\left\{ \left(m+k+\ell\right)n\,:\,k,\ell,m\in\mathbb{Z}\right\} \\
+ & =\left\{ 0+\left(m+k+\ell\right)n\,:\,k,\ell,m\in\mathbb{Z}\right\} \\
+ & =\bar{0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For all 
+\begin_inset Formula $X,Y,Z\in\mathbb{Z}_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(X+Y\right)\cdot Z=\left(X\cdot Z\right)+\left(Y\cdot Z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $X,Y,Z\in\mathbb{Z}_{n}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $X=\bar{x}$
+\end_inset
+
+, 
+\begin_inset Formula $Y=\bar{y}$
+\end_inset
+
+, and 
+\begin_inset Formula $Z=\bar{z}$
+\end_inset
+
+.
+ According to Theorem 23.4, 
+\begin_inset Formula $\bar{x}=\left\{ x+kn\,:k\in\mathbb{Z}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\bar{y}=\left\{ y+\ell n\,:\ell\in\mathbb{Z}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{z}=\left\{ z+hn\,:\,h\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Then we can write
+\begin_inset Formula 
+\begin{align*}
+\left(\bar{x}+\bar{y}\right)\cdot\bar{z} & =\left\{ \left(x+kn+y+\ell n\right)\cdot\left(z+hn\right)\,:\,k,\ell,h\in\mathbb{Z}\right\} \\
+ & =\left\{ \left(x+kn\right)\cdot\left(z+hn\right)+\left(y+\ell n\right)\left(z+hn\right)\,:\,k,\ell,h\in\mathbb{Z}\right\} \\
+ & =\bar{x}\cdot\bar{z}+\bar{y}\cdot\bar{z}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Demonstrate that for each 
+\begin_inset Formula $X\neq\bar{0}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{5}$
+\end_inset
+
+, there is some 
+\begin_inset Formula $Y\in\mathbb{Z}_{5}$
+\end_inset
+
+ such that 
+\begin_inset Formula $X\cdot Y=\bar{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+According to the multiplication table in exercise 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:multiplicationTable"
+
+\end_inset
+
+, we see that 
+\begin_inset Formula $\bar{1}\cdot\bar{1}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{2}\cdot\bar{3}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{3}\cdot\bar{2}=1$
+\end_inset
+
+, and 
+\begin_inset Formula $\bar{4}\cdot\bar{4}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Is it true that for each 
+\begin_inset Formula $X\neq\bar{0}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{6}$
+\end_inset
+
+, there is some 
+\begin_inset Formula $Y\in\mathbb{Z}_{6}$
+\end_inset
+
+ such that 
+\begin_inset Formula $X\cdot Y=\bar{1}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Exercise
+No, consider the simple multiplication table below which shows 
+\begin_inset Formula $\bar{2}\cdot Y$
+\end_inset
+
+ for all 
+\begin_inset Formula $Y\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="7">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The table shows that there is not 
+\begin_inset Formula $Y\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\bar{2}\cdot Y=\bar{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+In this exercise we generalize what was done in the previous two exercises.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ is composite, prove that there are elements 
+\begin_inset Formula $\bar{a},\bar{b}\in\mathbb{Z}_{n}$
+\end_inset
+
+ with 
+\begin_inset Formula $\bar{a}\cdot\bar{b}=\bar{0}$
+\end_inset
+
+ even though 
+\begin_inset Formula $\bar{a},\bar{b}\neq\bar{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $n$
+\end_inset
+
+ is composite.
+ Then, according to theorem 19.3, there exists two integers 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $1<x,y<n$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\cdot y=n$
+\end_inset
+
+.
+ The integers 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are elements of their respective equivalence classes 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+ which can be written as 
+\begin_inset Formula $\bar{x}=\left\{ x+kn\,:k\in\mathbb{Z}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{y}=\left\{ y+\ell n\,:\ell\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Multiplying them together yields
+\begin_inset Formula 
+\begin{align*}
+\overline{x\cdot y} & =\left\{ \left(x+kn\right)\left(y+\ell n\right)\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ xy+ykn+x\ell n+kn\ell n\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ n+ykn+x\ell n+kn\ell n\,:\,k,\ell\in\mathbb{Z}\right\} \\
+ & =\left\{ 0+mn\,:\,m\in\mathbb{Z}\right\} \\
+ & =\bar{0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ is prime, prove that given 
+\begin_inset Formula $\bar{a},\bar{b}\in\mathbb{Z}_{n}$
+\end_inset
+
+, if 
+\begin_inset Formula $\bar{a}\cdot\bar{b}=\bar{0}$
+\end_inset
+
+, then 
+\begin_inset Formula $\bar{a}=\bar{0}$
+\end_inset
+
+ or 
+\begin_inset Formula $\bar{b}=\bar{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime and that for 
+\begin_inset Formula $\bar{a},\bar{b}\in\mathbb{Z}_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{a}\cdot\bar{b}=\bar{0}$
+\end_inset
+
+.
+ The equivalence classes 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ are 
+\begin_inset Formula $\bar{a}=\left\{ a+kn\,:\,k\in\mathbb{Z}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{b}=\left\{ b+\ell n\,:\,\ell\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Multiplying them together we get 
+\begin_inset Formula 
+\begin{align*}
+\bar{a}\cdot\bar{b} & =\left\{ \left(a+kn\right)\left(b+\ell n\right)\,:\,m,k\in\mathbb{Z}\right\} \\
+ & =\left\{ \left(ab+a\ell n+bkn+kn\ell n\right),\,:\,m,k\in\mathbb{Z}\right\} .
+\end{align*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\bar{a}\cdot\bar{b}=\bar{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(ab+a\ell n+bkn+kn\ell n\right)=mn$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+.
+ This would require that 
+\begin_inset Formula $n\mid ab$
+\end_inset
+
+.
+ According to Euclid's lemma, since 
+\begin_inset Formula $n\mid ab$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime, we know that 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+ or 
+\begin_inset Formula $n\mid b$
+\end_inset
+
+.
+ thus 
+\begin_inset Formula $a=ng$
+\end_inset
+
+ or 
+\begin_inset Formula $b=nh$
+\end_inset
+
+ for some 
+\begin_inset Formula $g,h\in\mathbb{Z}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{a}=\left\{ gn+kn\,:\,k,g\in\mathbb{Z}\right\} $
+\end_inset
+
+ or 
+\begin_inset Formula $\bar{b}=\left\{ hn+\ell n\,:\,\ell,g\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $\bar{a}=\bar{0}$
+\end_inset
+
+ or 
+\begin_inset Formula $\bar{b}=\bar{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
 \end_layout
 
 \begin_layout Standard
