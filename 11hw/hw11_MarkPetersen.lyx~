@@ -2911,6 +2911,12 @@ This is a biconditional statement.
 \end_inset
 
 .
+ Due to the symmetric property, the antisymmetric property applies to every
+ element in 
+\begin_inset Formula $R$
+\end_inset
+
+.
  Hence 
 \begin_inset Formula $R=\left\{ \left(a,b\right)\in A\times A\,:\,a=b\right\} $
 \end_inset

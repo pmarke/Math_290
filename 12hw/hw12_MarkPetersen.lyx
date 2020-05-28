@@ -1236,6 +1236,249 @@ Prove that
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Proof
+To show that 
+\begin_inset Formula $P$
+\end_inset
+
+ is a partition of 
+\begin_inset Formula $\mathcal{P\left(A\right)},$
+\end_inset
+
+ we need to show that no set in 
+\begin_inset Formula $P$
+\end_inset
+
+ is empty, every element of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ is a member of some element of 
+\begin_inset Formula $P$
+\end_inset
+
+, and that any two distinct elements of 
+\begin_inset Formula $P$
+\end_inset
+
+ are disjoint.
+ We will prove each property separately.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+(Nonempty pieces)
+\series default
+: We suppose directly that 
+\begin_inset Formula 
+\[
+S_{i}=\left\{ X\in\mathcal{P}\left(A\right)\,:\,i\,\text{is the least element of X}\right\} ,
+\]
+
+\end_inset
+
+since 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ contains all of the possible subsets of 
+\begin_inset Formula $A$
+\end_inset
+
+, the sets 
+\begin_inset Formula $\left\{ 1\right\} ,\left\{ 2\right\} ,\ldots,\left\{ 10\right\} $
+\end_inset
+
+ must be elements of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+, and thus the set 
+\begin_inset Formula $\left\{ i\right\} $
+\end_inset
+
+ must be an element of 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in A$
+\end_inset
+
+.
+ This shows that none of the sets 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ are empty, and since the set 
+\begin_inset Formula $\left\{ \emptyset\right\} $
+\end_inset
+
+ is clearly not empty, none of the sets in 
+\begin_inset Formula $P$
+\end_inset
+
+ are empty.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+(Covering)
+\series default
+: We suppose directly that 
+\begin_inset Formula 
+\[
+S_{i}=\left\{ X\in\mathcal{P}\left(A\right)\,:\,i\,\text{is the least element of X}\right\} ,
+\]
+
+\end_inset
+
+since each element of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ has a least element 
+\begin_inset Formula $i\in A$
+\end_inset
+
+ except for the empty set, then each element of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+, except for the empty set, must be an element of one of the sets 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+.
+ And since an element of 
+\begin_inset Formula $P$
+\end_inset
+
+ contains the empty set, 
+\begin_inset Formula $P$
+\end_inset
+
+ is a covering of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+(Disjoint Pieces)
+\series default
+: We suppose by contradiction that 
+\begin_inset Formula $S_{k},S_{m}\in P$
+\end_inset
+
+, with 
+\begin_inset Formula $k,m\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $k\neq m$
+\end_inset
+
+, and that 
+\begin_inset Formula $S_{k}\cap S_{m}\neq\emptyset$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $S_{k}=\left\{ X\in\mathcal{P}\left(A\right)\,:\,k\,\text{is the least element of X}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $S_{m}=\left\{ X\in\mathcal{P}\left(A\right)\,:\,m\,\text{is the least element of X}\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $S_{m}$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ must have an element 
+\begin_inset Formula $Y\in\mathcal{P}\left(A\right)$
+\end_inset
+
+ in common.
+ Since 
+\begin_inset Formula $Y$
+\end_inset
+
+ cannot contain two different least elements, the only way for 
+\begin_inset Formula $Y\in S_{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y\in S_{m}$
+\end_inset
+
+ would be for 
+\begin_inset Formula $S_{k}=S_{m}$
+\end_inset
+
+.
+ But this is a contradiction.
+ Thus, every element of 
+\begin_inset Formula $P$
+\end_inset
+
+ is disjoint.
+ We quickly state that the element 
+\begin_inset Formula $\left\{ \emptyset\right\} $
+\end_inset
+
+ of 
+\begin_inset Formula $P$
+\end_inset
+
+ is disjoint from all other sets since 
+\begin_inset Formula $\emptyset\not\in A$
+\end_inset
+
+, therefore 
+\begin_inset Formula $\emptyset\not\in S_{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We have shown that 
+\begin_inset Formula $P$
+\end_inset
+
+ contains no empty pieces, is a covering of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+, and that its pieces are disjoint.
+ Therefore, 
+\begin_inset Formula $P$
+\end_inset
+
+ is a covering of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Let 
 \begin_inset Formula $\sim$
@@ -1257,6 +1500,17 @@ Let
  have?
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $P$
+\end_inset
+
+ contains 11 disjoint elements, then there are 11 equivalence classes according
+ to Theorem 22.9.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Write down a transversal of 
 \begin_inset Formula $\sim$
@@ -1266,6 +1520,15 @@ Write down a transversal of
  
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T=\left\{ \emptyset,\left\{ 1\right\} ,\left\{ 2\right\} ,\left\{ 3\right\} ,\left\{ 4\right\} ,\left\{ 5\right\} ,\left\{ 6\right\} ,\left\{ 7\right\} ,\left\{ 8\right\} ,\left\{ 9\right\} ,\left\{ 10\right\} \right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Determine the equivalence class 
 \begin_inset Formula $\left[\left\{ 8,9,10\right\} \right]$
@@ -1274,12 +1537,364 @@ Determine the equivalence class
  by listing its elements.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left[\left\{ 8,9,10\right\} \right]=\left\{ \left\{ 8\right\} ,\left\{ 8,9\right\} ,\left\{ 8,10\right\} ,\left\{ 8,9,10\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 How large is the equivalence class 
 \begin_inset Formula $\left[\left\{ 2,3,4\right\} \right]$
 \end_inset
 
 ?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Its huge! 
+\begin_inset Formula $\left|\left[\left\{ 2,3,4\right\} \right]\right|=1+\left(\begin{matrix}8\\
+1
+\end{matrix}\right)+\left(\begin{matrix}8\\
+2
+\end{matrix}\right)+\left(\begin{matrix}8\\
+3
+\end{matrix}\right)+\left(\begin{matrix}8\\
+4
+\end{matrix}\right)+\left(\begin{matrix}8\\
+5
+\end{matrix}\right)+\left(\begin{matrix}8\\
+6
+\end{matrix}\right)+\left(\begin{matrix}8\\
+7
+\end{matrix}\right)+\left(\begin{matrix}8\\
+8
+\end{matrix}\right)=256.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Give another proof of Theorem 22.1, by proving that 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ implies 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+, that 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+ implies 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+, and that 
+\begin_inset Formula $\left(3\right)$
+\end_inset
+
+ implies 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+.
+ Note that your proof should not use any theorems after or including Theorem
+ 22.1; it should only use basic properties of equivalence relations and equivalen
+ce classes.
+\end_layout
+
+\begin_layout Proof
+We prove the equivalence by proving three implications: 
+\begin_inset Formula $\left(1\right)\implies\left(2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(2\right)\implies\left(3\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $\left(3\right)\implies\left(1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(1\right)\implies\left(2\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $x\sim y$
+\end_inset
+
+.
+ Since an equivalence relation is reflexive we know that 
+\begin_inset Formula $x,y\in\left[x\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in\left[y\right]$
+\end_inset
+
+.
+ Since it is symmetric, we know that 
+\begin_inset Formula $y\sim x$
+\end_inset
+
+, thus 
+\begin_inset Formula $x\in\left[y\right]$
+\end_inset
+
+.
+ Thus the intersection 
+\begin_inset Formula $\left[x\right]\cap\left[y\right]$
+\end_inset
+
+ must contain at least the elements 
+\begin_inset Formula $x,y$
+\end_inset
+
+ and therefore cannot be empty.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(2\right)\implies\left(3\right)$
+\end_inset
+
+: Assume 
+\begin_inset Formula $\left[x\right]\cap\left[y\right]\neq\emptyset$
+\end_inset
+
+.
+ We wish to show 
+\begin_inset Formula $\left[x\right]=\left[y\right]$
+\end_inset
+
+.
+ We will prove this equality by showing both inclusions.
+ 
+\end_layout
+
+\begin_layout Proof
+We first show 
+\begin_inset Formula $\left[x\right]\subseteq\left[y\right]$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $z\in\left[x\right]$
+\end_inset
+
+, then 
+\begin_inset Formula $x\sim z$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left[x\right]\cap\left[y\right]\neq\emptyset$
+\end_inset
+
+ there is an element 
+\begin_inset Formula $m$
+\end_inset
+
+ that is in both 
+\begin_inset Formula $\left[x\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\left[y\right]$
+\end_inset
+
+ so that 
+\begin_inset Formula $x\sim m$
+\end_inset
+
+ and 
+\begin_inset Formula $y\sim m$
+\end_inset
+
+.
+ Using the symmetric property and transitive properties of equivalence relations
+ we get 
+\begin_inset Formula $z\sim m$
+\end_inset
+
+.
+ Using the same properties again we get 
+\begin_inset Formula $y\sim z$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $z\in\left[y\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We now show 
+\begin_inset Formula $\left[y\right]\subseteq\left[x\right]$
+\end_inset
+
+.
+ This is similar to the proof of 
+\begin_inset Formula $\left[x\right]\subseteq\left[y\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(3\right)\implies\left(2\right)$
+\end_inset
+
+.
+ We assume directly that 
+\begin_inset Formula $\left[x\right]=\left[y\right]$
+\end_inset
+
+.
+ This meas that 
+\begin_inset Formula $x,y\in\left[x\right]$
+\end_inset
+
+, thus 
+\begin_inset Formula $x\sim y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since all three implications hold, the theorem 22.1 is true.
+\end_layout
+
+\begin_layout Exercise
+It is claimed above that every equivalence relation corresponds uniquely
+ to a partition.
+ Prove the final piece of that claim, by showing the following: Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a set.
+ Let 
+\begin_inset Formula $\sim$
+\end_inset
+
+ and 
+\begin_inset Formula $\approx$
+\end_inset
+
+ be two equivalence relations.
+ Show that if their equivalence classes are the same, then the relations
+ are the same.
+ (In other words, conclude that for all 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+, we have 
+\begin_inset Formula $a\sim b$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $a\approx b$
+\end_inset
+
+.) For ease of notation, we will write the equivalence classes for 
+\begin_inset Formula $\sim$
+\end_inset
+
+ using 
+\begin_inset Formula $\left[a\right]$
+\end_inset
+
+, and the equivalence classes for 
+\begin_inset Formula $\approx$
+\end_inset
+
+ using 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that the equivalence relations 
+\begin_inset Formula $\sim$
+\end_inset
+
+ and 
+\begin_inset Formula $\approx$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+ have the same equivalence classes, i.e., 
+\begin_inset Formula $\left[a\right]=\bar{a}$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ Using the definition of equivalence classes, for all 
+\begin_inset Formula $x\in\left[a\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,x\right)\in\sim$
+\end_inset
+
+, and for all 
+\begin_inset Formula $x\in\bar{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,x\right)\in\approx$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left[a\right]=\bar{a}$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $\sim$
+\end_inset
+
+ must have the same elements as 
+\begin_inset Formula $\approx$
+\end_inset
+
+.
+ Thus they are equal.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1290,7 +1905,1192 @@ How large is the equivalence class
 \end_layout
 
 \begin_layout Section
-asdf
+Integers modulo 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $0\in\bar{a}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We wish to show that 
+\begin_inset Formula $0\in\bar{a}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+.
+ This is a biconditional statement, so we will show both implications.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We assume directly that 
+\begin_inset Formula $0\in\bar{a}$
+\end_inset
+
+, then 
+\begin_inset Formula $a\equiv0\,\left(\mod\:n\right)$
+\end_inset
+
+.
+ In other words 
+\begin_inset Formula $n\mid a-0$
+\end_inset
+
+ which is equivalent to 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We assume directly that 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+.
+ This can be written as 
+\begin_inset Formula $n\mid\left(a-0\right)$
+\end_inset
+
+, which is equivalent to 
+\begin_inset Formula $a\equiv0\,\left(\mod\:n\right)$
+\end_inset
+
+, hence 
+\begin_inset Formula $0\in\bar{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since both implications hold, the statement that 
+\begin_inset Formula $0\in\bar{a}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $n\mid a$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Exercise
+Compute the following.
+ Write the results as 
+\begin_inset Formula $\bar{r}$
+\end_inset
+
+, with 
+\begin_inset Formula $r\in\mathbb{Z}$
+\end_inset
+
+ non-negative and as small as possible.
+ For this problem let 
+\begin_inset Formula $\%$
+\end_inset
+
+ denote modulus 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bar{6}+\bar{7}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{9}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(6+7\right)\%9=4$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bar{6}\cdot\bar{7}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{9}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(6\cdot7\right)\%9=6$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{6}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\overline{59}\cdot\overline{119}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{30}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(59\cdot119\right)\%30=1$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bar{6}\cdot\bar{5}+\overline{85}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{7}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(6\cdot5+85\right)\%7=3$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\bar{2}^{10}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}_{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(2^{10}\right)\%5=\left(2^{4}\cdot2^{4}\cdot2^{2}\right)\%5=4$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Create addition and multiplication tables for 
+\begin_inset Formula $\mathbb{Z}_{5}$
+\end_inset
+
+.
+ Be sure to write each entry of the tables as one of 
+\begin_inset Formula $\bar{0},\bar{1},\bar{2},\bar{3}$
+\end_inset
+
+ or 
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
