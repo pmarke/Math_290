@@ -2861,11 +2861,11 @@ We suppose directly that
 \end_inset
 
  is a function, and that the graph of the function has coordinates 
-\begin_inset Formula $\left(x,f\left(x\right)\right)$
+\begin_inset Formula $\left(a,f\left(a\right)\right)$
 \end_inset
 
  for 
-\begin_inset Formula $x\in\mathbb{R}$
+\begin_inset Formula $a\in\mathbb{R}$
 \end_inset
 
 .
@@ -2874,7 +2874,7 @@ We suppose directly that
 \end_inset
 
  for all 
-\begin_inset Formula $b\in\mathbb{R}$
+\begin_inset Formula $b,x\in\mathbb{R}$
 \end_inset
 
  which has coordinates 
@@ -2882,40 +2882,39 @@ We suppose directly that
 \end_inset
 
 .
- Since the image of a line is all of 
-\begin_inset Formula $\mathbb{R}$
+ Since the image of a vertical line at 
+\begin_inset Formula $x$
 \end_inset
 
-, there must exists a 
-\begin_inset Formula $b\in\mathbb{R}$
+ spans all all of the 
+\begin_inset Formula $y$
+\end_inset
+
+ axis, there must exists a 
+\begin_inset Formula $b$
 \end_inset
 
  such that 
-\begin_inset Formula $\left(x,f\left(x\right)\right)=\left(x,x+b\right)$
+\begin_inset Formula $\left(a,f\left(a\right)\right)=\left(x,x+b\right)$
+\end_inset
+
+ when 
+\begin_inset Formula $x=a$
 \end_inset
 
 .
- In addition, since a function requires that for ever 
-\begin_inset Formula $x\in\mathbb{R}$
+ And since every element of the domain is mapped to only one element of
+ the codomain (for every 
+\begin_inset Formula $a$
 \end_inset
 
- there is only one 
-\begin_inset Formula $\left(x,f\left(x\right)\right)\in f$
+, there is only one 
+\begin_inset Formula $f\left(a\right)$
 \end_inset
 
- such that 
-\begin_inset Formula $x$
-\end_inset
-
- is the left coordinate, the line 
-\begin_inset Formula $y=x+b$
-\end_inset
-
- can only intersect the graph of 
-\begin_inset Formula $x$
-\end_inset
-
- at most once.
+), the vertical line can only intersect the graph at most once.
+ In addition, since every element of the domain is mapped to the codomain,
+ then every vertical line intersects the graph once.
  
 \end_layout
 
@@ -2997,20 +2996,47 @@ Since this is a biconditional statement, we must show both ways.
 \begin_inset Formula $b\in\mathbb{R}$
 \end_inset
 
-.
- Since the horizontal line extends all along the 
-\begin_inset Formula $x-$
+ which has coordinates 
+\begin_inset Formula $\left(f\left(a\right)+b,f\left(a\right)\right)$
 \end_inset
 
-axis, The horizontal line must intersect the graph of 
+.
+ Since the horizontal line at 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+ spans the entire 
+\begin_inset Formula $x$
+\end_inset
+
+-axis, the horizontal line intersect the graph of 
 \begin_inset Formula $f$
 \end_inset
 
- at most once at 
+ at 
 \begin_inset Formula $\left(a,f\left(a\right)\right)$
 \end_inset
 
 .
+ Since 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+ is distinct, the corresponding 
+\begin_inset Formula $a$
+\end_inset
+
+ must also be distinct.
+ Hence, if 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective, then every horizontal line intersect he graph of 
+\begin_inset Formula $f$
+\end_inset
+
+ at most once.
+ 
 \end_layout
 
 \begin_layout Proof
@@ -3027,7 +3053,7 @@ axis, The horizontal line must intersect the graph of
 \end_inset
 
  where 
-\begin_inset Formula $b\in\mathbb{R}$
+\begin_inset Formula $b,y\in\mathbb{R}$
 \end_inset
 
 , 
@@ -3043,11 +3069,234 @@ axis, The horizontal line must intersect the graph of
 \end_inset
 
 -axis.
+ The horizontal line has coordinates 
+\begin_inset Formula $\left(y+b,y\right)$
+\end_inset
+
+.
  Since the line intersects the graph of 
 \begin_inset Formula $f$
 \end_inset
 
- at most once, then there exists
+ at most once, then for every 
+\begin_inset Formula $y$
+\end_inset
+
+ (that corresponds to a line intersection with the graph of 
+\begin_inset Formula $f$
+\end_inset
+
+), there is a unique 
+\begin_inset Formula $b*\in\mathbb{R}$
+\end_inset
+
+ where the graph intersects the function.
+ This point is 
+\begin_inset Formula $\left(y+b*,y\right)$
+\end_inset
+
+.
+ By letting 
+\begin_inset Formula $a=y+b*$
+\end_inset
+
+ and 
+\begin_inset Formula $y=f\left(a\right)$
+\end_inset
+
+ we get 
+\begin_inset Formula $\left(a,f\left(a\right)\right)$
+\end_inset
+
+.
+ Thus for every 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+ there is a distinct 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ This is the contrapositive of the definition of what it means for a function
+ to be injective.
+ Hence the function 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+(No holes in the codomain): The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is surjective if an only if every horizontal line intersects the graph
+ of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+This is a biconditional statement, we must show both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We assume directly that 
+\begin_inset Formula $f$
+\end_inset
+
+ is surjective.
+ This indicates that for every 
+\begin_inset Formula $b$
+\end_inset
+
+ in the codomain, there is an 
+\begin_inset Formula $a$
+\end_inset
+
+ in the domain such that 
+\begin_inset Formula $f\left(a\right)=b$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ has coordinates 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ where neither the left or right coordinate are distinct, but for every
+ 
+\begin_inset Formula $b$
+\end_inset
+
+ in the codomain, there is at least one 
+\begin_inset Formula $a$
+\end_inset
+
+ in the domain, so the coordinates 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ exist.
+ A horizontal line at 
+\begin_inset Formula $y$
+\end_inset
+
+ spans the entire 
+\begin_inset Formula $x$
+\end_inset
+
+-axis and has the equation 
+\begin_inset Formula $x=y+c$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+.
+ The equation has the coordinates 
+\begin_inset Formula $\left(y+c,y\right)$
+\end_inset
+
+.
+ By letting 
+\begin_inset Formula $b=y$
+\end_inset
+
+ we get 
+\begin_inset Formula $\left(b+c,b\right)$
+\end_inset
+
+.
+ This shows that every horizontal line will intersect the graph of 
+\begin_inset Formula $f$
+\end_inset
+
+ since 
+\begin_inset Formula $b$
+\end_inset
+
+ spans the 
+\begin_inset Formula $y$
+\end_inset
+
+ axis.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We assume directly that every horizontal line intersects the graph of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Let the horizontal line at 
+\begin_inset Formula $y$
+\end_inset
+
+ be 
+\begin_inset Formula $x=y+c$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ which shows that the line spans the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis at the point 
+\begin_inset Formula $y$
+\end_inset
+
+, and has coordinates 
+\begin_inset Formula $\left(y+c,y\right)$
+\end_inset
+
+.
+ Since every horizontal line intersects the graph of 
+\begin_inset Formula $f$
+\end_inset
+
+, then there exists some 
+\begin_inset Formula $a$
+\end_inset
+
+ in the domain of 
+\begin_inset Formula $f$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(a,f\left(a\right)\right)=\left(y+c*,y\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $c*\in\mathbb{R}$
+\end_inset
+
+ for all 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_deeper
