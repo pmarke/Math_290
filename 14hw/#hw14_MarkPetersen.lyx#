@@ -2426,6 +2426,79 @@ Prove or disprove:
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Proof
+Since this is an equality statement between sets, we will show that 
+\begin_inset Formula $f^{-1}\left(C\cup D\right)\subseteq f^{-1}\left(C\right)\cup f^{-1}\left(D\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f^{-1}\left(C\cup D\right)\supseteq f^{-1}\left(C\right)\cup f^{-1}\left(D\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\subseteq\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $x\in f^{-1}\left(C\cup D\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $f\left(x\right)\in C\cup D$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $f\left(x\right)\in C$
+\end_inset
+
+ and/or 
+\begin_inset Formula $f\left(x\right)\in D$
+\end_inset
+
+.
+ Which is equivalent to 
+\begin_inset Formula $f\left(x\right)\in C\cup D$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $x\in f^{-1}\left(C\cup D\right)$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $f^{-1}\left(C\cup D\right)\subseteq f^{-1}\left(C\right)\cup f^{-1}\left(D\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\supseteq\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $x\in f^{-1}\left(C\right)\cup f^{-1}\left(D\right)$
+\end_inset
+
+.
+ Which means that 
+\begin_inset Formula $f\left(x\right)\in C$
+\end_inset
+
+ and/or 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Prove or disprove: 
 \begin_inset Formula $f^{-1}\left(C\cap D\right)=f^{-1}\left(C\right)\cap f^{-1}\left(D\right)$
@@ -2436,66 +2509,121 @@ Prove or disprove:
 
 \begin_deeper
 \begin_layout Proof
-\begin_inset Argument 1
-status open
+Since this is an equality statement between sets, we will show that 
+\begin_inset Formula $f^{-1}\left(C\cap D\right)\subseteq f^{-1}\left(C\right)\cap f^{-1}\left(D\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Disproof
+ and 
+\begin_inset Formula $f^{-1}\left(C\cap D\right)\supseteq f^{-1}\left(C\right)\cap f^{-1}\left(D\right)$
+\end_inset
+
+.
 \end_layout
 
+\begin_layout Proof
+\begin_inset Formula $\left(\subseteq\right):$
 \end_inset
 
- To disprove this statement, we need to show that there is a function 
-\begin_inset Formula $f:A\to B$
+ We suppose directly that 
+\begin_inset Formula $x\in f^{-1}\left(C\cap D\right)$
 \end_inset
 
- and subsets 
-\begin_inset Formula $C,D\subseteq B$
+, then 
+\begin_inset Formula $f\left(x\right)\in C\cap D$
 \end_inset
 
- such that 
+.
+ In other words, 
+\begin_inset Formula $f\left(x\right)\in C$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(x\right)\in D$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $x$
+\end_inset
+
+ is an element of 
+\begin_inset Formula $f^{-1}\left(C\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f^{-1}\left(D\right)$
+\end_inset
+
+.
+ Which is equivalent to 
+\begin_inset Formula $x\in f^{-1}\left(C\right)\cap f^{-1}\left(D\right)$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $f^{-1}\left(C\cap D\right)\subseteq f^{-1}\left(C\right)\cap f^{-1}\left(D\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\supseteq\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $x\in f^{-1}\left(C\right)\cap f^{-1}\left(D\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $x\in f^{-1}\left(C\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in f^{-1}\left(D\right)$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $f\left(x\right)\in C$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(x\right)\in D$
+\end_inset
+
+.
+ Which means that 
+\begin_inset Formula $f\left(x\right)\in C\cap D$
+\end_inset
+
+, or that 
+\begin_inset Formula $x\in f^{-1}\left(C\cap D\right)$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $f^{-1}\left(C\cap D\right)\supseteq f^{-1}\left(C\right)\cap f^{-1}\left(D\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $f^{-1}\left(C\cap D\right)\subseteq f^{-1}\left(C\right)\cap f^{-1}\left(D\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f^{-1}\left(C\cap D\right)\supseteq f^{-1}\left(C\right)\cap f^{-1}\left(D\right)$
+\end_inset
+
+, we know that 
 \begin_inset Formula $f^{-1}\left(C\cap D\right)=f^{-1}\left(C\right)\cap f^{-1}\left(D\right)$
 \end_inset
 
 .
- We do this by giving an example.
- Let 
-\begin_inset Formula $f$
-\end_inset
-
- be a bijective function and let 
-\begin_inset Formula $\left\{ C,D\right\} $
-\end_inset
-
- be a partition of 
-\begin_inset Formula $B$
-\end_inset
-
- so that 
-\begin_inset Formula $B=C\cup D$
-\end_inset
-
- and 
-\begin_inset Formula $C\cap D=\emptyset$
-\end_inset
-
-, then 
-\begin_inset Formula 
-\begin{align*}
-f^{-1}\left(C\cap D\right) & =f^{-1}\left(\emptyset\right)\\
- & =\emptyset
-\end{align*}
-
-\end_inset
-
-and 
-\begin_inset Formula 
-\[
-\]
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper
