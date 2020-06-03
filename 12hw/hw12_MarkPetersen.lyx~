@@ -4076,9 +4076,129 @@ Since
 
 \end_deeper
 \begin_layout Enumerate
+If 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
 
+ is prime, prove that for any nonzero 
+\begin_inset Formula $\bar{a}\in\mathbb{Z}_{n}$
+\end_inset
+
+, there exists 
+\begin_inset Formula $\bar{b}\in\mathbb{Z}$
+\end_inset
+
+ with 
+\begin_inset Formula $\bar{a}\cdot\bar{b}=\bar{1}$
+\end_inset
+
+.
+ 
 \end_layout
 
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime, 
+\begin_inset Formula $\bar{a}\in\mathbb{Z}_{n}$
+\end_inset
+
+ and that 
+\begin_inset Formula $\bar{a}\neq\bar{0}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\bar{a}=\left\{ a+kn\,:\,k\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime, then 
+\begin_inset Formula $\text{GCD}\left(a,n\right)=1$
+\end_inset
+
+.
+ This allows us to write 
+\begin_inset Formula $1$
+\end_inset
+
+ as a linear combination of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+ then 
+\begin_inset Formula $1=ax+ny$
+\end_inset
+
+ .
+ This can be written as 
+\begin_inset Formula $n\left(-y\right)=ax-1$
+\end_inset
+
+ which is equivalent to 
+\begin_inset Formula $n\mid ax-1$
+\end_inset
+
+ or 
+\begin_inset Formula $ax\equiv1\,\text{mod}\,n$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $x\in\bar{b}$
+\end_inset
+
+ so that 
+\begin_inset Formula $x=b+pn$
+\end_inset
+
+ for some 
+\begin_inset Formula $p\in\mathbb{Z}$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $x\equiv b\,\text{mod}\,n$
+\end_inset
+
+..
+ Thus we can substitute in 
+\begin_inset Formula $b$
+\end_inset
+
+ for 
+\begin_inset Formula $x$
+\end_inset
+
+ to get 
+\begin_inset Formula $ab\equiv1\,\text{mod}\,n$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\bar{a}\cdot\bar{b}=\bar{1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset

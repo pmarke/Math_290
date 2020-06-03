@@ -43,7 +43,7 @@ theorems-sec
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 2
 \use_package amssymb 1
 \use_package cancel 1
@@ -67,6 +67,10 @@ theorems-sec
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 3in
+\bottommargin 1in
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -1902,6 +1906,10 @@ We suppose directly that the equivalence relations
 \end_inset
 
 
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3639,6 +3647,7 @@ No, consider the simple multiplication table below which shows
 
 \begin_layout Exercise
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status collapsed
@@ -4203,10 +4212,6 @@ We suppose directly that
 \begin_inset Newpage newpage
 \end_inset
 
-
-\end_layout
-
-\begin_layout Appendix
 
 \end_layout
 
