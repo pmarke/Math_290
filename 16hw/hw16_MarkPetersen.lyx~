@@ -1032,6 +1032,559 @@ We assume directly that
 
 \end_deeper
 \begin_layout Exercise
+Let 
+\begin_inset Formula $S=\left\{ a,b,c,d,e\right\} $
+\end_inset
+
+ and let 
+\begin_inset Formula $g:S\to\mathcal{P}\left(S\right)$
+\end_inset
+
+ be defined by the rule 
+\begin_inset Formula $g\left(a\right)=\left\{ b,d\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $g\left(b\right)=\left\{ a,c,e\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $g\left(c\right)=\left\{ a,c,d,e\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $g\left(d\right)=\emptyset$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(e\right)=\left\{ e\right\} $
+\end_inset
+
+.
+ List the elements of the barber set 
+\begin_inset Formula $B=\left\{ s\in S\,:\,s\not\in g\left(s\right)\right\} .$
+\end_inset
+
+ Why is it not in the image of 
+\begin_inset Formula $g$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $B=\left\{ a,b,d\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose by contradiction that 
+\begin_inset Formula $B=\left\{ s\in S\,s\not\in g\left(s\right)\right\} $
+\end_inset
+
+ and that 
+\begin_inset Formula $B=g\left(x\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $x\in S$
+\end_inset
+
+.
+ Then there are two cases:
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let 
+\begin_inset Formula $x\in B$
+\end_inset
+
+, this can't be the case by the definition of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $x\not\in B$
+\end_inset
+
+, well then 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ according to the definition of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since both cases lead to a contradiction, the statement must be false.
+ Thus 
+\begin_inset Formula $B$
+\end_inset
+
+ can never be in the image of 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Find a set with cardinality bigger than that of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Then find a set with cardinality bigger than that.
+\end_layout
+
+\begin_layout Exercise
+The power sets 
+\begin_inset Formula $\mathcal{P}\left(\mathbb{R}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{P}\left(\mathcal{P}\left(\mathbb{R}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Theorem 27.5 says that for finite sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, if 
+\begin_inset Formula $\abs{A}=\abs{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ is a function, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective if and only if 
+\begin_inset Formula $f$
+\end_inset
+
+ is surjective.
+ Prove that this fails for infinite sets, by proving the following.
+\end_layout
+
+\begin_layout Enumerate
+Find and infinite set 
+\begin_inset Formula $S$
+\end_inset
+
+ and a function 
+\begin_inset Formula $f:S\to S$
+\end_inset
+
+ that is injective but not surjective.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $S=\mathbb{Z}$
+\end_inset
+
+ and consider the piecewise function
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+2x & \text{if }x\geq0\\
+2\left(-x\right)+1 & \text{if }x<0
+\end{cases}
+\]
+
+\end_inset
+
+which is injective but not surjective.
+ (The problem doesn't say that I have to prove it)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find an infinite set 
+\begin_inset Formula $S$
+\end_inset
+
+ and a function 
+\begin_inset Formula $g:S\to S$
+\end_inset
+
+ that is surjective but not injective.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $S=\mathbb{Z}$
+\end_inset
+
+ and consider the piecewise function
+\begin_inset Formula 
+\[
+g\left(x\right)=\begin{cases}
+x-1 & \text{if }x\geq0\\
+x & \text{if }x<0
+\end{cases}
+\]
+
+\end_inset
+
+which is surjective and not injective.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be sets with 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ a bijection.
+ Define a new map 
+\begin_inset Formula $g:\mathcal{P}\left(A\right)\to\mathcal{P}\left(B\right)$
+\end_inset
+
+ by the rule 
+\begin_inset Formula $g\left(S\right)=\left\{ f\left(s\right)\,:\,s\in S\right\} $
+\end_inset
+
+, where 
+\begin_inset Formula $S\subseteq A$
+\end_inset
+
+ is an arbitrary element of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $g$
+\end_inset
+
+ is a bijection.
+ Conclude that if 
+\begin_inset Formula $\abs{A}=\abs{B}$
+\end_inset
+
+ then 
+\begin_inset Formula $\abs{\mathcal{P}\left(A\right)}=\abs{\mathcal{P}\left(B\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+To show that the function 
+\begin_inset Formula $g$
+\end_inset
+
+ is a bijection, we must show that it is injective and surjective.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Injective
+\series default
+: We suppose contrapositively that 
+\begin_inset Formula $g\left(M\right)=g\left(N\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $M,N\in\mathcal{P}\left(A\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+g\left(M\right) & =g\left(N\right)\\
+\left\{ f\left(m\right)\,:\,m\in M\right\}  & =\left\{ f\left(n\right)\,:\,n\in N\right\} ,
+\end{align*}
+
+\end_inset
+
+since the function 
+\begin_inset Formula $f$
+\end_inset
+
+ is a bijection, 
+\begin_inset Formula $f\left(m\right)=f\left(n\right)$
+\end_inset
+
+ only if 
+\begin_inset Formula $m=n$
+\end_inset
+
+.
+ Thus, for 
+\begin_inset Formula $g\left(M\right)=g\left(N\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+ must equal 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $g$
+\end_inset
+
+ is injective.
+ 
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Surjective
+\series default
+: Let 
+\begin_inset Formula $X\in\mathcal{P}\left(B\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $X\subseteq B$
+\end_inset
+
+ and there exists a corresponding 
+\begin_inset Formula $Y\subseteq A$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(A\right)=B$
+\end_inset
+
+ since 
+\begin_inset Formula $f$
+\end_inset
+
+ is bijective.
+ Thus 
+\begin_inset Formula $g\left(Y\right)=\left\{ f\left(y\right)\,:\,y\in Y\right\} =B$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $g$
+\end_inset
+
+ is surjective.
+ 
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $g$
+\end_inset
+
+ is both surjective and injective, then it is bijective.
+ And because there is a bijection from 
+\begin_inset Formula $\mathcal{P}\left(A\right)\to\mathcal{P}\left(B\right)$
+\end_inset
+
+ we see that if 
+\begin_inset Formula $\abs{A}=\abs{B}$
+\end_inset
+
+ then 
+\begin_inset Formula $\abs{\mathcal{P}\left(A\right)}=\abs{\mathcal{P}\left(B\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Define a function 
+\begin_inset Formula $f:\mathbb{R}\to\mathcal{P}\left(\mathbb{Q}\right)$
+\end_inset
+
+ by the rule
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ q\in\mathbb{Q}\,:\,q\leq x\right\} .
+\]
+
+\end_inset
+
+Prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ in injective.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose contrapositively that 
+\begin_inset Formula $f\left(m\right)=f\left(n\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $m,n\in\mathbb{R}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+f\left(m\right) & =f\left(n\right)\\
+\left\{ q\in\mathbb{Q}\,:q\leq m\right\}  & =\left\{ q\in\mathbb{Q}\,:\,q\leq n\right\} ,
+\end{align*}
+
+\end_inset
+
+Because there is a rational number between any two real numbers 
+\begin_inset Formula $x<y$
+\end_inset
+
+, and the two sets contain all of the same elements, 
+\begin_inset Formula $m=n$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective.
+ 
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective, 
+\begin_inset Formula $\abs{\mathbb{R}}\leq\mathcal{P}\left(\mathbb{Q}\right)$
+\end_inset
+
+.
+ We know that 
+\begin_inset Formula $\abs{\mathbb{Q}}=\abs{\mathbb{N}}$
+\end_inset
+
+.
+ Using the result from the previous exercise, we get that 
+\begin_inset Formula $\abs{\mathcal{P}\left(\mathbb{Q}\right)}=\abs{\mathcal{P}\left(\mathbb{N}\right)}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\abs{\mathbb{R}}\leq\abs{\mathcal{P}\left(\mathbb{N}\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be nonempty sets.
+ Prove that there exists an injection 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ if and only if there exists a surjection 
+\begin_inset Formula $g:B\to A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since the statement is biconditional, we must show both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ is an injection.
+ Then 
+\begin_inset Formula $\abs{A}\leq\abs{B}$
+\end_inset
+
+.
+ Since the cardinality of 
+\begin_inset Formula $B$
+\end_inset
+
+ is greater or equal to the cardinality of 
+\begin_inset Formula $A$
+\end_inset
+
+, then there exists a function 
+\begin_inset Formula $g:B\to A$
+\end_inset
+
+ that is surjective.
+ The function 
+\begin_inset Formula $g$
+\end_inset
+
+ can be a piecewise function that includes 
+\begin_inset Formula $\hat{f}^{-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
 
 \end_layout
 
