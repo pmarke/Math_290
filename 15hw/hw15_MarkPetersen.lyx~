@@ -1485,5 +1485,14 @@ Since we have a bijective map
  
 \end_layout
 
+\begin_layout Exercise
+Prove that the set of all finite subsets of 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ is countably infinite.
+ 
+\end_layout
+
 \end_body
 \end_document
