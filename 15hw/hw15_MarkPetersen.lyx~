@@ -12,7 +12,7 @@
 \renewcommand{\thesubsection}{\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{subsubsection}}
 
-\addtocounter{section}{28}
+\addtocounter{section}{27}
 
 \newcommand\abs[1]{\left|#1\right|}
 \end_preamble

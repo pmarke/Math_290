@@ -521,13 +521,82 @@ Let
 \begin_inset Formula $f:\mathbb{N}\to\prod_{i=1}^{\infty}\left\{ 0,1\right\} $
 \end_inset
 
-.
- We will show that 
+ and let 
+\begin_inset Formula 
+\[
+\text{dig}\left(i\right)=\begin{cases}
+0 & \text{if }i=1\\
+1 & \text{if }i=0.
+\end{cases}
+\]
+
+\end_inset
+
+We will show that 
 \begin_inset Formula $f$
 \end_inset
 
  is not surjective.
- ? I can always make a larger natural number can convert it to binary.
+ Write 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ as the ordered tuple 
+\begin_inset Formula $\left(a_{1},a_{2},a_{3},\ldots\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $a_{1}\in\left\{ 0,1\right\} $
+\end_inset
+
+, and let 
+\begin_inset Formula $x\in\prod_{i=1}^{\infty}\left\{ 0,1\right\} $
+\end_inset
+
+ be written as the ordered tuple 
+\begin_inset Formula $\left(b_{1},b_{2},b_{2},\ldots\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $b_{n}=\text{dig}\left(a_{n}\right)$
+\end_inset
+
+.
+ In other words, the 
+\begin_inset Formula $n$
+\end_inset
+
+th digit of 
+\begin_inset Formula $x$
+\end_inset
+
+ is the digit change of the 
+\begin_inset Formula $n$
+\end_inset
+
+th digit of 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $x\neq f\left(n\right)$
+\end_inset
+
+ for each 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $f$
+\end_inset
+
+ is not surjective, as 
+\begin_inset Formula $x$
+\end_inset
+
+ is not in the image.
 \end_layout
 
 \begin_layout Proof
@@ -1585,7 +1654,48 @@ Since the statement is biconditional, we must show both ways.
 \begin_inset Formula $\left(\impliedby\right):$
 \end_inset
 
+ We suppose directly that 
+\begin_inset Formula $g:B\to A$
+\end_inset
 
+ is surjective.
+ Then for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ such that 
+\begin_inset Formula $g\left(b\right)=a$
+\end_inset
+
+.
+ We can then define a function 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ by the rule that 
+\begin_inset Formula $f\left(a\right)=$
+\end_inset
+
+one of the elements which mapped to 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ And 
+\begin_inset Formula $f$
+\end_inset
+
+ would be an injective map.
+ 
+\end_layout
+
+\begin_layout Proof
+Since both implications are true, the biconditional statement is true.
+ 
 \end_layout
 
 \end_body

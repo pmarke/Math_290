@@ -1442,7 +1442,7 @@ We suppose directly that
 \begin_inset Formula $A_{i}$
 \end_inset
 
- are pairwise disjoint, the codomain of 
+ are pairwise disjoint, the co-domain of 
 \begin_inset Formula $f_{i}$
 \end_inset
 
@@ -1492,6 +1492,63 @@ Prove that the set of all finite subsets of
 
  is countably infinite.
  
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $S_{i}=\left\{ T\subseteq\mathbb{N}\,:\,\forall x\in T,x\leq i\right\} $
+\end_inset
+
+, then all the elements of 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ are finite subsets of 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $s_{i,j}\in S_{i}$
+\end_inset
+
+ be the 
+\begin_inset Formula $j^{th}$
+\end_inset
+
+ element of the set 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+.
+ We can place these elements in a list 
+\begin_inset Formula 
+\[
+\left\{ s_{0,1},s_{1,1},s_{1,2},s_{2,1},s_{2,2},\cdots\right\} .
+\]
+
+\end_inset
+
+ Let 
+\begin_inset Formula $M$
+\end_inset
+
+ be the set after removing the duplicate entries in the list, then the elements
+ of 
+\begin_inset Formula $M$
+\end_inset
+
+ form a non repeating infinite list.
+ Thus 
+\begin_inset Formula $M$
+\end_inset
+
+ is countably infinite.
+ Therefore, the set of all finite subsets of 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ is countably infinite.
 \end_layout
 
 \end_body
