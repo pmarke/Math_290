@@ -1,0 +1,1702 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\addtocounter{section}{29}
+
+\newcommand\abs[1]{\left|#1\right|}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\begin_modules
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 3in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 16
+\end_layout
+
+\begin_layout After Title Text
+Sections 30 and 31
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Section
+Uncountable Sets
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ with 
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ Construct a bijection 
+\begin_inset Formula $f:\left(0,1\right)\to\left(a,b\right),$
+\end_inset
+
+ and prove it is a bijection.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be a function defined as 
+\begin_inset Formula 
+\[
+f\left(x\right)=a+x\cdot\left(b-a\right),
+\]
+
+\end_inset
+
+and we wish to show that it is a bijection.
+ This is done by proving that it is both injective and surjective.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Injective
+\series default
+: We suppose contrapositively that 
+\begin_inset Formula $f\left(m\right)=f\left(k\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $m,k\in\left(0,1\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+f\left(m\right) & =f\left(k\right)\\
+a+m\left(b-a\right) & =a+k\left(b-a\right)\\
+mb-ma & =kb-ka\\
+b\left(m-k\right) & =a\left(m-k\right),
+\end{align*}
+
+\end_inset
+
+since 
+\begin_inset Formula $a<b$
+\end_inset
+
+, this equality holds only when 
+\begin_inset Formula $m-k=0$
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $m=k$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Surjective
+\series default
+: We suppose directly that 
+\begin_inset Formula $y\in\left(a,b\right)$
+\end_inset
+
+, and we want to find a 
+\begin_inset Formula $z\in x\left(0,1\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(z\right)=y$
+\end_inset
+
+.
+ We do this by solving for 
+\begin_inset Formula $z$
+\end_inset
+
+ as follows
+\begin_inset Formula 
+\begin{align*}
+y & =a+z\left(b-a\right)\\
+y-a & =z\left(b-a\right)\\
+\frac{y-a}{b-a} & =z,
+\end{align*}
+
+\end_inset
+
+since 
+\begin_inset Formula $b-a>y-a>0$
+\end_inset
+
+, we know that 
+\begin_inset Formula $1>\frac{y-a}{b-a}>0$
+\end_inset
+
+.
+ Plugging in the expression for 
+\begin_inset Formula $z$
+\end_inset
+
+ into 
+\begin_inset Formula $f$
+\end_inset
+
+ yields
+\begin_inset Formula 
+\begin{align*}
+f\left(z\right) & =a+\frac{y-a}{b-a}\left(b-a\right)\\
+ & =a+y-a\\
+ & =y,
+\end{align*}
+
+\end_inset
+
+thus, 
+\begin_inset Formula $f$
+\end_inset
+
+ is surjective.
+ Since it is both surjective and injective, we know that 
+\begin_inset Formula $f$
+\end_inset
+
+ is a bijection.
+ 
+\end_layout
+
+\begin_layout Exercise
+Prove that the interval 
+\begin_inset Formula $\left[0,1\right)$
+\end_inset
+
+ has continuum cardinality, by creating a bijection 
+\begin_inset Formula $\left[0,1\right)\to\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We define a piecewise bijection 
+\begin_inset Formula $f:\left[0,1\right)\to\left(0,1\right)$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $S=\left\{ 1/\left(n+1\right)\,:\,n\in\mathbb{Z}\geq0\right\} \subsetneq\left[0,1\right)$
+\end_inset
+
+.
+ Now define 
+\begin_inset Formula $f$
+\end_inset
+
+ by the rule
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+x & \text{if }x\not\in S\\
+1/\left(n+2\right) & \text{if }x=1/\left(n+1\right)\in S
+\end{cases}.
+\]
+
+\end_inset
+
+It is easy to see that 
+\begin_inset Formula $f$
+\end_inset
+
+ is a bijection from 
+\begin_inset Formula $\left[0,1\right)-S\to\left(0,1\right)-S$
+\end_inset
+
+ (as it is essentially the identity function on this set).
+ It is also a bijection from 
+\begin_inset Formula $S\to\left(0,1\right)\cap S$
+\end_inset
+
+.
+ By pasting together we have a bijection.
+ Thus, 
+\begin_inset Formula $\left[0,1\right)$
+\end_inset
+
+ has continuum cardinality since 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ has continuum cardinality.
+ 
+\end_layout
+
+\begin_layout Exercise
+Prove that the interval 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ has continuum cardinality.
+ 
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $S=\left(0-\delta,1+\delta\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $T=\left(0+\delta,1-\delta\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $\delta\in\mathbb{R}-\left\{ 0\right\} $
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $T\subseteq\left[0,1\right]\subseteq S$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+ are both open intervals in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, it has been proven that they have continuum cardinality.
+ Since a set cannot have less elements than it's subset, nor can a subset
+ have more elements than the set of which it is a subset, the set 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ must have continuum cardinality.
+\end_layout
+
+\begin_layout Exercise
+Prove that the irrational numbers are uncountable.
+ 
+\end_layout
+
+\begin_layout Proof
+According to theorem 29.1.
+ If 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+ are countable sets, then 
+\begin_inset Formula $S\cup T$
+\end_inset
+
+ is countable.
+ The contrapositive of this is if 
+\begin_inset Formula $S\cup T$
+\end_inset
+
+ is uncountable, then 
+\begin_inset Formula $S$
+\end_inset
+
+ or 
+\begin_inset Formula $T$
+\end_inset
+
+ is uncountable.
+ The rational numbers 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is the union of the irrational and rational numbers, i.e.
+ 
+\begin_inset Formula $\mathbb{R}=\mathbb{Q}\cup\mathbb{I}$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ denotes the set of irrational numbers.
+ Since 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is an uncountable set, either 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ and/or 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ is an uncountable set.
+ It was already shown that 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is a countable set, thus 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ must be an uncountable set.
+ 
+\end_layout
+
+\begin_layout Exercise
+Prove or disprove: The set 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ of complex numbers is uncountable.
+ 
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $\mathbb{R}\subsetneq\mathbb{C}$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is an uncountable set, then according to theorem 30.6, the set 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ is uncountable.
+ 
+\end_layout
+
+\begin_layout Exercise
+We defined a product of two sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ to be the collection of the ordered pairs from 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A_{1},A_{2},A_{3},\ldots$
+\end_inset
+
+ be sets.
+ Define the product 
+\begin_inset Formula $\prod_{i=1}^{-\infty}A_{i}=A_{1}\times A_{2}\times A_{3}\times\cdots$
+\end_inset
+
+ to be the set of ordered sequences
+\begin_inset Formula 
+\[
+\left\{ \left(a_{1},a_{2},a_{3},\ldots\right)\,:\,a_{i}\in A_{i}\text{ for each integer }i\geq1\right\} .
+\]
+
+\end_inset
+
+We showed previously that a finite product of countable sets is countable.
+ Show that the countable product 
+\begin_inset Formula $\prod_{i=1}^{\infty}\left\{ 0,1\right\} =\left\{ 0,1\right\} \times\left\{ 0,1\right\} \times\left\{ 0,1\right\} \times\cdots$
+\end_inset
+
+ is not countable.
+ 
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $f:\mathbb{N}\to\prod_{i=1}^{\infty}\left\{ 0,1\right\} $
+\end_inset
+
+ and let 
+\begin_inset Formula 
+\[
+\text{dig}\left(i\right)=\begin{cases}
+0 & \text{if }i=1\\
+1 & \text{if }i=0.
+\end{cases}
+\]
+
+\end_inset
+
+We will show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is not surjective.
+ Write 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ as the ordered tuple 
+\begin_inset Formula $\left(a_{1},a_{2},a_{3},\ldots\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $a_{i}\in\left\{ 0,1\right\} $
+\end_inset
+
+, and let 
+\begin_inset Formula $x\in\prod_{i=1}^{\infty}\left\{ 0,1\right\} $
+\end_inset
+
+ be written as the ordered tuple 
+\begin_inset Formula $\left(b_{1},b_{2},b_{2},\ldots\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $b_{n}=\text{dig}\left(a_{n}\right)$
+\end_inset
+
+.
+ In other words, the 
+\begin_inset Formula $n$
+\end_inset
+
+th digit of 
+\begin_inset Formula $x$
+\end_inset
+
+ is the digit change of the 
+\begin_inset Formula $n$
+\end_inset
+
+th digit of 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $x\neq f\left(n\right)$
+\end_inset
+
+ for each 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $f$
+\end_inset
+
+ is not surjective, as 
+\begin_inset Formula $x$
+\end_inset
+
+ is not in the image.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Injections and Cardinalities
+\end_layout
+
+\begin_layout Exercise
+Answer each of the following true or false problems, proving your answer.
+\end_layout
+
+\begin_layout Enumerate
+Every uncountable set has the same cardinality as 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ We know that 
+\begin_inset Formula $\abs{\mathbb{R}}=\abs{\left(0,1\right)}$
+\end_inset
+
+.
+ From theorem 31.5 we know that 
+\begin_inset Formula $\abs{\mathbb{R}}<\abs{\mathcal{P}\left(\mathbb{R}\right)}$
+\end_inset
+
+.
+ This shows that the uncountable set 
+\begin_inset Formula $\mathcal{P}\left(\mathbb{R}\right)$
+\end_inset
+
+ has a larger cardinality than 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be sets.
+ If 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{A}\leq\abs{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ be the identity function.
+ Since 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+, we know that 
+\begin_inset Formula $f$
+\end_inset
+
+ is either surjective (if 
+\begin_inset Formula $A=B$
+\end_inset
+
+) or nor surjective if 
+\begin_inset Formula $A\neq B$
+\end_inset
+
+.
+ If it is surjective, then 
+\begin_inset Formula $\abs{A}=\abs{B}$
+\end_inset
+
+, and if it is injective, then 
+\begin_inset Formula $\abs{A}\leq\abs{B}$
+\end_inset
+
+.
+ In either case, we have that 
+\begin_inset Formula $\abs{A}\leq\abs{B}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, if 
+\begin_inset Formula $A\subsetneq B$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{A}<\abs{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ Consider the sets 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ that have the relation 
+\begin_inset Formula $\mathbb{N}\subsetneq\mathbb{Z}$
+\end_inset
+
+; however, it has been shown that 
+\begin_inset Formula $\abs{\mathbb{N}}=\abs{\mathbb{Z}}$
+\end_inset
+
+.
+ This example proves that the statement is false.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Given sets 
+\begin_inset Formula $A,B,$
+\end_inset
+
+ and 
+\begin_inset Formula $C,$
+\end_inset
+
+ if 
+\begin_inset Formula $A\subseteq B\subseteq C$
+\end_inset
+
+ and both 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ are countably infinite, then 
+\begin_inset Formula $B$
+\end_inset
+
+ is countably infinite.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Since 
+\begin_inset Formula $B$
+\end_inset
+
+ is a subset of 
+\begin_inset Formula $C$
+\end_inset
+
+, there exists an injective function 
+\begin_inset Formula $f:B\to C$
+\end_inset
+
+ that is the identity function, thus 
+\begin_inset Formula $\abs{B}\leq\abs{C}$
+\end_inset
+
+.
+ Also, since 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+, then there exists an injective function 
+\begin_inset Formula $g:A\to C$
+\end_inset
+
+ that can be the identity function, thus 
+\begin_inset Formula $\abs{A}\leq\abs{C}$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $\abs{A}\leq\abs{B}\leq\abs{C}$
+\end_inset
+
+.
+ Which shows that 
+\begin_inset Formula $B$
+\end_inset
+
+ is countably infinite.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+No subsets of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ has smaller cardinality than 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ We disprove this statement with a simple example.
+ Consider the empty set 
+\begin_inset Formula $\emptyset\subsetneq\mathbb{R}$
+\end_inset
+
+.
+ Surely 
+\begin_inset Formula $\abs{\emptyset}<\abs{\mathbb{R}}$
+\end_inset
+
+.
+ Thus the statement is false.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For sets 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+, if 
+\begin_inset Formula $\abs{S}<\abs{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ is finite, then 
+\begin_inset Formula $T$
+\end_inset
+
+ is infinite.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ We disprove this statement with a counterexample.
+ Let 
+\begin_inset Formula $S=\emptyset$
+\end_inset
+
+ and 
+\begin_inset Formula $T=\left\{ 0\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{S}<\abs{T}$
+\end_inset
+
+, but 
+\begin_inset Formula $T$
+\end_inset
+
+ is not infinite.
+ This is a contradiction to the statement, thus the statement is false.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For sets 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+, if 
+\begin_inset Formula $\abs{S}<\abs{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ is countable, then 
+\begin_inset Formula $T$
+\end_inset
+
+ is uncountable.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ We disprove this statement with a counterexample.
+ Let 
+\begin_inset Formula $S=\emptyset$
+\end_inset
+
+ and 
+\begin_inset Formula $T=\left\{ 0\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{S}<\abs{T}$
+\end_inset
+
+, 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+ are both finite sets and are thus both countable.
+ This is a contradiction to the statement, thus it is false.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For sets 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+, if 
+\begin_inset Formula $\abs{S}<\abs{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ is countably infinite, then 
+\begin_inset Formula $T$
+\end_inset
+
+ is uncountable.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+A countably infinite set has cardinality 
+\begin_inset Formula $\aleph_{0}$
+\end_inset
+
+, the next largest cardinality is 
+\begin_inset Formula $\aleph_{1}$
+\end_inset
+
+ which pertains to a set that is uncountable.
+ Since 
+\begin_inset Formula $\abs{S}<\abs{T}$
+\end_inset
+
+, then 
+\begin_inset Formula $T$
+\end_inset
+
+ must be uncountable since 
+\begin_inset Formula $\abs{T}\geq\aleph_{1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For any set 
+\begin_inset Formula $S$
+\end_inset
+
+, there exists another set 
+\begin_inset Formula $T$
+\end_inset
+
+ such that 
+\begin_inset Formula $\abs{S}<\abs{T}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $S$
+\end_inset
+
+ is a set, then according to theorem 31.5, 
+\begin_inset Formula $\abs{S}<\abs{\mathcal{P}\left(S\right)}$
+\end_inset
+
+.
+ By letting 
+\begin_inset Formula $T=\mathcal{P}\left(S\right)$
+\end_inset
+
+, we have shown that there exists another set 
+\begin_inset Formula $T$
+\end_inset
+
+ such that 
+\begin_inset Formula $\abs{S}<\abs{T}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $S=\left\{ a,b,c,d,e\right\} $
+\end_inset
+
+ and let 
+\begin_inset Formula $g:S\to\mathcal{P}\left(S\right)$
+\end_inset
+
+ be defined by the rule 
+\begin_inset Formula $g\left(a\right)=\left\{ b,d\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $g\left(b\right)=\left\{ a,c,e\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $g\left(c\right)=\left\{ a,c,d,e\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $g\left(d\right)=\emptyset$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(e\right)=\left\{ e\right\} $
+\end_inset
+
+.
+ List the elements of the barber set 
+\begin_inset Formula $B=\left\{ s\in S\,:\,s\not\in g\left(s\right)\right\} .$
+\end_inset
+
+ Why is it not in the image of 
+\begin_inset Formula $g$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula $B=\left\{ a,b,d\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose by contradiction that 
+\begin_inset Formula $B=\left\{ s\in S\,s\not\in g\left(s\right)\right\} $
+\end_inset
+
+ and that 
+\begin_inset Formula $B=g\left(x\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $x\in S$
+\end_inset
+
+.
+ Then there are two cases:
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let 
+\begin_inset Formula $x\in B$
+\end_inset
+
+, this can't be the case by the definition of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $x\not\in B$
+\end_inset
+
+, well then 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ according to the definition of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since both cases lead to a contradiction, the statement must be false.
+ Thus 
+\begin_inset Formula $B$
+\end_inset
+
+ can never be in the image of 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Find a set with cardinality bigger than that of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Then find a set with cardinality bigger than that.
+\end_layout
+
+\begin_layout Exercise
+The power sets 
+\begin_inset Formula $\mathcal{P}\left(\mathbb{R}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{P}\left(\mathcal{P}\left(\mathbb{R}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+Theorem 27.5 says that for finite sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, if 
+\begin_inset Formula $\abs{A}=\abs{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ is a function, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective if and only if 
+\begin_inset Formula $f$
+\end_inset
+
+ is surjective.
+ Prove that this fails for infinite sets, by proving the following.
+\end_layout
+
+\begin_layout Enumerate
+Find and infinite set 
+\begin_inset Formula $S$
+\end_inset
+
+ and a function 
+\begin_inset Formula $f:S\to S$
+\end_inset
+
+ that is injective but not surjective.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $S=\mathbb{Z}$
+\end_inset
+
+ and consider the piecewise function
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+2x & \text{if }x\geq0\\
+2\left(-x\right)+1 & \text{if }x<0
+\end{cases}
+\]
+
+\end_inset
+
+which is injective but not surjective.
+ (The problem doesn't say that I have to prove it)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find an infinite set 
+\begin_inset Formula $S$
+\end_inset
+
+ and a function 
+\begin_inset Formula $g:S\to S$
+\end_inset
+
+ that is surjective but not injective.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $S=\mathbb{Z}$
+\end_inset
+
+ and consider the piecewise function
+\begin_inset Formula 
+\[
+g\left(x\right)=\begin{cases}
+x-1 & \text{if }x\geq0\\
+x & \text{if }x<0
+\end{cases}
+\]
+
+\end_inset
+
+which is surjective and not injective.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be sets with 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ a bijection.
+ Define a new map 
+\begin_inset Formula $g:\mathcal{P}\left(A\right)\to\mathcal{P}\left(B\right)$
+\end_inset
+
+ by the rule 
+\begin_inset Formula $g\left(S\right)=\left\{ f\left(s\right)\,:\,s\in S\right\} $
+\end_inset
+
+, where 
+\begin_inset Formula $S\subseteq A$
+\end_inset
+
+ is an arbitrary element of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $g$
+\end_inset
+
+ is a bijection.
+ Conclude that if 
+\begin_inset Formula $\abs{A}=\abs{B}$
+\end_inset
+
+ then 
+\begin_inset Formula $\abs{\mathcal{P}\left(A\right)}=\abs{\mathcal{P}\left(B\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+To show that the function 
+\begin_inset Formula $g$
+\end_inset
+
+ is a bijection, we must show that it is injective and surjective.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Injective
+\series default
+: We suppose contrapositively that 
+\begin_inset Formula $g\left(M\right)=g\left(N\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $M,N\in\mathcal{P}\left(A\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+g\left(M\right) & =g\left(N\right)\\
+\left\{ f\left(m\right)\,:\,m\in M\right\}  & =\left\{ f\left(n\right)\,:\,n\in N\right\} ,
+\end{align*}
+
+\end_inset
+
+since the function 
+\begin_inset Formula $f$
+\end_inset
+
+ is a bijection, 
+\begin_inset Formula $f\left(m\right)=f\left(n\right)$
+\end_inset
+
+ only if 
+\begin_inset Formula $m=n$
+\end_inset
+
+.
+ Thus, for 
+\begin_inset Formula $g\left(M\right)=g\left(N\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+ must equal 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $g$
+\end_inset
+
+ is injective.
+ 
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Surjective
+\series default
+: Let 
+\begin_inset Formula $X\in\mathcal{P}\left(B\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $X\subseteq B$
+\end_inset
+
+ and there exists a corresponding 
+\begin_inset Formula $Y\subseteq A$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(A\right)=B$
+\end_inset
+
+ since 
+\begin_inset Formula $f$
+\end_inset
+
+ is bijective.
+ Thus 
+\begin_inset Formula $g\left(Y\right)=\left\{ f\left(y\right)\,:\,y\in Y\right\} =B$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $g$
+\end_inset
+
+ is surjective.
+ 
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $g$
+\end_inset
+
+ is both surjective and injective, then it is bijective.
+ And because there is a bijection from 
+\begin_inset Formula $\mathcal{P}\left(A\right)\to\mathcal{P}\left(B\right)$
+\end_inset
+
+ we see that if 
+\begin_inset Formula $\abs{A}=\abs{B}$
+\end_inset
+
+ then 
+\begin_inset Formula $\abs{\mathcal{P}\left(A\right)}=\abs{\mathcal{P}\left(B\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Define a function 
+\begin_inset Formula $f:\mathbb{R}\to\mathcal{P}\left(\mathbb{Q}\right)$
+\end_inset
+
+ by the rule
+\begin_inset Formula 
+\[
+f\left(x\right)=\left\{ q\in\mathbb{Q}\,:\,q\leq x\right\} .
+\]
+
+\end_inset
+
+Prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ in injective.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose contrapositively that 
+\begin_inset Formula $f\left(m\right)=f\left(n\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $m,n\in\mathbb{R}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+f\left(m\right) & =f\left(n\right)\\
+\left\{ q\in\mathbb{Q}\,:q\leq m\right\}  & =\left\{ q\in\mathbb{Q}\,:\,q\leq n\right\} ,
+\end{align*}
+
+\end_inset
+
+Because there is a rational number between any two real numbers 
+\begin_inset Formula $x<y$
+\end_inset
+
+, and the two sets contain all of the same elements, 
+\begin_inset Formula $m=n$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective.
+ 
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective, 
+\begin_inset Formula $\abs{\mathbb{R}}\leq\mathcal{P}\left(\mathbb{Q}\right)$
+\end_inset
+
+.
+ We know that 
+\begin_inset Formula $\abs{\mathbb{Q}}=\abs{\mathbb{N}}$
+\end_inset
+
+.
+ Using the result from the previous exercise, we get that 
+\begin_inset Formula $\abs{\mathcal{P}\left(\mathbb{Q}\right)}=\abs{\mathcal{P}\left(\mathbb{N}\right)}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\abs{\mathbb{R}}\leq\abs{\mathcal{P}\left(\mathbb{N}\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be nonempty sets.
+ Prove that there exists an injection 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ if and only if there exists a surjection 
+\begin_inset Formula $g:B\to A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since the statement is biconditional, we must show both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ is an injection.
+ Then 
+\begin_inset Formula $\abs{A}\leq\abs{B}$
+\end_inset
+
+.
+ Since the cardinality of 
+\begin_inset Formula $B$
+\end_inset
+
+ is greater or equal to the cardinality of 
+\begin_inset Formula $A$
+\end_inset
+
+, then there exists a function 
+\begin_inset Formula $g:B\to A$
+\end_inset
+
+ that is surjective.
+ The function 
+\begin_inset Formula $g$
+\end_inset
+
+ can be a piecewise function that includes 
+\begin_inset Formula $\hat{f}^{-1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $g:B\to A$
+\end_inset
+
+ is surjective.
+ Then for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ such that 
+\begin_inset Formula $g\left(b\right)=a$
+\end_inset
+
+.
+ We can then define a function 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ by the rule that 
+\begin_inset Formula $f\left(a\right)=$
+\end_inset
+
+one of the elements which mapped to 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ And 
+\begin_inset Formula $f$
+\end_inset
+
+ would be an injective map.
+ 
+\end_layout
+
+\begin_layout Proof
+Since both implications are true, the biconditional statement is true.
+ 
+\end_layout
+
+\end_body
+\end_document
