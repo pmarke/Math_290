@@ -387,7 +387,7 @@ We assume directly that
 \end_inset
 
  is a bijection, then 
-\begin_inset Formula $\abs{C}=\abs\left\{ B\right\} $
+\begin_inset Formula $\abs{C}=\abs{B}$
 \end_inset
 
 .
@@ -414,7 +414,7 @@ We assume directly that
 \end_inset
 
 , 
-\begin_inset Formula $\abs{C}=\abs\left\{ B\right\} $
+\begin_inset Formula $\abs{C}=\abs{B}$
 \end_inset
 
 , and 
@@ -446,6 +446,83 @@ Complete the proof in case
 \end_inset
 
 , and also that it is bijective.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that the sets 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+ correspond to the chain that never loops and has an ultimate ancestor in
+ 
+\begin_inset Formula $A.$
+\end_inset
+
+ Let 
+\begin_inset Formula $a_{i}\in A_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{i}\in B_{2}$
+\end_inset
+
+ with 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ being the ultimate ancestor in 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+.
+ Using 
+\begin_inset Formula $f|_{A_{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $g|_{B_{2}}$
+\end_inset
+
+, we get the chain 
+\begin_inset Formula 
+\[
+a_{0}\mapsto b_{0}\mapsto a_{1}\mapsto b_{1}\mapsto\cdots\mapsto a_{n}\mapsto b_{n},
+\]
+
+\end_inset
+
+with .
+ Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective, then 
+\begin_inset Formula $f|_{A_{2}}$
+\end_inset
+
+ is injective.
+ From the chain we can see that any 
+\begin_inset Formula $b_{i}\in B_{2}$
+\end_inset
+
+ is simply 
+\begin_inset Formula $f\left(a_{i}\right)$
+\end_inset
+
+, thus 
+\begin_inset Formula $f|_{A_{2}}$
+\end_inset
+
+ is surjective.
+ Since the function 
+\begin_inset Formula $f|_{A_{2}}$
+\end_inset
+
+ is both injective and surjective, it is bijective.
 \end_layout
 
 \begin_layout --Separator--

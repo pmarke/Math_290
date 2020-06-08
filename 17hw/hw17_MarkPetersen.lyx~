@@ -387,7 +387,7 @@ We assume directly that
 \end_inset
 
  is a bijection, then 
-\begin_inset Formula $\abs{C}=\abs\left\{ B\right\} $
+\begin_inset Formula $\abs{C}=\abs{B}$
 \end_inset
 
 .
@@ -448,12 +448,168 @@ Complete the proof in case
 , and also that it is bijective.
 \end_layout
 
+\begin_layout Proof
+We suppose directly that the sets 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+ correspond to the chain that never loops and has an ultimate ancestor in
+ 
+\begin_inset Formula $A.$
+\end_inset
+
+ Let 
+\begin_inset Formula $a_{i}\in A_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{i}\in B_{2}$
+\end_inset
+
+ with 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ being the ultimate ancestor in 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+.
+ Using 
+\begin_inset Formula $f|_{A_{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $g|_{B_{2}}$
+\end_inset
+
+, we get the chain 
+\begin_inset Formula 
+\[
+a_{0}\mapsto b_{0}\mapsto a_{1}\mapsto b_{1}\mapsto\cdots\mapsto a_{n}\mapsto b_{n},
+\]
+
+\end_inset
+
+with .
+ Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective, then 
+\begin_inset Formula $f|_{A_{2}}$
+\end_inset
+
+ is injective.
+ From the chain we can see that any 
+\begin_inset Formula $b_{i}\in B_{2}$
+\end_inset
+
+ is simply 
+\begin_inset Formula $f\left(a_{i}\right)$
+\end_inset
+
+, thus 
+\begin_inset Formula $f|_{A_{2}}$
+\end_inset
+
+ is surjective.
+ Since the function 
+\begin_inset Formula $f|_{A_{2}}$
+\end_inset
+
+ is both injective and surjective, it is bijective.
+\end_layout
+
 \begin_layout --Separator--
 
 \end_layout
 
 \begin_layout Exercise
+In exercise 31.6 we showed that 
+\begin_inset Formula $\abs{R}\leq\abs{\mathcal{P}\left(\mathbb{N}\right)}$
+\end_inset
 
+.
+ Here is another way to do that.
+\end_layout
+
+\begin_layout Exercise
+Define a function 
+\begin_inset Formula $f:\left(0,1\right)\to\mathcal{P}\left(\mathbb{N}\right)$
+\end_inset
+
+, by sending (the decimal expansion of) a real number 
+\begin_inset Formula $0.a_{1}a_{2}a_{3}\ldots$
+\end_inset
+
+ (not ending in repeating 9's) to the set
+\begin_inset Formula 
+\[
+\left\{ a_{1},10a_{2},100a_{3},\ldots\right\} -\left\{ 0\right\} \subseteq\mathbb{N}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Prove that this is an injective function.
+\end_layout
+
+\begin_layout Proof
+We suppose contrapositively that 
+\begin_inset Formula $f\left(x\right)=f\left(y\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y\in\left(0,1\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =f\left(y\right)\\
+\left\{ x_{1},10x_{2},100x_{3},\ldots\right\}  & =\left\{ y_{1},10y_{2},100y_{3},\ldots\right\} .
+\end{align*}
+
+\end_inset
+
+The two sets can only be equivalent if they have the same elements.
+ Since the elements of the sets are constructed uniquely from the decimal
+ digits of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+, this means that 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ must have the same decimal digits.
+ And, since 
+\begin_inset Formula $0<x,y<1$
+\end_inset
+
+, we get that 
+\begin_inset Formula $x=y$
+\end_inset
+
+ since their decimal values are equivalent.
+ Thus the function is injective.
+ 
 \end_layout
 
 \end_body
