@@ -1,0 +1,1250 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\addtocounter{section}{0}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\begin_modules
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 3in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Midterm 3
+\end_layout
+
+\begin_layout Title
+Mark Petersen
+\end_layout
+
+\begin_layout Exercise
+Answer the following
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f:\mathbb{Z}_{7}\to\left\{ -1,1\right\} $
+\end_inset
+
+ be given by 
+\begin_inset Formula $f\left(\bar{a}\right)=\left(-1\right)^{a}$
+\end_inset
+
+.
+ Is 
+\begin_inset Formula $f$
+\end_inset
+
+ well defined?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For 
+\begin_inset Formula $f$
+\end_inset
+
+ to be well defined, every element in the domain can only be mapped to one
+ element in the codomain.
+ The integers 
+\begin_inset Formula $1$
+\end_inset
+
+ and 
+\begin_inset Formula $8$
+\end_inset
+
+ are elements of 
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+, but they are mapped to different elements in the codomain.
+\begin_inset Formula 
+\begin{align*}
+\left(-1\right)^{1} & =-1\\
+\left(-1\right)^{8} & =1
+\end{align*}
+
+\end_inset
+
+thus the function is not well defined.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $i$
+\end_inset
+
+ be the complex number satisfying 
+\begin_inset Formula $i^{2}=-1$
+\end_inset
+
+.
+ Is the function 
+\begin_inset Formula $g:\mathbb{Z}_{4}\to\mathbb{C}$
+\end_inset
+
+ given by 
+\begin_inset Formula $g\left(\bar{a}\right)=i^{a}$
+\end_inset
+
+ well defined?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Yes, every element 
+\begin_inset Formula $m\in\bar{a}$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $a+k4$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula 
+\begin{align*}
+i^{m} & =i^{\left(a+k4\right)}\\
+ & =i^{a}\cdot i^{k4}\\
+ & =i^{a}\cdot\left(1^{k}\right)\\
+ & =i^{a}
+\end{align*}
+
+\end_inset
+
+This shows that every representation of the domain is mapped to the same
+ element in the codomain, and therefore, the function is well defined.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider the new definition of addition of fractions as 
+\begin_inset Formula $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$
+\end_inset
+
+.
+ Is 
+\begin_inset Formula $h\left(x,y\right)=x\oplus y$
+\end_inset
+
+ a well defined function from 
+\begin_inset Formula $\mathbb{Q}\times\mathbb{Q}\to\mathbb{Q}?$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+No, we will show this with a simple counterexample.
+ Let 
+\begin_inset Formula $a=\frac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $b=\frac{3}{8}$
+\end_inset
+
+, and 
+\begin_inset Formula $a'=\frac{2}{4}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a=a'$
+\end_inset
+
+.
+ In other words 
+\begin_inset Formula $\left(a,b\right)=\left(a',b\right)$
+\end_inset
+
+.
+ We note that 
+\begin_inset Formula 
+\begin{align*}
+a+b & =\frac{1}{2}+\frac{3}{8}=\frac{4}{10}=\frac{2}{5}\\
+a'+b & =\frac{2}{4}+\frac{3}{8}=\frac{5}{12}.
+\end{align*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\frac{2}{5}\neq\frac{5}{12}$
+\end_inset
+
+ , this shows that the same element in the domain has more than one image.
+ Therefore, the function is not well defined.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove that the set 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is uncountable.
+ Make no assumptions about the uncountability of any other sets.
+ You may use the fact that 
+\begin_inset Formula $\left|\left(0,1\right)\right|=\left|\mathbb{R}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $\left|\left(0,1\right)\right|=\left|\mathbb{R}\right|$
+\end_inset
+
+, it is sufficient to show that the set 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ is uncountable.
+ We can show that it is uncountable by showing that there does not exist
+ a bijection from 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ to 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ since 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ is a countable set.
+ This is done by showing that there is not surjective function from 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ to 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+.
+ To do this, let 
+\begin_inset Formula $f:\mathbb{N}\to\left(0,1\right)$
+\end_inset
+
+ be the arbitrary function defined as 
+\begin_inset Formula 
+\[
+f\left(x\right)=0.x_{1}x_{2}x_{3}\cdots
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ represents the decimal digits.
+ The codomain of the function is 
+\begin_inset Formula $U\subseteq\left(0,1\right)$
+\end_inset
+
+ by construction.
+ The decimal expansion of any number in the codomain 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $0.a_{1}a_{2}a_{3}\cdots$
+\end_inset
+
+ with 
+\begin_inset Formula $a_{i}\in\mathbb{N}$
+\end_inset
+
+.
+ To show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is not surjective, we must show that there exists at least one element
+ in the codomain 
+\begin_inset Formula $m$
+\end_inset
+
+, such that 
+\begin_inset Formula $f\left(x\right)=m$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\mathbb{N}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $k\in\left(0,1\right)$
+\end_inset
+
+ be written as 
+\begin_inset Formula $0.k_{1}k_{2}k_{2}\cdots$
+\end_inset
+
+ where the digit 
+\begin_inset Formula $k_{i}$
+\end_inset
+
+ is defined as 
+\begin_inset Formula 
+\[
+k_{i}=\begin{cases}
+7 & \text{if }g\left(i\right)\neq7\\
+0 & \text{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $g\left(i\right)$
+\end_inset
+
+ being the function that returns the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ digit of 
+\begin_inset Formula $f\left(i\right)$
+\end_inset
+
+.
+ For example, if 
+\begin_inset Formula $f\left(3\right)=0.123000\cdots$
+\end_inset
+
+ then 
+\begin_inset Formula $g\left(i\right)=3$
+\end_inset
+
+ and 
+\begin_inset Formula $k_{i}=7$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $k\not\in f\left(\mathbb{R}\right)$
+\end_inset
+
+, thus there is no surjective function 
+\begin_inset Formula $f:\mathbb{N}\to\left(0,1\right)$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\left|\left(0,1\right)\right|$
+\end_inset
+
+ is uncountable, and since 
+\begin_inset Formula $\left|\left(0,1\right)\right|=\left|\mathbb{R}\right|$
+\end_inset
+
+, then 
+\begin_inset Formula $\left|\mathbb{R}\right|$
+\end_inset
+
+ is uncountable.
+ 
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $f:\mathbb{R}-\left\{ 7\right\} \to\mathbb{R}-\left\{ 5\right\} $
+\end_inset
+
+ be the function 
+\begin_inset Formula $f\left(x\right)=\frac{5x-2}{x-7}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $f:\mathbb{R}-\left\{ 7\right\} \to\mathbb{R}-\left\{ 5\right\} $
+\end_inset
+
+ is a function.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+To show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is a function, we must show that every element in the domain is mapped
+ to an element in the codomain.
+ To do this, we assume directly that 
+\begin_inset Formula $f\left(x\right)=\frac{5x-2}{x-7}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $7\not\in\mathbb{R}-\left\{ 7\right\} $
+\end_inset
+
+, the denominator of 
+\begin_inset Formula $\frac{5x-2}{x-7}$
+\end_inset
+
+ is never zero and thus 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ does not go to infinity.
+ We also need to make sure that 
+\begin_inset Formula $f\left(x\right)\neq5$
+\end_inset
+
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+ in the domain.
+ To do this, we solve for 
+\begin_inset Formula $x$
+\end_inset
+
+ as follows
+\begin_inset Formula 
+\begin{align*}
+\frac{5x-2}{x-7} & =5\\
+5x-2 & =5\left(x-7\right)\\
+5x-2 & =5x-35\\
+-2 & =-35,
+\end{align*}
+
+\end_inset
+
+which is a contradiction, thus 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ can never equal 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ Lastly, since any real number divided by a another real number not equal
+ to 
+\begin_inset Formula $0$
+\end_inset
+
+ is another real number, we know that 
+\begin_inset Formula $\frac{5x-2}{x-7}\in\mathbb{R}-\left\{ 5\right\} $
+\end_inset
+
+ for any 
+\begin_inset Formula $x\in\mathbb{R}-\left\{ 7\right\} $
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $f$
+\end_inset
+
+ is a function.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is bijective.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+To show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is bijective, we must show that it is a function, injective, and surjective.
+ We have already shown that 
+\begin_inset Formula $f$
+\end_inset
+
+ is a function, so we only need to show that it is injective and surjective.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Injective
+\series default
+: We suppose contrapostively that 
+\begin_inset Formula $f\left(m\right)=f\left(k\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $m,k\in\mathbb{R}-\left\{ 7\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+f\left(m\right) & =f\left(k\right)\\
+\frac{5m-2}{m-7} & =\frac{5k-2}{k-7}\\
+\left(5m-2\right)\left(k-7\right) & =\left(5k-2\right)\left(m-7\right)\\
+5mk-35m-2k+14 & =5mk-35k-2m+14\\
+33k & =33m\\
+k & =m,
+\end{align*}
+
+\end_inset
+
+since 
+\begin_inset Formula $k=m$
+\end_inset
+
+, the function is injective.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Surjective
+\series default
+: We suppose directly that 
+\begin_inset Formula $f\left(x\right)=\frac{5x-2}{x-7}$
+\end_inset
+
+.
+ To show that it is surjective, we need to show that for every 
+\begin_inset Formula $b\in\mathbb{R}-\left\{ 5\right\} $
+\end_inset
+
+, there exists an 
+\begin_inset Formula $a\in\mathbb{R}-\left\{ 7\right\} $
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(a\right)=b$
+\end_inset
+
+.
+ To do this, we begin by solving for 
+\begin_inset Formula $a$
+\end_inset
+
+ as follows
+\begin_inset Formula 
+\begin{align*}
+\frac{5a-2}{a-7} & =b\\
+5a-2 & =ba-7b\\
+5a-ba & =2-7b\\
+a\left(5-b\right) & =2-7b\\
+a & =\frac{2-7b}{5-b},
+\end{align*}
+
+\end_inset
+
+since 
+\begin_inset Formula $b$
+\end_inset
+
+ can never equal 
+\begin_inset Formula $5$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ is never infinity.
+ We must also show that 
+\begin_inset Formula $a\neq7$
+\end_inset
+
+ for any 
+\begin_inset Formula $b\in\mathbb{R}-\left\{ 5\right\} $
+\end_inset
+
+.
+ This is done by assuming that 
+\begin_inset Formula $7=\frac{2-7b}{5-b}$
+\end_inset
+
+ for some 
+\begin_inset Formula $b$
+\end_inset
+
+, and showing that this can never happen by solving for 
+\begin_inset Formula $b$
+\end_inset
+
+ as follows:
+\begin_inset Formula 
+\begin{align*}
+\frac{2-7b}{5-b} & =7\\
+2-7b & =35-7b\\
+2 & =35,
+\end{align*}
+
+\end_inset
+
+which is a contradiction, thus 
+\begin_inset Formula $7\neq\frac{2-7b}{5-b}$
+\end_inset
+
+ for all 
+\begin_inset Formula $b\in\mathbb{R}-\left\{ 5\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Plugging in 
+\begin_inset Formula $a$
+\end_inset
+
+ into the function yields 
+\begin_inset Formula 
+\begin{align*}
+f\left(a\right) & =\frac{5a-2}{a-7}\\
+ & =\frac{5\left(\frac{2-7b}{5-b}\right)-2}{\frac{2-7b}{5-b}-7}\\
+ & =\frac{5\left(2-7b\right)-2\left(5-b\right)}{2-7b-7\left(5-b\right)}\\
+ & =\frac{-35b+10-10+2b}{2-7b-35+7b}\\
+ & =\frac{-33b}{-33}\\
+ & =b,
+\end{align*}
+
+\end_inset
+
+hence there exists a 
+\begin_inset Formula $a$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(a\right)=b$
+\end_inset
+
+.
+ Therefore, the function 
+\begin_inset Formula $f$
+\end_inset
+
+ is surjective.
+ 
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is a surjective and injective function, 
+\begin_inset Formula $f$
+\end_inset
+
+ is bijective.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $f^{-1}:\mathbb{R}-\left\{ 5\right\} \to\mathbb{R}-\left\{ 7\right\} $
+\end_inset
+
+ and prove that it is the inverse.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $f$
+\end_inset
+
+ is a bijective function and that 
+\begin_inset Formula $f\left(x\right)=\frac{5x-2}{x-7}$
+\end_inset
+
+.
+ Using the results from part 
+\begin_inset Formula $b$
+\end_inset
+
+, we get that 
+\begin_inset Formula $f^{-1}\left(b\right)=\frac{2-7b}{5-b}.$
+\end_inset
+
+ To show that 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ is the inverse of 
+\begin_inset Formula $f$
+\end_inset
+
+, we will show that 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ is well defined and that 
+\begin_inset Formula $f^{-1}\circ f=id_{\mathbb{R}-\left\{ 7\right\} }$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Well Defined
+\series default
+: Since 
+\begin_inset Formula $5\not\in\mathbb{R}-\left\{ 5\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left|f^{-1}\left(b\right)\right|\neq\infty$
+\end_inset
+
+.
+ In addition, we will show that 
+\begin_inset Formula $7\not\in f^{-1}\left(\mathbb{R}-\left\{ 5\right\} \right)$
+\end_inset
+
+ by trying to solve for 
+\begin_inset Formula $b$
+\end_inset
+
+ such that 
+\begin_inset Formula $f^{-1}\left(b\right)=7$
+\end_inset
+
+ as follows
+\begin_inset Formula 
+\begin{align*}
+\frac{2-7b}{5-b} & =7\\
+2-7b & =35-7b\\
+2 & =35,
+\end{align*}
+
+\end_inset
+
+which is a contradiction, thus 
+\begin_inset Formula $7\not\in f^{-1}\left(\mathbb{R}-\left\{ 5\right\} \right)$
+\end_inset
+
+.
+ Lastly, since a real number divided by a real number that is not zero,
+ produces another real number 
+\begin_inset Formula $f^{-1}:\mathbb{R}-\left\{ 5\right\} \to\mathbb{R}-\left\{ 7\right\} $
+\end_inset
+
+, and 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ is well defined.
+ 
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Identity
+\series default
+: Let 
+\begin_inset Formula $a\in\mathbb{R}-\left\{ 7\right\} $
+\end_inset
+
+, then for 
+\begin_inset Formula $f^{-1}\circ f=id_{\mathbb{R}-\left\{ 7\right\} }$
+\end_inset
+
+, we must get 
+\begin_inset Formula $f^{-1}\circ f\left(a\right)=a$
+\end_inset
+
+.
+ We show this directly, 
+\begin_inset Formula 
+\begin{align*}
+f^{-1}\circ f\left(a\right) & =\frac{2-7\left(\frac{5a-2}{a-7}\right)}{5-\frac{5a-2}{a-7}}\\
+ & =\frac{2\left(a-7\right)-7\left(5a-2\right)}{5\left(a-7\right)-5a-2}\\
+ & =\frac{2a-14-35a+14}{5a-35-5a-2}\\
+ & =\frac{-33a}{33}\\
+ & =a,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ is the inverse of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Complete 
+\begin_inset Formula $6$
+\end_inset
+
+ of the following 
+\begin_inset Formula $8$
+\end_inset
+
+ definitions
+\end_layout
+
+\begin_layout Enumerate
+A function 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ is injective if for all 
+\begin_inset Formula $a_{1},a_{2}\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $a_{1}\neq a_{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $f\left(a_{1}\right)\neq f\left(a_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+A function 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ is surjective if for all 
+\begin_inset Formula $b\in B$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(a\right)=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $g:S\to\mathcal{P}\left(S\right)$
+\end_inset
+
+ is a function, then the barber set of 
+\begin_inset Formula $g$
+\end_inset
+
+ is the set 
+\begin_inset Formula $B=\left\{ s\in S\,:\,s\not\in g\left(s\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Two sets 
+\begin_inset Formula $A,B$
+\end_inset
+
+ have the same cardinality if there exists a bijection 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+.
+ Or equivalently if there exists a bijection 
+\begin_inset Formula $f^{-1}:B\to A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+We write 
+\begin_inset Formula $\left|S\right|<\left|T\right|$
+\end_inset
+
+ for sets 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+ to mean that the cardinality of 
+\begin_inset Formula $S$
+\end_inset
+
+ is less than the cardinality of 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ In other words, there exists an injection 
+\begin_inset Formula $f:S\to T$
+\end_inset
+
+, but no surjection 
+\begin_inset Formula $g:S\to T$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+A set 
+\begin_inset Formula $A$
+\end_inset
+
+ is countably infinite if 
+\begin_inset Formula $\left|A\right|=\left|\mathbb{N}\right|$
+\end_inset
+
+.
+ In other words, there exists a bijection 
+\begin_inset Formula $f:A\to\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ and 
+\begin_inset Formula $g:B\to C$
+\end_inset
+
+ be functions.
+ Prove or disprove the following.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ is surjective, then 
+\begin_inset Formula $g$
+\end_inset
+
+ is surjective.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ and 
+\begin_inset Formula $g:B\to C$
+\end_inset
+
+ are functions, and that 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ is surjective.
+ Then for every 
+\begin_inset Formula $c\in C$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $c=g\circ f\left(a\right)$
+\end_inset
+
+.
+ Well, 
+\begin_inset Formula $f\left(a\right)\in B$
+\end_inset
+
+, so let 
+\begin_inset Formula $b=f\left(a\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+c & =g\circ f\left(a\right)\\
+ & =g\left(f\left(a\right)\right)\\
+ & =g\left(b\right),
+\end{align*}
+
+\end_inset
+
+which shows that for every 
+\begin_inset Formula $c\in C$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ such that 
+\begin_inset Formula $c=g\left(b\right)$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $g$
+\end_inset
+
+ is surjective.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective, then so is 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ We disprove this with a counterexample.
+ Let 
+\begin_inset Formula $A=\left\{ 1,2\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ 1,2\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $C=$
+\end_inset
+
+
+\begin_inset Formula $\left\{ 1,2\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $f\left(a\right)=a$
+\end_inset
+
+, and 
+\begin_inset Formula $g\left(b\right)=1$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective, but the composition is not since 
+\begin_inset Formula $g\circ f\left(1\right)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $g\circ f\left(2\right)=1$
+\end_inset
+
+.
+ Therefore, the statement is false.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $g$
+\end_inset
+
+ is surjective, then so is 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ We disprove this with a counterexample.
+ Let 
+\begin_inset Formula $A=\left\{ 1,2\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ 1,2\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $C=$
+\end_inset
+
+
+\begin_inset Formula $\left\{ 1,2\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $f\left(a\right)=1$
+\end_inset
+
+, and 
+\begin_inset Formula $g\left(b\right)=b$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $g\left(b\right)$
+\end_inset
+
+ is surjective, but the composition is not since 
+\begin_inset Formula $g\circ f\left(1\right)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $g\circ f\left(2\right)=1$
+\end_inset
+
+.
+ Therefore, the statement is false.
+ 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
