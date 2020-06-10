@@ -1,0 +1,1997 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\addtocounter{section}{32}
+
+\newcommand\abs[1]{\left|#1\right|}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\begin_modules
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 3in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 18
+\end_layout
+
+\begin_layout After Title Text
+Sections 33,34
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Section
+Sequences
+\end_layout
+
+\begin_layout Exercise
+Write the first six terms, and determine the nth term 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, for each of the following sequences.
+\end_layout
+
+\begin_layout Enumerate
+An arithmetic sequence with first term 
+\begin_inset Formula $5$
+\end_inset
+
+ and common difference 
+\begin_inset Formula $-3$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $5,2,-1,-4,-7,-10$
+\end_inset
+
+; 
+\begin_inset Formula $a_{n}=5-3\left(n-1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A geometric sequence with first term 
+\begin_inset Formula $4$
+\end_inset
+
+ and common ration 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $4,8,16,32,64,128$
+\end_inset
+
+; 
+\begin_inset Formula $a_{n}=4\cdot2^{n-1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+An arithmetic sequence with first term 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ and common difference 
+\begin_inset Formula $\frac{3}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{2}{4},\frac{5}{4},\frac{8}{4},\frac{11}{4},\frac{14}{4},\frac{17}{4}$
+\end_inset
+
+; 
+\begin_inset Formula $a_{n}=\frac{1}{2}+\frac{3}{4}\left(n-1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A geometric sequence with first term 
+\begin_inset Formula $\frac{3}{5}$
+\end_inset
+
+ and common ration 
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{3}{5},\frac{6}{15},\frac{12}{45},\frac{24}{135},\frac{48}{405},\frac{96}{1215}$
+\end_inset
+
+; 
+\begin_inset Formula $a_{n}=\frac{3}{5}\cdot\left(\frac{2}{3}\right)^{n-1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Translate the following phrases into symbolic logic.
+\end_layout
+
+\begin_layout Enumerate
+The sequence 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ defined by 
+\begin_inset Formula $a_{n}=3-4/n$
+\end_inset
+
+ converges to 
+\begin_inset Formula $L=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall\epsilon\in\mathbb{R}>0,\exists N\in\mathbb{R},\forall n\in\mathbb{N},n>N\implies\abs{3-4/n-3}<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The sequence 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ defined by 
+\begin_inset Formula $a_{n}=6$
+\end_inset
+
+ does not converge to 
+\begin_inset Formula $L=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists\epsilon\in\mathbb{R}>0,\forall N\in\mathbb{R},\exists n\in\mathbb{N},\left(n>N\right)\land\left(\abs{6-3}\geq\epsilon\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a,b,x\in\mathbb{R}$
+\end_inset
+
+.
+ Prove the following.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\max\left(a,b\right)\geq a$
+\end_inset
+
+ and 
+\begin_inset Formula $\max\left(a,b\right)\geq b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that the function 
+\begin_inset Formula $\max\left(a,b\right)$
+\end_inset
+
+ is defined as 
+\begin_inset Formula 
+\[
+\max\left(a,b\right)=\begin{cases}
+a & \text{if }a\geq b\\
+b & \text{if }b>a
+\end{cases},
+\]
+
+\end_inset
+
+then the image of 
+\begin_inset Formula $\text{max}\left(a,b\right)$
+\end_inset
+
+ is either 
+\begin_inset Formula $a$
+\end_inset
+
+ or 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ This gives us two cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let the output be 
+\begin_inset Formula $a$
+\end_inset
+
+, then 
+\begin_inset Formula $a\geq b$
+\end_inset
+
+, thus 
+\begin_inset Formula $\max\left(a,b\right)\geq a$
+\end_inset
+
+ and 
+\begin_inset Formula $\max\left(a,b\right)\geq b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Let the output be 
+\begin_inset Formula $b$
+\end_inset
+
+, then 
+\begin_inset Formula $b>a$
+\end_inset
+
+, thus 
+\begin_inset Formula $\max\left(a,b\right)\geq a$
+\end_inset
+
+ and 
+\begin_inset Formula $\max\left(a,b\right)\geq b$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Since both cases hold, the statement is true.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\min\left(a,b\right)\leq a$
+\end_inset
+
+ and 
+\begin_inset Formula $\min\left(a,b\right)\leq b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that the function 
+\begin_inset Formula $\min\left(a,b\right)$
+\end_inset
+
+ is defined as 
+\begin_inset Formula 
+\[
+\min\left(a,b\right)=\begin{cases}
+a & \text{if }a\leq b\\
+b & \text{if }b<a
+\end{cases},
+\]
+
+\end_inset
+
+then the image of 
+\begin_inset Formula $\min\left(a,b\right)$
+\end_inset
+
+ is either 
+\begin_inset Formula $a$
+\end_inset
+
+ or 
+\begin_inset Formula $b$
+\end_inset
+
+ depending on which one is smaller.
+ This gives us two cases.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Let 
+\begin_inset Formula $\min\left(a,b\right)=a$
+\end_inset
+
+, then 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+, thus 
+\begin_inset Formula $\min\left(a,b\right)\leq a$
+\end_inset
+
+ and 
+\begin_inset Formula $\min\left(a,b\right)\leq b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $\min\left(a,b\right)=b$
+\end_inset
+
+, then 
+\begin_inset Formula $b<a$
+\end_inset
+
+, thus 
+\begin_inset Formula $\min\left(a,b\right)<a$
+\end_inset
+
+ and 
+\begin_inset Formula $\min\left(a,b\right)\leq b$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Since both cases hold, the statement is true.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x>\max\left(a,b\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $x>a$
+\end_inset
+
+ and 
+\begin_inset Formula $x>b$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We suppose directly that the function 
+\begin_inset Formula $\max\left(a,b\right)$
+\end_inset
+
+ is defined as in part a), and that 
+\begin_inset Formula $x>\text{max}\left(a,b\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\max\left(a,b\right)\geq a$
+\end_inset
+
+ and 
+\begin_inset Formula $\max\left(a,b\right)\geq b$
+\end_inset
+
+, we then have that 
+\begin_inset Formula $x>\max\left(a,b\right)\geq a$
+\end_inset
+
+ and 
+\begin_inset Formula $x>\max\left(a,b\right)\geq b$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $x>a$
+\end_inset
+
+ and 
+\begin_inset Formula $x>b$
+\end_inset
+
+.
+ Thus the statement is true.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove that 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{2}{n^{2}}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Scratch work:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula 
+\begin{align*}
+\abs{a_{n}-L} & <\epsilon\\
+\abs{\frac{2}{n^{2}}-0} & <\epsilon\\
+\frac{2}{n^{2}} & <\epsilon\\
+\frac{2}{\epsilon} & <n^{2}\\
+\sqrt{\frac{2}{\epsilon}} & <n,
+\end{align*}
+
+\end_inset
+
+thus we want 
+\begin_inset Formula $N=\sqrt{\frac{2}{\epsilon}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+, and we let 
+\begin_inset Formula $N\in\mathbb{R}$
+\end_inset
+
+ to be 
+\begin_inset Formula $N=\sqrt{\frac{2}{\epsilon}}$
+\end_inset
+
+.
+ We suppose directly that 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ is greater than 
+\begin_inset Formula $N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{a_{n}-L} & =\abs{\frac{2}{n^{2}}-0}\\
+ & =\frac{2}{n^{2}}\\
+ & <\frac{2}{\sqrt{\frac{2}{\epsilon}}^{2}}\\
+ & =\frac{2}{\frac{2}{\epsilon}}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\forall\epsilon\in\mathbb{R}>0,\exists N\in\mathbb{R},\forall n\in\mathbb{N},n>N\implies\abs{a_{n}-L}<\epsilon$
+\end_inset
+
+.
+ Therefore, the limit is 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Prove that 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{3n-5}{2n+4}=\frac{3}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Scratch work:=
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{3n-5}{2n+4}-\frac{3}{2}} & =\abs{\frac{2\left(3n-5\right)-3\left(2n+4\right)}{2\left(2n+4\right)}}\\
+ & =\abs{\frac{6n-10-6n-12}{2\left(2n+4\right)}}\\
+ & =\abs{\frac{-24}{4n+8}}\\
+ & =\frac{24}{4n+8},
+\end{align*}
+
+\end_inset
+
+we want to solve for 
+\begin_inset Formula $n$
+\end_inset
+
+ such that 
+\begin_inset Formula $\frac{24}{4n+8}<\epsilon$
+\end_inset
+
+ as follows:
+\begin_inset Formula 
+\begin{align*}
+\frac{24}{4n+8} & <\epsilon\\
+\frac{\frac{24}{\epsilon}-8}{4} & <n\\
+\frac{6}{\epsilon}-2 & <n
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+, 
+\begin_inset Formula $N=\frac{6}{\epsilon}-2$
+\end_inset
+
+ and 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We suppose directly that 
+\begin_inset Formula $n>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{a_{n}-L} & =\abs{\frac{3n-5}{2n+4}-\frac{3}{2}}\\
+ & =\abs{\frac{24}{4n+8}}\\
+ & <\abs{\frac{24}{4\left(\frac{6}{\epsilon}-2\right)+8}}\\
+ & <\abs{\frac{24}{\frac{24}{\epsilon}}}\\
+ & <\epsilon,
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+thus 
+\begin_inset Formula $\forall\epsilon\in\mathbb{R}>0,\exists N\in\mathbb{R},\forall n\in\mathbb{N},n>N\implies\abs{a_{n}-L}<\epsilon$
+\end_inset
+
+.
+ Therefore, the limit is 
+\begin_inset Formula $\frac{3}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Prove or disprove: The sequence 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ defined by 
+\begin_inset Formula $a_{n}=\left(n+1\right)/n$
+\end_inset
+
+ converges.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Scratch Work: (We will prove that it converges to 
+\begin_inset Formula $1$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{n+1}{n}-1} & =\abs{\frac{n+1-n}{n}}\\
+ & =\frac{1}{n},
+\end{align*}
+
+\end_inset
+
+we want to solve for 
+\begin_inset Formula $n$
+\end_inset
+
+ such that 
+\begin_inset Formula $\frac{1}{n}<\epsilon$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\frac{1}{\epsilon}<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+, 
+\begin_inset Formula $N=\frac{1}{\epsilon}$
+\end_inset
+
+, and 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We suppose directly that 
+\begin_inset Formula $n>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{n+1}{n}-1} & =\frac{1}{n}\\
+ & <\frac{1}{\frac{1}{\epsilon}}\\
+ & <\epsilon,
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+thus 
+\begin_inset Formula $\forall\epsilon\in\mathbb{R}>0,\exists N\in\mathbb{R},\forall n\in\mathbb{N},n>N\implies\abs{a_{n}-L}<\epsilon$
+\end_inset
+
+.
+ Therefore, the limit is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ be an arithmetic sequence with first term 
+\begin_inset Formula $c$
+\end_inset
+
+ and common difference 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Prove that if 
+\begin_inset Formula $d=0$
+\end_inset
+
+, the sequence 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ converges to 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+, 
+\begin_inset Formula $N\in\mathbb{R}$
+\end_inset
+
+, and 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We suppose directly that 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ is an arithmetic sequence with first term 
+\begin_inset Formula $c$
+\end_inset
+
+ and common difference 
+\begin_inset Formula $d=0$
+\end_inset
+
+, and that 
+\begin_inset Formula $n>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{a_{n}-c} & =\abs{c+d\left(n-1\right)-c}\\
+ & =\abs{c-c}\\
+ & =0\\
+ & <\epsilon,
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+thus 
+\begin_inset Formula $\forall\epsilon\in\mathbb{R}>0,\exists N\in\mathbb{R},\forall n\in\mathbb{N},n>N\implies\abs{a_{n}-L}<\epsilon$
+\end_inset
+
+.
+ Therefore, the limit is 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ This is trivially true.
+ 
+\end_layout
+
+\begin_layout Exercise
+Prove that the sequence 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ defined by 
+\begin_inset Formula $a_{n}=n$
+\end_inset
+
+ does not converge to 
+\begin_inset Formula $L=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $\exists\epsilon\in\mathbb{R}>0,\forall N\in\mathbb{R},\exists n\in\mathbb{N},n>N\land\abs{a_{n}-L}\geq\epsilon$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\epsilon=1$
+\end_inset
+
+ and let 
+\begin_inset Formula $n=\max\left(N+1,10\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{a_{n}-L} & =\abs{\max\left(N+1,10\right)-3}\\
+ & \geq7\\
+ & >\epsilon,
+\end{align*}
+
+\end_inset
+
+thus the sequence doesn't converge to 
+\begin_inset Formula $L=3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+Prove that 
+\begin_inset Formula $\lim_{n\to\infty}\left(\sqrt{n^{2}+1}-n\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Scratch Work, we want to solve for 
+\begin_inset Formula $n$
+\end_inset
+
+ in the equation 
+\begin_inset Formula $\abs{\sqrt{n^{2}+1}-n-0}<\epsilon$
+\end_inset
+
+ as follows:
+\begin_inset Formula 
+\begin{align*}
+\abs{\sqrt{n^{2}+1}-n-0} & <\epsilon\\
+\sqrt{n^{2}+1}-n & <\epsilon\\
+\sqrt{n^{2}+1} & <\epsilon+n\\
+n^{2}+1 & <2\epsilon n+\epsilon^{2}+n^{2}\\
+1-\epsilon^{2} & <2\epsilon n\\
+\frac{1-\epsilon^{2}}{2\epsilon} & <n,
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+, 
+\begin_inset Formula $N=\frac{1-\epsilon^{2}}{2\epsilon}$
+\end_inset
+
+, 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, and suppose directly that 
+\begin_inset Formula $n>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{\sqrt{n^{2}+1}-n-0} & =\sqrt{n^{2}+1}-n\\
+ & <\sqrt{\left(\frac{1-\epsilon^{2}}{2\epsilon}\right)^{2}+1}-\frac{1-\epsilon^{2}}{2\epsilon}\\
+ & =\sqrt{\frac{1-2\epsilon^{2}+\epsilon^{4}+4\epsilon^{2}}{4\epsilon^{2}}}-\frac{1-\epsilon^{2}}{2\epsilon}\\
+ & =\sqrt{\frac{\left(1+\epsilon^{2}\right)^{2}}{\left(2\epsilon\right)^{2}}}-\frac{1-\epsilon^{2}}{2\epsilon}\\
+ & =\frac{1+\epsilon^{2}}{2\epsilon}-\frac{1-\epsilon^{2}}{2\epsilon}\\
+ & =\frac{2\epsilon^{2}}{2\epsilon}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+thus 
+\begin_inset Formula $\forall\epsilon\in\mathbb{R}>0,\exists N\in\mathbb{R},\forall n\in\mathbb{N},n>N\implies\abs{a_{n}-L}<\epsilon$
+\end_inset
+
+.
+ Therefore, the limit is 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ be a geometric sequence with first term 
+\begin_inset Formula $c$
+\end_inset
+
+ and common ration 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Prove the following statements.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\abs{r}<1$
+\end_inset
+
+, then 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ converges to 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Scratch Work: We want to solve for 
+\begin_inset Formula $n$
+\end_inset
+
+ in the expression 
+\begin_inset Formula $c\cdot r^{n-1}<\epsilon$
+\end_inset
+
+.
+ We do this as follows
+\begin_inset Formula 
+\begin{align*}
+c\cdot r^{n-1} & <\epsilon\\
+\ln\left(cr^{n-1}\right) & <\ln\left(\epsilon\right)\\
+\ln\left(c\right)+\ln\left(r^{n-1}\right) & <\ln\left(\epsilon\right)\\
+\ln\left(c\right)-\ln\left(\epsilon\right) & <-\left(n-1\right)\ln\left(r\right)\\
+\ln\left(c\right)-\ln\left(\epsilon\right)-\ln\left(r\right) & <-n\ln\left(r\right)\\
+-\ln\left(c\right)+\ln\left(\epsilon\right)+\ln\left(r\right) & <n\ln\left(r\right)\\
+\ln\left(\frac{\epsilon}{c}r\right) & <n\ln\left(r\right)\\
+\frac{\ln\left(\frac{\epsilon}{c}r\right)}{\ln\left(r\right)} & <n\\
+a<n & ,
+\end{align*}
+
+\end_inset
+
+with 
+\begin_inset Formula $a=\frac{\ln\left(\frac{\epsilon}{c}r\right)}{\ln\left(r\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+, 
+\begin_inset Formula $N=\ln\left(\frac{c}{\epsilon}r\right)/\ln\left(r\right)$
+\end_inset
+
+, 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $a=\frac{\ln\left(\frac{\epsilon}{c}r\right)}{\ln\left(r\right)}$
+\end_inset
+
+, and 
+\begin_inset Formula $\ln$
+\end_inset
+
+ be 
+\begin_inset Formula $\log_{r}$
+\end_inset
+
+.
+ We suppose directly that 
+\begin_inset Formula $\abs{r}<1$
+\end_inset
+
+ and 
+\begin_inset Formula $n>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{a_{n}-L} & =\abs{c\cdot r^{n-1}-0}\\
+ & =c\cdot r^{n-1}\\
+ & <c\cdot r^{a-1}\\
+ & <c\cdot r^{\frac{\ln\left(\frac{\epsilon}{c}r\right)}{\ln\left(r\right)}-1}\\
+ & <c\frac{\epsilon}{c}\\
+ & <\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\forall\epsilon\in\mathbb{R}>0,\exists N\in\mathbb{R},\forall n\in\mathbb{N},n>N\implies\abs{a_{n}-L}<\epsilon$
+\end_inset
+
+.
+ Therefore, the limit is 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ converges to 
+\begin_inset Formula $0$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{r}<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume by contradiction that 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ converges to 
+\begin_inset Formula $0$
+\end_inset
+
+ and that 
+\begin_inset Formula $\abs{r}\geq1$
+\end_inset
+
+.
+ There are two cases to consider, when 
+\begin_inset Formula $\abs{r}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\abs{r}>1$
+\end_inset
+
+.
+ If the statement is false under any case, then the entire statement is
+ false.
+ So we only consider the first case.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+We suppose that 
+\begin_inset Formula $\abs{r}=1$
+\end_inset
+
+, then 
+\begin_inset Formula $a_{n}=c\cdot\left(\pm1\right)^{n-1}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $r=1$
+\end_inset
+
+, then 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ converges trivially to 
+\begin_inset Formula $c$
+\end_inset
+
+ as shown similarly in exercise 33.7.
+ If 
+\begin_inset Formula $r=-1$
+\end_inset
+
+, then 
+\begin_inset Formula $a_{n}=\left(-c\right)^{n-1}$
+\end_inset
+
+ which does not converge as shown similarly in proposition 33.16.
+ 
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ does not converge to 
+\begin_inset Formula $0$
+\end_inset
+
+ when 
+\begin_inset Formula $\abs{r}=1$
+\end_inset
+
+, this is a contradiction.
+ Therefore, the original statement is true.
+ Thus if 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ converges to 
+\begin_inset Formula $0$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{r}<1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $c>0$
+\end_inset
+
+ and 
+\begin_inset Formula $r>1$
+\end_inset
+
+, then 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ diverges.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Scratch Work: Let's solve for 
+\begin_inset Formula $n$
+\end_inset
+
+ in the equation 
+\begin_inset Formula $cr^{n-1}=L$
+\end_inset
+
+ as follows
+\begin_inset Formula 
+\begin{align*}
+cr^{n-1} & =L\\
+\ln\left(r^{n-1}\right) & =\ln\left(\frac{L}{c}\right)\\
+\left(n-1\right)\ln\left(r\right) & =\ln\left(\frac{L}{c}\right)\\
+n\ln\left(r\right)-\ln\left(r\right) & =\ln\left(\frac{L}{c}\right)\\
+n & =\frac{\ln\left(\frac{Lr}{c}\right)}{\ln\left(r\right)},
+\end{align*}
+
+\end_inset
+
+note that when 
+\begin_inset Formula $n>\frac{\ln\left(\frac{Lr}{c}\right)}{\ln\left(r\right)}$
+\end_inset
+
+, then 
+\begin_inset Formula $cr^{n-1}>L$
+\end_inset
+
+ since 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\epsilon=cr$
+\end_inset
+
+ and 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ be chosen such that 
+\begin_inset Formula $n>\max\left(N,\frac{\ln\left(\frac{Lr}{c}\right)}{\ln\left(r\right)}+1\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{cr^{n-1}-L} & \geq cr^{\frac{\ln\left(\frac{Lr}{c}\right)}{\ln\left(r\right)}+1}-L\\
+ & =cr^{\frac{\ln\left(\frac{Lr}{c}\right)}{\ln\left(r\right)}}+cr-L\\
+ & =L-L+cr\\
+ & =cr,
+\end{align*}
+
+\end_inset
+
+thus, 
+\begin_inset Formula $\forall L\in\mathbb{R},\exists\epsilon\in\mathbb{R}>0,\forall N\in\mathbb{N},\exists n\in\mathbb{N},n>N\land\abs{cr^{n-1}-L}\geq\epsilon$
+\end_inset
+
+ when 
+\begin_inset Formula $r>0$
+\end_inset
+
+ and 
+\begin_inset Formula $c>0$
+\end_inset
+
+.
+ Therefore, the statement is true.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Series
+\end_layout
+
+\begin_layout Exercise
+Consider the sequence 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ given by the rule 
+\begin_inset Formula $a_{n}=n$
+\end_inset
+
+.
+ Find the first 
+\begin_inset Formula $6$
+\end_inset
+
+ terms of the sequence of partial sums 
+\begin_inset Formula $s_{n}$
+\end_inset
+
+.
+ Conjecture a simple formula for 
+\begin_inset Formula $s_{n}$
+\end_inset
+
+ and prove it.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="7">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $s_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Conjecture
+\series default
+: Let the sequence 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ be given by the rule 
+\begin_inset Formula $a_{n}=n$
+\end_inset
+
+, then the partial sum 
+\begin_inset Formula $s_{n}=\frac{n\left(n+1\right)}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Let the sequence 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ be given by the rule 
+\begin_inset Formula $a_{n}=n$
+\end_inset
+
+, we want to show that the open sentence 
+\begin_inset Formula 
+\[
+P\left(n\right):\text{the partial sum }s_{n}=\frac{n\left(n+1\right)}{2}
+\]
+
+\end_inset
+
+ is true.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ which is 
+\begin_inset Formula 
+\[
+s_{1}=a_{1}=1=\frac{1\left(1+1\right)}{2},
+\]
+
+\end_inset
+
+thus it is true.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction
+\series default
+: Let 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+.
+ We assume by induction that 
+\begin_inset Formula $P\left(k\right)$
+\end_inset
+
+ is true, which is the statement 
+\begin_inset Formula $s_{k}=\frac{k\left(k+1\right)}{2}$
+\end_inset
+
+, and we want to show that 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true.
+ Well, 
+\begin_inset Formula 
+\begin{align*}
+s_{k+1} & =s_{k}+a_{k+1}\\
+ & =\frac{k\left(k+1\right)}{2}+k+1\\
+ & =\frac{k\left(k+1\right)+2\left(k+1\right)}{2}\\
+ & =\frac{\left(k+1\right)\left(k+2\right)}{2},
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $P\left(k+1\right)$
+\end_inset
+
+ is true.
+ Therefore 
+\begin_inset Formula $s_{n}=\frac{n\left(n+1\right)}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $c,d\in\mathbb{R}$
+\end_inset
+
+ and let 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ be the arithmetic sequence defined by 
+\begin_inset Formula $a_{n}=c+\left(n-1\right)d$
+\end_inset
+
+.
+ Find a formula for the nth partial sum 
+\begin_inset Formula $s_{n}=\sum_{k=1}^{n}a_{k}$
+\end_inset
+
+ and prove it.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Conjecture
+\series default
+: Let 
+\begin_inset Formula $c,d\in\mathbb{R}$
+\end_inset
+
+ and let the sequence 
+\begin_inset Formula $\left(a_{n}\right)_{n\in\mathbb{N}}$
+\end_inset
+
+ be defined by 
+\begin_inset Formula $a_{n}=c+\left(n-1\right)d$
+\end_inset
+
+, then the partial sum 
+\begin_inset Formula $s_{n}=cn+d\left(\frac{n\left(n-1\right)}{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We wish to show that 
+\begin_inset Formula $s_{n}=cn+d$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ as follows:
+\begin_inset Formula 
+\begin{align*}
+s_{1} & =a_{1}\\
+ & =c+\left(1-1\right)d\\
+ & =c\cdot1+d\left(\frac{1\left(1-1\right)}{2}\right),
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, we suppose that 
+\begin_inset Formula $s_{k}=ck+d\left(\frac{k\left(k-1\right)}{2}\right)$
+\end_inset
+
+, and we want to show that 
+\begin_inset Formula $s_{k+1}=c\left(k+1\right)+d\left(\frac{\left(k+1\right)\left(k\right)}{2}\right)$
+\end_inset
+
+.
+ We do this by looking at 
+\begin_inset Formula $s_{k+1}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+s_{k+1} & =s_{k}+a_{k+1}\\
+ & =ck+d\left(\frac{k\left(k-1\right)}{2}\right)+c+\left(k+1-1\right)d\\
+ & =c\left(k+1\right)+d\left(\frac{k\left(k-1\right)}{2}\right)+kd\\
+ & =c\left(k+1\right)+d\left(\frac{k\left(k-1\right)}{2}+\frac{2k}{2}\right)\\
+ & =c\left(k+1\right)+d\left(\frac{k\left(k-1\right)+2k}{2}\right)\\
+ & =c\left(k+1\right)+d\left(\frac{k^{2}-k+2k}{2}\right)\\
+ & =c\left(k+1\right)+d\left(\frac{\left(k+1\right)\left(k\right)}{2}\right),
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $s_{k+1}=c\left(k+1\right)+d\left(\frac{\left(k+1\right)\left(k\right)}{2}\right)$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $s_{n}=cn+d\left(\frac{n\left(n-1\right)}{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Give a complete proof that 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{2^{n}}=1$
+\end_inset
+
+, by filling in the missing details from Example 34.5.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Prove by induction that 
+\begin_inset Formula $s_{n}=1-1/2^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We wish to show that 
+\begin_inset Formula $s_{n}=1-1/2^{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify that 
+\begin_inset Formula $s_{1}=1-1/2^{1}$
+\end_inset
+
+.
+ We start with 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+s_{1} & =a_{1}\\
+ & =\frac{1}{2^{1}}\\
+ & =1-1/2,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $s_{1}=1-1/2^{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, we suppose directly that 
+\begin_inset Formula $s_{k}=1-\frac{1}{2^{k}}$
+\end_inset
+
+ and we wish to show that 
+\begin_inset Formula $s_{k+1}=1-\frac{1}{2^{k+1}}$
+\end_inset
+
+.
+ We do this by looking at 
+\begin_inset Formula $s_{k+1}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+s_{k+1} & =s_{k}+a_{k+1}\\
+ & =1-\frac{1}{2^{k}}+\frac{1}{2^{k+1}}\\
+ & =1+\frac{1-2}{2^{k+1}}\\
+ & =1-\frac{1}{2^{k+1}},
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $s_{k+1}=1-\frac{1}{2^{k+1}}$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $s_{n}=1-\frac{1}{2^{n}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $\lim_{n\to\infty}s_{n}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Scratch Work: We want to find an 
+\begin_inset Formula $n$
+\end_inset
+
+ such that 
+\begin_inset Formula $\abs{s_{n}-1}=\epsilon$
+\end_inset
+
+.
+ We do this as follows.
+\begin_inset Formula 
+\begin{align*}
+\abs{s_{n}-1} & =\epsilon\\
+\abs{1-\frac{1}{2^{n}}-1} & =\epsilon\\
+\abs{-\frac{1}{2^{n}}} & =\epsilon\\
+\frac{1}{2^{n}} & =\epsilon\\
+\frac{1}{\epsilon} & =2^{n}\\
+\ln\left(\frac{1}{\epsilon}\right) & =n\ln\left(2\right)\\
+\frac{\ln\left(\frac{1}{\epsilon}\right)}{\ln\left(2\right)} & =n.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+, 
+\begin_inset Formula $N=\frac{\ln\left(\frac{1}{\epsilon}\right)}{\ln\left(2\right)}$
+\end_inset
+
+, and 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We suppose directly that 
+\begin_inset Formula $n>N$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\begin{align*}
+\abs{s_{n}-1} & =\abs{1-\frac{1}{2^{n}}-1}\\
+ & =\abs{-\frac{1}{2^{n}}}\\
+ & =\frac{1}{2^{n}}\\
+ & <\frac{1}{2^{\frac{\ln\left(\frac{1}{\epsilon}\right)}{\ln\left(2\right)}}}\\
+ & <\frac{1}{\frac{1}{\epsilon}}\\
+ & <\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\forall\epsilon\in\mathbb{R}>0,\exists N\in\mathbb{R},\forall n\in\mathbb{N},n>N\implies\abs{a_{n}-L}<\epsilon$
+\end_inset
+
+, therefore, the limit is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+Prove or disprove: The series 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{3^{n}}$
+\end_inset
+
+ converges.
+\end_layout
+
+\end_body
+\end_document
