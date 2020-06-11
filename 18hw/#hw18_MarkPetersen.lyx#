@@ -2435,157 +2435,37 @@ Now show that the harmonic series does not converge.
 
 \begin_deeper
 \begin_layout Proof
-Let 
-\begin_inset Formula $L\in\mathbb{R}$
-\end_inset
-
-, 
-\begin_inset Formula $N\in\mathbb{R}$
-\end_inset
-
-, 
-\begin_inset Formula $n\geq0$
-\end_inset
-
-, and 
-\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+We suppose directly that 
+\begin_inset Formula $s_{n}=\sum_{k=1}^{n}\frac{1}{k}$
 \end_inset
 
 .
- We have two cases to consider.
- 
-\end_layout
-
-\begin_layout Case
-Let 
-\begin_inset Formula $b\in\mathbb{Z}>0$
+ We can write this sum as 
+\begin_inset Formula $s_{2^{k}}=\sum_{k=0}^{2^{k}}t_{k}$
 \end_inset
 
-.
- Choose 
-\begin_inset Formula $2^{b}>N$
+ where 
+\begin_inset Formula $t_{k}$
 \end_inset
 
-.
- If 
-\begin_inset Formula $L\leq s_{2^{b}}$
+ was defined in part 1.
+ By definition 
+\begin_inset Formula $t_{m}\geq\frac{1}{2}$
 \end_inset
 
-, then 
-\begin_inset Formula $\abs{s_{2^{b}}-L}\geq0$
+ for all 
+\begin_inset Formula $m\in\mathbb{Z}>0$
 \end_inset
 
-.
- Since 
-\begin_inset Formula $s_{2^{b+1}}-s_{2^{b}}=t_{n+1}\geq\frac{1}{2}$
+, we know that 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}t_{n}\neq0.
+\]
+
 \end_inset
 
-, then 
-\begin_inset Formula $\abs{s_{2^{b+1}}-L}\geq\frac{1}{2}$
-\end_inset
-
-.
- In this case, let 
-\begin_inset Formula $\epsilon=\frac{1}{2}$
-\end_inset
-
- and 
-\begin_inset Formula $n=2^{b+1}$
-\end_inset
-
- so that 
-\begin_inset Formula $\abs{s_{n}-L}\geq\epsilon$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Case
-Let 
-\begin_inset Formula $b\in\mathbb{Z}>0$
-\end_inset
-
-.
- Choose 
-\begin_inset Formula $2^{b}>N$
-\end_inset
-
-.
- If 
-\begin_inset Formula $L>s_{2^{b}}$
-\end_inset
-
-, then 
-\begin_inset Formula $L\geq s_{2^{b+1}}$
-\end_inset
-
- or 
-\begin_inset Formula $L<s_{2^{b+1}}$
-\end_inset
-
-.
- In the case that 
-\begin_inset Formula $L\geq s_{2^{b+1}}$
-\end_inset
-
-, then 
-\begin_inset Formula $\abs{s_{2^{b}}-L}\geq\frac{1}{2}$
-\end_inset
-
-.
- In the case that 
-\begin_inset Formula $L<s_{2^{b+1}}$
-\end_inset
-
-, then 
-\begin_inset Formula $\abs{s_{2^{b+2}}-L}\geq\frac{1}{2}$
-\end_inset
-
-.
- Depending on the case, let 
-\begin_inset Formula $n=2^{b}$
-\end_inset
-
- or 
-\begin_inset Formula $n=2^{b+2}$
-\end_inset
-
-, and let 
-\begin_inset Formula $\epsilon=\frac{1}{2}$
-\end_inset
-
-.
- Then we have 
-\begin_inset Formula $\abs{s_{n}-L}\geq\frac{1}{2}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Since all cases hold, we have shown that for every 
-\begin_inset Formula $L,N\in\mathbb{R}$
-\end_inset
-
-, there exists an 
-\begin_inset Formula $\epsilon\in\mathbb{R}>0$
-\end_inset
-
- and 
-\begin_inset Formula $n\in\mathbb{N}$
-\end_inset
-
- such that 
-\begin_inset Formula $n>0$
-\end_inset
-
- and 
-\begin_inset Formula $\abs{s_{n}-L}\geq\epsilon$
-\end_inset
-
-.
- Therefore, the harmonic series does not converge.
- 
+ Thuse,
 \end_layout
 
 \end_deeper
