@@ -1040,11 +1040,6 @@ Scratch Work: We want to solve for
 \end_inset
 
 .
- To do this, let 
-\begin_inset Formula $\text{ln}\left(x\right)=\log_{r}\left(x\right)$
-\end_inset
-
-.
  We do this as follows
 \begin_inset Formula 
 \begin{align*}
@@ -1052,17 +1047,17 @@ c\cdot r^{n-1} & <\epsilon\\
 \ln\left(cr^{n-1}\right) & <\ln\left(\epsilon\right)\\
 \ln\left(c\right)+\ln\left(r^{n-1}\right) & <\ln\left(\epsilon\right)\\
 \ln\left(c\right)-\ln\left(\epsilon\right) & <-\left(n-1\right)\ln\left(r\right)\\
-\ln\left(c\right)-\ln\left(\epsilon\right)-1 & <-n\\
--\ln\left(c\right)+\ln\left(\epsilon\right)+1 & <n\\
-\ln\left(\frac{\epsilon}{c}\right)+1 & <n\\
-\ln\left(\frac{\epsilon}{c}\right)+1 & <n\\
+\ln\left(c\right)-\ln\left(\epsilon\right)-\ln\left(r\right) & <-n\ln\left(r\right)\\
+-\ln\left(c\right)+\ln\left(\epsilon\right)+\ln\left(r\right) & <n\ln\left(r\right)\\
+\ln\left(\frac{\epsilon}{c}r\right) & <n\ln\left(r\right)\\
+\frac{\ln\left(\frac{\epsilon}{c}r\right)}{\ln\left(r\right)} & <n\\
 a<n & ,
 \end{align*}
 
 \end_inset
 
 with 
-\begin_inset Formula $a=\ln\left(\frac{c}{\epsilon}r\right)$
+\begin_inset Formula $a=\frac{\ln\left(\frac{\epsilon}{c}r\right)}{\ln\left(r\right)}$
 \end_inset
 
 .
@@ -1082,7 +1077,7 @@ Let
 \end_inset
 
 , 
-\begin_inset Formula $a=\ln\left(\frac{c}{\epsilon}\right)+1$
+\begin_inset Formula $a=\frac{\ln\left(\frac{\epsilon}{c}r\right)}{\ln\left(r\right)}$
 \end_inset
 
 , and 
@@ -1108,7 +1103,7 @@ Let
 \abs{a_{n}-L} & =\abs{c\cdot r^{n-1}-0}\\
  & =c\cdot r^{n-1}\\
  & <c\cdot r^{a-1}\\
- & <c\cdot r^{\ln\left(\frac{\epsilon}{c}\right)+1-1}\\
+ & <c\cdot r^{\frac{\ln\left(\frac{\epsilon}{c}r\right)}{\ln\left(r\right)}-1}\\
  & <c\frac{\epsilon}{c}\\
  & <\epsilon,
 \end{align*}
@@ -1990,5 +1985,613 @@ thus
 \end_layout
 
 \end_deeper
+\begin_layout Exercise
+Prove or disprove: The series 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{3^{n}}$
+\end_inset
+
+ converges.
+\end_layout
+
+\begin_layout Enumerate
+The first step is to find a partial sum 
+\begin_inset Formula $s_{n}=\sum_{k=1}^{n}\frac{1}{3^{n}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Conjecture
+\series default
+: Let 
+\begin_inset Formula $a_{n}=\frac{1}{3^{n}}$
+\end_inset
+
+ for 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, then 
+\begin_inset Formula $s_{n}=\sum_{k=1}^{n}a_{n}=b\frac{\left(1-b^{n}\right)}{\left(1-b\right)}$
+\end_inset
+
+, with 
+\begin_inset Formula $b=\frac{1}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $b=\frac{1}{3}$
+\end_inset
+
+.
+ We wish to show that 
+\begin_inset Formula $s_{n}=b\frac{\left(1-b^{n}\right)}{\left(1-b\right)}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify that 
+\begin_inset Formula $s_{1}=b\frac{\left(1-b^{1}\right)}{\left(1-b\right)}$
+\end_inset
+
+ as follows:
+\begin_inset Formula 
+\begin{align*}
+s_{1} & =a_{1}\\
+ & =\frac{1}{3}\\
+ & =\frac{1}{3}\left(\frac{1-\left(\frac{1}{3}\right)^{1}}{1-\frac{1}{3}}\right),
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $s_{1}=b\frac{\left(1-b^{1}\right)}{\left(1-b\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+.
+ We suppose directly that 
+\begin_inset Formula $s_{k}=b\frac{\left(1-b^{k}\right)}{\left(1-b\right)}$
+\end_inset
+
+, and we want to show that 
+\begin_inset Formula $s_{k+1}=b\frac{\left(1-b^{k+1}\right)}{\left(1-b\right)}$
+\end_inset
+
+.
+ We begin with the definition of 
+\begin_inset Formula $s_{k+1}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+s_{k+1} & =s_{k}+a_{k+1}\\
+ & =b\frac{\left(1-b^{k}\right)}{\left(1-b\right)}+b^{k+1}\\
+ & =b\frac{\left(1-b^{k}\right)}{\left(1-b\right)}+b^{k+1}\left(\frac{1-b}{1-b}\right)\\
+ & =\frac{b\left(1-b^{k}\right)+b^{k+1}\left(1-b\right)}{1-b}\\
+ & =\frac{b-b\cdot b^{k}+b^{k+1}-b^{k+1}\cdot b}{1-b}\\
+ & =\frac{b-b\cdot b^{k+1}}{1-b}\\
+ & =b\left(\frac{1-b^{k+1}}{1-b}\right),
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $s_{k+1}=b\frac{\left(1-b^{k+1}\right)}{\left(1-b\right)}$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $s_{n}=b\frac{\left(1-b^{n}\right)}{\left(1-b\right)}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $b=\frac{1}{3}$
+\end_inset
+
+, 
+\begin_inset Formula $s_{n}=b\frac{\left(1-b^{n}\right)}{\left(1-b\right)}$
+\end_inset
+
+ and 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We want to show that 
+\begin_inset Formula $\lim_{n\to\infty}s_{n}=\frac{1}{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Scratch Work: We want to solve for 
+\begin_inset Formula $n$
+\end_inset
+
+ in the equation 
+\begin_inset Formula $\abs{s_{n}-\frac{1}{2}}=\epsilon$
+\end_inset
+
+ with 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+.
+ We do this as follows:
+\begin_inset Formula 
+\begin{align*}
+\abs{s_{n}-\frac{1}{2}} & =\epsilon\\
+\abs{b\frac{\left(1-b^{n}\right)}{\left(1-b\right)}-\frac{1}{2}} & =\epsilon\\
+\frac{1}{2}-b\frac{\left(1-b^{n}\right)}{\left(1-b\right)} & =\epsilon\\
+\frac{1}{2}-\epsilon & =b\frac{\left(1-b^{n}\right)}{\left(1-b\right)}\\
+\frac{\left(1-b\right)}{b}\left(\frac{1}{2}-\epsilon\right) & =1-b^{n}\\
+1-\frac{\left(1-b\right)}{b}\left(\frac{1}{2}-\epsilon\right) & =b^{n}\\
+\ln\left(1-\frac{\left(1-b\right)}{b}\left(\frac{1}{2}-\epsilon\right)\right)/\ln\left(b\right) & =n.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+, 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $N=\ln\left(1-\frac{\left(1-b\right)}{b}\left(\frac{1}{2}-\epsilon\right)\right)/\ln\left(b\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $t=\ln\left(1-\frac{\left(1-b\right)}{b}\left(\frac{1}{2}-\epsilon\right)\right)/\ln\left(b\right)$
+\end_inset
+
+.
+ We quickly note that 
+\begin_inset Formula $b^{t}=1-\frac{\left(1-b\right)}{b}\left(\frac{1}{2}-\epsilon\right)$
+\end_inset
+
+.
+ We assume directly that 
+\begin_inset Formula $n>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{s_{n}-\frac{1}{2}} & =\abs{b\frac{\left(1-b^{n}\right)}{\left(1-b\right)}-\frac{1}{2}}\\
+ & =\frac{1}{2}-b\frac{\left(1-b^{n}\right)}{\left(1-b\right)}\\
+ & <\frac{1}{2}-b\frac{\left(1-b^{t}\right)}{\left(1-b\right)}\\
+ & =\frac{1}{2}-b\frac{\left(1-1-\frac{\left(1-b\right)}{b}\left(\frac{1}{2}-\epsilon\right)\right)}{\left(1-b\right)}\\
+ & =\frac{1}{2}-\frac{1}{2}+\epsilon\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\abs{s_{n}-\frac{1}{2}}<\epsilon$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $\lim_{n\to\infty}s_{n}=\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+In the exercise we will show that the harmonic series 
+\begin_inset Formula $\sum_{k=1}^{\infty}\frac{1}{k}$
+\end_inset
+
+ does not converge.
+ Throughout the exercise, let 
+\begin_inset Formula $s_{n}=\sum_{k=1}^{n}\frac{1}{k}$
+\end_inset
+
+ be the nth partial sum, for each integer 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For each 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+, define 
+\begin_inset Formula 
+\[
+t_{n}=\sum_{k=2^{n-1}+1}^{2^{n}}\frac{1}{k}.
+\]
+
+\end_inset
+
+Prove that 
+\begin_inset Formula $t_{n}\geq\frac{1}{2}$
+\end_inset
+
+, for each 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ and that 
+\begin_inset Formula $t_{n}=\sum_{k=2^{n-1}+1}^{2^{n}}\frac{1}{k}$
+\end_inset
+
+.
+ Then for each 
+\begin_inset Formula $n$
+\end_inset
+
+, we sum over 
+\begin_inset Formula $\left(2^{n}-2^{n-1}-1+1\right)$
+\end_inset
+
+ terms.
+ Which is simply 
+\begin_inset Formula $\left(2^{n}-2^{n-1}\right)$
+\end_inset
+
+ terms.
+ In each summation, the smallest term is always the last term to be added.
+ Thus 
+\begin_inset Formula 
+\begin{align*}
+t_{n} & =\sum_{k=2^{n-1}+1}^{2^{n}}\frac{1}{k}\\
+ & \geq\left(2^{n}-2^{n-1}\right)\frac{1}{2^{n}}\\
+ & =1-\frac{1}{2}\\
+ & =\frac{1}{2}.
+\end{align*}
+
+\end_inset
+
+Therefore 
+\begin_inset Formula $t_{n}\geq\frac{1}{2}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $s_{2^{n}}\geq n/2$
+\end_inset
+
+, for each 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+, by induction.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{n}=\sum_{k=2^{n-1}+1}^{2^{n}}\frac{1}{k}$
+\end_inset
+
+.
+ We note that 
+\begin_inset Formula 
+\begin{align*}
+s_{2^{n+1}} & =\sum_{k=1}^{2^{n}}\frac{1}{k}+\sum_{k=2^{n}+1}^{2^{n+1}}\frac{1}{k}\\
+ & =s_{2^{n}}+t_{n+1}.
+\end{align*}
+
+\end_inset
+
+and we want to show that 
+\begin_inset Formula $s_{2^{n}}\geq n/2$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We verify that 
+\begin_inset Formula $s_{2^{0}}\geq0/2$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+s_{2^{0}} & =s_{1}\\
+ & =\frac{1}{1}\\
+ & \geq0.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $k\geq0$
+\end_inset
+
+.
+ We suppose by induction that 
+\begin_inset Formula $s_{2^{k}}\geq k/2$
+\end_inset
+
+, and we want to show that 
+\begin_inset Formula $s_{2^{k+1}}\geq\left(k+1\right)/2$
+\end_inset
+
+.
+ We do this as follows:
+\begin_inset Formula 
+\begin{align*}
+s_{2^{k+1}} & =s_{2^{k}}+t_{n+1}\\
+ & \geq k/2+t_{n+1}\\
+ & \geq k/2+1/2\\
+ & =\left(k+1\right)/2.
+\end{align*}
+
+\end_inset
+
+Thus 
+\begin_inset Formula $s_{2^{k+1}}\geq\left(k+1\right)/2$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $s_{2^{n}}\geq n/2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Now show that the harmonic series does not converge.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $L\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $N\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+, and 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+.
+ We have two cases to consider.
+ 
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $b\in\mathbb{Z}>0$
+\end_inset
+
+.
+ Choose 
+\begin_inset Formula $2^{b}>N$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $L\leq s_{2^{b}}$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{s_{2^{b}}-L}\geq0$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $s_{2^{b+1}}-s_{2^{b}}=t_{n+1}\geq\frac{1}{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{s_{2^{b+1}}-L}\geq\frac{1}{2}$
+\end_inset
+
+.
+ In this case, let 
+\begin_inset Formula $\epsilon=\frac{1}{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $n=2^{b+1}$
+\end_inset
+
+ so that 
+\begin_inset Formula $\abs{s_{n}-L}\geq\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Case
+Let 
+\begin_inset Formula $b\in\mathbb{Z}>0$
+\end_inset
+
+.
+ Choose 
+\begin_inset Formula $2^{b}>N$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $L>s_{2^{b}}$
+\end_inset
+
+, then 
+\begin_inset Formula $L\geq s_{2^{b+1}}$
+\end_inset
+
+ or 
+\begin_inset Formula $L<s_{2^{b+1}}$
+\end_inset
+
+.
+ In the case that 
+\begin_inset Formula $L\geq s_{2^{b+1}}$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{s_{2^{b}}-L}\geq\frac{1}{2}$
+\end_inset
+
+.
+ In the case that 
+\begin_inset Formula $L<s_{2^{b+1}}$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{s_{2^{b+2}}-L}\geq\frac{1}{2}$
+\end_inset
+
+.
+ Depending on the case, let 
+\begin_inset Formula $n=2^{b}$
+\end_inset
+
+ or 
+\begin_inset Formula $n=2^{b+2}$
+\end_inset
+
+, and let 
+\begin_inset Formula $\epsilon=\frac{1}{2}$
+\end_inset
+
+.
+ Then we have 
+\begin_inset Formula $\abs{s_{n}-L}\geq\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since all cases hold, we have shown that for every 
+\begin_inset Formula $L,N\in\mathbb{R}$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $\epsilon\in\mathbb{R}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ such that 
+\begin_inset Formula $n>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\abs{s_{n}-L}\geq\epsilon$
+\end_inset
+
+.
+ Therefore, the harmonic series does not converge.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
